@@ -1,6 +1,6 @@
 # [sli.dev](https://sli.dev)
 
-Documentation for [Slidev](https://github.com/slidevjs/slidev)
+Spanish documentation for [Slidev](https://github.com/slidevjs/slidev)
 
 ## Translations
 

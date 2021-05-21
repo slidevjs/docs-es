@@ -1,4 +1,4 @@
-# Components
+# Componentes
 
 ## Built-in Components
 

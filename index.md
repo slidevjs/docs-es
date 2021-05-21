@@ -7,5 +7,5 @@ actionLink: /guide/
 altActionText: Leer más
 altActionLink: /guide/why
 
-footer: MIT Licensed | Copyright © 2021-PRESENT Anthony Fu
+footer: Licencia MIT | Copyright © 2021-PRESENTE Anthony Fu
 ---

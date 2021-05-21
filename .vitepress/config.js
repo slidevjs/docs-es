@@ -18,7 +18,7 @@ const Guide = [
     link: '/guide/syntax',
   },
   {
-    text: 'Navigation',
+    text: 'Navegación',
     link: '/guide/navigation',
   },
   {
@@ -45,22 +45,26 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Use Theme',
+    text: 'Usar un tema',
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallery',
+    text: 'Galería de temas',
     link: '/themes/gallery',
   },
   {
-    text: 'Write a Theme',
+    text: 'Escribir un tema',
     link: '/themes/write-a-theme',
   },
 ]
 
 const Translations = [
   {
+    text: 'Español',
+  },
+  {
     text: 'English',
+    link: 'https://sli.dev{{pathname}}',
   },
   {
     text: '简体中文',
@@ -74,11 +78,11 @@ const Translations = [
 
 const Customizations = [
   {
-    text: 'Customizations',
+    text: 'Personalizaciones',
     link: '/custom/',
   },
   {
-    text: 'Directory Structure',
+    text: 'Estructura del directorio',
     link: '/custom/directory-structure',
   },
   {
@@ -86,27 +90,27 @@ const Customizations = [
     link: '/custom/highlighters',
   },
   {
-    text: 'Configure Vue',
+    text: 'Configurar Vue',
     link: '/custom/config-vue',
   },
   {
-    text: 'Configure Vite',
+    text: 'Configurar Vite',
     link: '/custom/config-vite',
   },
   {
-    text: 'Configure Windi CSS',
+    text: 'Configurar Windi CSS',
     link: '/custom/config-windicss',
   },
   {
-    text: 'Configure Monaco',
+    text: 'Configurar Monaco',
     link: '/custom/config-monaco',
   },
   {
-    text: 'Configure KaTeX',
+    text: 'Configurar KaTeX',
     link: '/custom/config-katex',
   },
   {
-    text: 'Configure Mermaid',
+    text: 'Configurar Mermaid',
     link: '/custom/config-mermaid',
   },
 ]
@@ -124,26 +128,26 @@ const Resources = [
 
 const slidebars = [
   {
-    text: 'Guide',
+    text: 'Guía',
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Temas',
     children: Theme,
   },
   {
-    text: 'Customizations',
+    text: 'Personalizaciones',
     children: Customizations,
   },
   {
     text: 'Built-in',
     children: [
       {
-        text: 'Components',
+        text: 'Componentes',
         link: '/builtin/components',
       },
       {
-        text: 'Layouts',
+        text: 'Plantillas',
         link: '/builtin/layouts',
       },
     ],
@@ -155,13 +159,13 @@ const slidebars = [
  */
 module.exports = {
   title: 'Slidev',
-  description: 'Presentation slides for developers',
+  description: 'Presentaciones de diapositivas para desarrolladores',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'author', content: 'Anthony Fu' }],
     ['meta', { property: 'og:title', content: 'Slidev' }],
     ['meta', { property: 'og:image', content: 'https://sli.dev/og-image.png' }],
-    ['meta', { property: 'og:description', content: 'Presentation slides for developers' }],
+    ['meta', { property: 'og:description', content: 'Presentaciones de diapositivas para desarrolladores' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:creator', content: '@slidevjs' }],
     ['meta', { name: 'twitter:image', content: 'https://sli.dev/og-image.png' }],
@@ -170,31 +174,31 @@ module.exports = {
     ['link', { href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600', rel: 'stylesheet' }],
   ],
   themeConfig: {
-    repo: 'slidevjs/docs',
+    repo: 'slidevjs/docs-es', // TODO - Doesn't really work yet 
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'Suggest changes to this page',
+    editLinkText: 'Sugerir cambios a esta página',
 
     nav: [
       {
-        text: 'Guide',
+        text: 'Guía',
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'Tema',
         items: Theme,
       },
       {
-        text: 'Customize',
+        text: 'Personalizar',
         items: Customizations,
       },
       {
-        text: 'Resources',
+        text: 'Recursos',
         items: Resources,
       },
       {
-        text: 'English',
+        text: 'Español',
         items: Translations,
       },
     ],

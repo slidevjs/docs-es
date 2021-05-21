@@ -22,8 +22,8 @@ export interface ThemeInfo {
 export const official: ThemeInfo[] = [
   {
     id: '@slidev/theme-default',
-    name: 'Default',
-    description: 'The minimalism default theme for Slidev',
+    name: 'Por defecto',
+    description: 'El tema minimalista por defecto para Slidev',
     author: {
       name: 'Anthony Fu',
       link: 'https://github.com/antfu',

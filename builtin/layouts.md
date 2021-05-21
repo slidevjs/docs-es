@@ -1,4 +1,4 @@
-# Layouts
+# Plantillas
 
 ## Built-in Layouts
 

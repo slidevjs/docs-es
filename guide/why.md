@@ -1,36 +1,36 @@
-# Why Slidev
+# Por qué Slidev
 
-There are a lot of feature-rich, general-purpose, WYSIWYG slides makers like [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) and [Apple Keynote](https://www.apple.com/keynote/). They work pretty well for making nice slides with animations, charts, and many other things, while being very intuitive and easy to learn. So why bother making Slidev?
+Hay muchos creadores de diapositivas *WYSIWYG* de uso general y repletos de funciones, como
+[Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) y [Apple Keynote](https://www.apple.com/keynote/). Funcionan bastante bien para hacer bonitas diapositivas con animaciones, gráficos y muchas otras cosas, a la vez que son muy intuitivas y fáciles de aprender. Entonces, ¿por qué molestarse en hacer Slidev?
 
-Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with. 
+Slidev pretende proporcionar la flexibilidad y la interactividad para que los desarrolladores puedan hacer sus presentaciones aún más interesantes, expresivas y atractivas utilizando las herramientas y tecnologías con las que ya están familiarizados. 
 
-When working with WYSIWYG editors, it is easy to get distracted by the styling options. Slidev remedies that by separating the content and visuals. This allows you to focus on one thing at a time, while also being able to reuse the themes from the community. Slidev does not seek to replace other slide deck builders entirely. Rather, it focuses on catering to the developer community.
+Cuando se trabaja con editores WYSIWYG, es fácil distraerse con las opciones de estilo. Slidev lo remedia separando el contenido y lo visual. Esto le permite centrarse en una cosa a la vez, a la vez que puede reutilizar los temas de la comunidad. Slidev no pretende sustituir por completo a otros creadores de presentaciones de diapositivas. Más bien, se centra en atender a la comunidad de desarrolladores.
 
 ## Slidev
 
 ![](/screenshots/cover.png)
 
-Here are a few of the coolest features of Slidev:
+Estas son algunas de las características más interesantes de Slidev:
 
-## Markdown-based
+## Basado en Markdown
 
-Slidev uses an extended Markdown format to store and organize your slides in a single plain text file. This lets you focus on making the content. And since the content and styles are separated, this also made it possible to switch between different themes effortlessly.
+Slidev utiliza un formato Markdown extendido para almacenar y organizar tus diapositivas en un único archivo de texto. Esto te permite centrarte en la elaboración del contenido. Y como el contenido y los estilos están separados, esto también hace posible cambiar entre diferentes temas sin esfuerzo.
 
-Learn more about [Slidev's Markdown Syntax](/guide/syntax).
+Aprende más sobre la [sintaxis de Markdown de Slidev](/guide/syntax).
+## Tematizable
 
-## Themable
+Los temas para Slidev pueden ser compartidos e instalados usando módulos de npm. Luego se aplican con una sola línea de configuración.
 
-Themes for Slidev can be shared and installed using npm packages. You then apply them with only one line of config.
+Revisa la [galería de temas](/themes/gallery) o [aprende cómo escribir un tema](/themes/write-a-theme).
 
-Check out the [theme gallery](/themes/gallery) or [learn how to write a theme](/themes/write-a-theme).
+## Pensado para desarrolladores
 
-## Developer Friendly
+Slidev proporciona soporte de primera clase de los fragmentos de código para los desarrolladores. [Prism](https://prismjs.com/) y [Shiki](https://github.com/shikijs/shiki) consiguen resaltado de sintaxis perfecto al pixel, al tiempo que es capaz de editar el código en cualquier momento. Con el [editor de Monaco](https://microsoft.github.io/monaco-editor/) integrado, también te permite programar en directo en tu presentación con autocompletado, marcado de tipos e incluso soporte de TypeScript.
 
-Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
+Lee más sobre los [resaltadores](/custom/highlighters) y la [configuración de Monaco](/custom/config-monaco).
 
-Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
-
-## Fast
+## Rápido
 
 Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
 

@@ -1,8 +1,8 @@
-# Configure Mermaid
+# Configurar Mermaid
 
 <Environment type="client" />
 
-Create `./setup/mermaid.ts` with the following content:
+Crea `./setup/mermaid.ts` con el siguiente contenido:
 
 ```ts
 import { defineMermaidSetup } from '@slidev/types'

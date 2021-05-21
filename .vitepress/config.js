@@ -2,19 +2,19 @@
 
 const Guide = [
   {
-    text: 'Why Slidev',
+    text: 'Por qué Slidev',
     link: '/guide/why',
   },
   {
-    text: 'Getting Started',
+    text: 'Primeros pasos',
     link: '/guide/',
   },
   {
-    text: 'Installation',
+    text: 'Instalación',
     link: '/guide/install',
   },
   {
-    text: 'Markdown Syntax',
+    text: 'Sintaxis de Markdown',
     link: '/guide/syntax',
   },
   {
@@ -22,23 +22,23 @@ const Guide = [
     link: '/guide/navigation',
   },
   {
-    text: 'Animations',
+    text: 'Animaciones',
     link: '/guide/animations',
   },
   {
-    text: 'Exporting',
+    text: 'Exportando',
     link: '/guide/exporting',
   },
   {
-    text: 'Record Presentation',
+    text: 'Grabar una presentación',
     link: '/guide/recording',
   },
   {
-    text: 'Presenter Mode',
+    text: 'Modo presentador',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Editor Integrations',
+    text: 'Integraciones del editor',
     link: '/guide/editors',
   },
 ]
@@ -140,7 +140,7 @@ const slidebars = [
     children: Customizations,
   },
   {
-    text: 'Built-in',
+    text: 'Integrado',
     children: [
       {
         text: 'Componentes',

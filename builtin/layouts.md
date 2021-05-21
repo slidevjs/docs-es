@@ -1,15 +1,15 @@
 # Plantillas
 
-## Built-in Layouts
+## Plantillas integradas
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directly.
+> La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directamente.
 
-## Custom Layouts
+## Plantillas personalizadas
 
-Create a directory `layouts/` under your project root, and simply put your custom Vue layout components under it.
+Crea un directorio `layouts/` en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él.
 
-Read more in the [Customization](/custom/directory-structure#layouts) section.
+Lee más en la sección de [personalización](/custom/directory-structure#layouts).
 
-## Theme-provided Layouts
+## Plantillas proveídas por temas
 
-Themes can provide layouts or override existing ones. Please read their documentation for what they have provided.
+Los temas pueden proveer plantillas o reemplazar aquellas existentes. Por favor, lea su documentación para aquello que provean. 

@@ -1,8 +1,8 @@
-# Configure KaTeX
+# Configurar KaTeX
 
 <Environment type="node" />
 
-Create `./setup/katex.ts` with the following content:
+Crea `./setup/katex.ts` con el siguiente contenido:
 
 ```ts
 import { defineKatexSetup } from '@slidev/types'

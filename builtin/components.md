@@ -1,17 +1,19 @@
 # Componentes
 
-## Built-in Components
+## Componentes integrados
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directly.
+> La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directamente.
 
-## Custom Components
+## Componentes personalizados
 
-Create a directory `components/` under your project root, and simply put your custom Vue components under it, then you can use it with the same name in your markdown file!
+Crea un directorio`components/`en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él; entonces podrás usarlo con el mismo nombre que en tu archivo markdown.
 
-Read more in the [Customization](/custom/directory-structure#components) section.
+Lea más en la sección de [personalización](/custom/directory-structure#components).
 
-## Theme-provided Components
+## Componentes proveídos por temas
 
-Themes can provide components as well. Please read their documentations for what they have provided.
 
-Check more in the [directory structure](/custom/directory-structure) section.
+Los temas pueden también pueden proveer sus propios componentes. Por favor, lea su documentación para aquello que provean. 
+
+
+Lea más en la sección de [estructura del contenido](/custom/directory-structure).

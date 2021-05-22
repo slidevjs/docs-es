@@ -1,30 +1,30 @@
-# Installation
+# Instalación
 
-## Starter Template
+## Plantilla de inicio
 
-> Slidev requires [**Node.js >=14.0**](https://nodejs.org/)
+> Slidev requiere [**Node.js >=14.0**](https://nodejs.org/)
 
-The best way to get started is using our official starter template.
+La mejor manera de empezar es utilizando nuestra plantilla oficial de inicio.
 
-With NPM:
+Con NPM:
 
 ```bash
 $ npm init slidev@latest
 ```
 
-With Yarn:
+Con Yarn:
 
 ```bash
 $ yarn create slidev@latest
 ```
 
-Follow the prompts and it will open up the slideshow at http://localhost:3030/ automatically for you.
+Sigue las indicaciones y se abrirá la presentación en http://localhost:3030/ automáticamente para ti.
 
-It also contains the basic setup and a short demo with instructions on how to get started with Slidev.
+También contiene la configuración básica y una breve demostración con instrucciones sobre cómo empezar a utilizar Slidev.
 
-## Install Manually
+## Instalación manual
 
-If you still prefer to install Slidev manually or would like to integrate it into your existing projects, you can do:
+Si todavía prefieres instalar Slidev manualmente o quieres integrarlo en tus proyectos existentes, puedes hacer lo siguiente:
 
 ```bash
 $ npm install @slidev/cli @slidev/theme-default
@@ -36,14 +36,13 @@ $ touch slides.md
 $ npx slidev
 ```
 
-> Please note if you are using [pnpm](https://pnpm.io), you will need to enable [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) option for Slidev to work properly:
+> Por favor, nótese que si usas [pnpm](https://pnpm.io), necesitarás activar la opción de '[shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist)' para que Slidev funcione correctamente:
 >
 > ```bash
 > echo 'shamefully-flatten=true' >> .npmrc
 > ```
 
-## Install on Docker
+## Instalación en Docker
+Si necesitas una forma rápida de ejecutar una presentación con contenedores, puedes utilizar la imagen de [docker](https://hub.docker.com/r/stig124/slidev) preconstruida y mantenida por [stig124](https://github.com/Stig124), o construir la tuya propia.
 
-If you need a rapid way to run a presentation with containers, you can use the prebuilt [docker](https://hub.docker.com/r/stig124/slidev) image maintained by [stig124](https://github.com/Stig124), or build your own.
-
-Refer to the [slidevjs/container repo](https://github.com/slidevjs/container) for more details.
+Consulta el [repositorio de slidevjs/container](https://github.com/slidevjs/container) para más detalles.

@@ -86,7 +86,7 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
-    text: 'Highlighters',
+    text: 'Resaltadores',
     link: '/custom/highlighters',
   },
   {

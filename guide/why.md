@@ -26,44 +26,43 @@ Revisa la [galería de temas](/themes/gallery) o [aprende cómo escribir un tema
 
 ## Pensado para desarrolladores
 
-Slidev proporciona soporte de primera clase de los fragmentos de código para los desarrolladores. [Prism](https://prismjs.com/) y [Shiki](https://github.com/shikijs/shiki) consiguen resaltado de sintaxis perfecto al pixel, al tiempo que es capaz de editar el código en cualquier momento. Con el [editor de Monaco](https://microsoft.github.io/monaco-editor/) integrado, también te permite programar en directo en tu presentación con autocompletado, marcado de tipos e incluso soporte de TypeScript.
+Slidev proporciona soporte de primera clase de los fragmentos de código para los desarrolladores. [Prism](https://prismjs.com/) y [Shiki](https://github.com/shikijs/shiki) consiguen resaltado de sintaxis perfectol, al tiempo que es capaz de editar el código en cualquier momento. Con el [editor de Monaco](https://microsoft.github.io/monaco-editor/) integrado, también te permite programar en directo en tu presentación con autocompletado, marcado de tipos e incluso soporte de TypeScript.
 
 Lee más sobre los [resaltadores](/custom/highlighters) y la [configuración de Monaco](/custom/config-monaco).
 
 ## Rápido
 
-Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+Slidev es potenciado por [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) y [Windi CSS](https://windicss.org/), lo que da la mejor experiencia de editor. Cada cambio que hagas se reflejará en las diapositivas **instantáneamente**.
 
-Find more about [our tech stack](/guide/#tech-stack).
+Aprende más sobre [nuestras tecnologías](/guide/#tech-stack).
 
-## Interactive & Expressive
+## Interactivo y expresivo
 
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interserting and intuitive way.
+Puedes escribir componentes Vue personalizados y utilizarlos directamente dentro de tu archivo markdown. También puedes interactuar con ellos dentro de la presentación para expresar tu idea de una manera más intersante e intuitiva.
 
-## Recording Support
+## Soporte de grabación
+Slidev proporciona grabación y vista de cámara de forma integrada. Puedes compartir tu presentación con la vista de la cámara, o grabar y guardar por separado la pantalla y la cámara. Todo con una sola pasada, sin necesidad de herramientas adicionales.
 
-Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
-
-Learn more about [recording here](/guide/recording).
+Aprende más sobre [grabar aquí](/guide/recording).
 
 ## Portable
 
-Export your slides into PDF, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+Exporte sus diapositivas a PDF, PNG o incluso a una _Single Page Application_ (SPA) alojable con un solo comando, y compártalas en cualquier lugar.
 
-Read more about that in the [exporting docs](/guide/exporting).
+Lee más sobre esto en [exportando documentos](/guide/exporting).
 
-## Hackable
+## Hackeable
 
-Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
+Al estar basado en tecnologías web, todo lo que se puede hacer en una aplicación web también es posible con Slidev. Por ejemplo, WebGL, solicitudes de API, iframes, o incluso compartir en vivo. ¡Todo depende de tu imaginación!
 
-## Give it a Try
+## Pruébalo
 
-Playing around with Slidev will tell you more than a thousand words. You are just one command away:
+Trastear con Slidev te dirá más que mil palabras. Estás tan solo a un comando:
 
 ```bash
 $ npm init slidev
 ```
 
-Or have a quick preview of it:
+O echa un vistazo rápido:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

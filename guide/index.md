@@ -88,7 +88,7 @@ Hola mundo
 
 ---
 
-# Page 2
+# Página 2
 
 Usa directamente bloques de código para el resaltado
 
@@ -98,7 +98,7 @@ console.log('¡Hola, mundo!')
 
 ---
 
-# Page 3
+# Página 3
 ~~~
 
 Lee más sobre la sintaxis de Markdown de Slidev en la [guía de sintaxis](/guide/syntax).

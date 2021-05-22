@@ -15,7 +15,7 @@ $ npm init slidev@latest
 Con Yarn:
 
 ```bash
-$ yarn create slidev@latest
+$ yarn create slidev
 ```
 
 Sigue las indicaciones y se abrirá la presentación en http://localhost:3030/ automáticamente para ti.

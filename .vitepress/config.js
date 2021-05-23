@@ -121,11 +121,11 @@ const Customizations = [
 
 const Resources = [
   {
-    text: 'Showcases',
+    text: 'Galería',
     link: '/showcases',
   },
   {
-    text: 'Curated Covers',
+    text: 'Portadas seleccionadas',
     link: '/resources/covers',
   },
 ]

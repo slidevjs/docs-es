@@ -2,9 +2,8 @@
 sidebar: false
 ---
 
-# Showcases
+# Galería
 
-Talks / Presentations using Slidev.
-
+Charlas / Presentaciones usando Slidev:
 <!-- Edit in ./docs/.vitepress/showcases.ts -->
 <ShowCases />

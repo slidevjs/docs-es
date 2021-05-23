@@ -1,6 +1,6 @@
-# Curated Covers
+# Portadas seleccionadas
 
-We curated a few cover images to demonstrate our starter template.
+Hemos seleccionado algunas imágenes de portada para nuestras plantillas de inicio:
 
 ![](/screenshots/covers.png)
 
@@ -11,4 +11,4 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 ```
 
-If you enjoy any of them, check out our [Unsplash collection](https://unsplash.com/collections/94734566/slidev) and find out their authors.
+Si te gusta alguna de ellas, echa un vistazo a nuestra [colección Unsplash](https://unsplash.com/collections/94734566/slidev) y descubre sus autores.

@@ -178,7 +178,7 @@ module.exports = {
     ['link', { href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600', rel: 'stylesheet' }],
   ],
   themeConfig: {
-    repo: 'slidevjs/docs-es', // TODO - Doesn't really work yet 
+    repo: 'slidevjs/docs-es',
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,

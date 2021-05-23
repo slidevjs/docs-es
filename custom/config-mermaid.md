@@ -14,4 +14,4 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-With the setup, you can provide a custom default setting for [Mermaid](https://mermaid-js.github.io/). Refer to the type definitions and its documentation for more details.
+Con la configuración, puede proporcionar una configuración personalizada por defecto para [Mermaid](https://mermaid-js.github.io/). Consulta las definiciones de tipo y su documentación para obtener más detalles.

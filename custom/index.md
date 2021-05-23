@@ -1,58 +1,58 @@
-# Customizations
+# Personalizaciones
 
-Slidev is fully customizable, from styling to tooling configurations. It allows you to configure the tools underneath ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
+Slidev es totalmente personalizable, desde el estilo hasta la configuración de las herramientas. Permite configurar las herramientas que funcionan "detrás de las escenas" ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
 
-## Frontmatter Configures
+## Configuración de Frontmatter
 
-You can configure Slidev in the frontmatter of your first slide, the following shows the default value for each option.
+Puedes configurar Slidev en el frontmatter de tu primera diapositiva, a continuación se muestra el valor por defecto de cada opción.
 
 ```yaml
 ---
-# theme id or package name
+# ID del tema o nombre del paquete
 theme: 'default'
-# title of your slide, will auto infer from the first header if not specified
+# título de tu diapositiva, se deducirá automáticamente de la primera cabecera si no se especifica
 title: ''
 
-# enabled pdf downloading in SPA build, can also be a custom url
+# descarga habilitada de pdf en la compilación de SPA, también puede ser una url personalizada
 download: true
-# syntax highlighter, can be 'prism' or 'shiki'
+# resaltador de sintaxis, puede ser 'prisma' o 'shiki'
 highlighter: 'prism'
-# enable monaco editor, default to dev only
+#  habilitar el editor de monaco, por defecto solo en 'dev'
 monaco: 'dev'
 
-# force color schema for the slides, could be 'auto', 'light', or 'dark'
+# forzar el esquema de colores para las diapositivas, podría ser 'auto', 'light', o 'dark'
 colorSchema: 'auto'
-# router mode for vue-router, could be "history" or "hash"
+# modo del router para vue-router, podría ser "history" o "hash"
 routerMode: 'history'
-# aspect ratio for the slides
+# relación de aspecto de las diapositivas
 aspectRatio: '16/9'
-# real width of the canvas, unit in px
+# ancho real del lienzo, unidad en px
 canvasWidth: 980
 
-# default frontmatter applies to all slides
+# frontmatter por defecto aplicado a todas las diapositivas
 defaults:
   layout: 'default'
   # ...
 
-# information for your slides, can be a markdown string
+# información para sus diapositivas, puede ser una cadena markdown
 info: |
   ## Slidev
-  My first [Slidev](http://sli.dev/) presentations!
+  ¡Mis primeras presentaciones con [Slidev](http://sli.dev/)!
 ---
 ```
 
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L16) for more options.
+Revisa las [definiciones de tipos](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L16) para más opciones.
 
-## Directory Structure
+## Estructura del directorio
 
-Slidev uses directory structure conventions to minimalize the configuration surface and make extensions in functionality flexible and intuitive.
+Slidev utiliza convenciones de estructura de directorios para minimizar la superficie de configuración y hacer que las extensiones en la funcionalidad sean flexibles e intuitivas.
 
-Refer to the [Directory Structure](/custom/directory-structure) section.
+Consulta la sección de [estructura de directorios](/custom/directory-structure).
 
 ## `vite.config.ts`
 
-Refer to the [Configure Vite](/custom/config-vite) section.
+Revisa la sección de [configurar Vite](/custom/config-vite).
 
 ## `windicss.config.ts`
 
-Refer to the [Configure Windi CSS](/custom/config-windicss) section.
+Revisa la sección de [Configure Windi CSS](/custom/config-windicss).

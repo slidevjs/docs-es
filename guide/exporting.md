@@ -1,27 +1,27 @@
-# Exporting
+# Exportando
 
 ## PDF
 
-> Exporting to PDF or PNG relies on [Playwright](https://playwright.dev) for rendering. You will therefore need to install [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) to use this feature.
-> If you are doing exporting in a CI environment, [the playwright CI guide](https://playwright.dev/docs/ci) can be helpful.
+> La exportación a PDF o PNG se basa en [Playwright](https://playwright.dev) para la renderización. Por lo tanto, tendras que instalar [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) para utilizar esta función.
+> Si estás haciendo la exportación en un entorno CI, [la guía CI de playwright](https://playwright.dev/docs/ci) puede ser útil.
 
-Install `playwright-chromium`
+Instala `playwright-chromium`
 
 ```bash
 $ npm i -D playwright-chromium
 ```
 
-Now export your slides to PDF using the following command
+Ahora exporta sus diapositivas a PDF utilizando el siguiente comando:
 
 ```bash
 $ slidev export
 ```
 
-After a few seconds, your slides will be ready at `./slides-exports.pdf`.
+Después de unos segundos, tus diapositivas estarán listas en `./slides-exports.pdf`.
 
 ## PNGs
 
-When passing in the `--format png` option, Slidev will export PNG images for each slide instead of a PDF.
+Al pasar la opción `--format png`, Slidev exportará imágenes PNG para cada diapositiva en lugar de un PDF.
 
 ```bash
 $ slidev export --format png
@@ -29,27 +29,27 @@ $ slidev export --format png
 
 ## Single-Page Application (SPA)
 
-You can also build the slides into a self-hostable SPA:
+También puedes compilar las diapositivas en un SPA auto-alojable:
 
 ```bash
 $ slidev build
 ```
 
-The generated application will be available under `dist/` and then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+La aplicación generada estará disponible en `dist/` y luego puedes alojarla en [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), o lo que quieras. Ahora puedes compartir tus diapositivas con el resto del mundo con un solo enlace.
 
-### Base Path
+### Ruta base
 
-To deploy your slides under sub-routes, you will need to pass the `--base` option. For example:
+Para desplegar sus diapositivas bajo sub-rutas, necesitarás pasar la opción `--base`. Por ejemplo:
 
 ```bash
 $ slidev build --base /talks/my-cool-talk/
 ```
 
-Refer to [Vite's documentation](https://vitejs.dev/guide/build.html#public-base-path) for more details.
+Revisa la [documentación de Vite](https://vitejs.dev/guide/build.html#public-base-path) para más detalles.
 
-### Provide Downloadable PDF
+### Proporcionar un PDF descargable
 
-You can provide a downloadable PDF to the viewers of your SPA. You can enable it by the following config:
+Puedes proporcionar un PDF descargable a los espectadores de su SPA. Puedes habilitarlo mediante la siguiente configuración:
 
 ```md
 ---
@@ -57,9 +57,9 @@ download: true
 ---
 ```
 
-Now, Slidev will generate a pdf file along with the build and a download button will appear in the SPA.
+Ahora, Slidev generará un archivo pdf junto con la construcción y un botón de descarga aparecerá en el SPA.
 
-You can also provide a custom url to the PDF. In that case, the rendering process will be skipped.
+También puede proporcionar una url personalizada para el PDF. En ese caso, se omitirá el proceso de renderización.
 
 ```md
 ---
@@ -67,9 +67,9 @@ download: 'https://myside.com/my-talk.pdf'
 ---
 ```
 
-### Examples
+### Ejemplos
 
-Here are a few examples of the exported SPA:
+A continuación se muestran algunos ejemplos de la SPA exportada:
 
 - [Starter Template](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) by [Anthony Fu](https://github.com/antfu)

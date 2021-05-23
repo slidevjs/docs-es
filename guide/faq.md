@@ -2,54 +2,54 @@
 
 ## Grids
 
-Since Slidev is based on the Web, you can apply any grid layouts as you want. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), or even [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), you get the full controls.
+Dado que Slidev está basado en la web, puedes aplicar cualquier modelo de grid como [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [flexboxes](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), o incluso [Masonry](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), tú tienes el control.
 
-Since we have [Windi CSS](https://windicss.org/) built-in, here is one simple way for you to reference:
+Dado que tenemos [Windi CSS](https://windicss.org/) integrado, aquí te mostramos una forma simple como referencia:
 
 ```html
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-The first column
+La primera columna
 
 </div>
 <div>
 
-The second column
+La segunda columna
 
 </div>
 </div>
 ```
 
-Go further, you can customize the size of each columns like:
+Yendo más allá, puedes personalizar el tamaño de cada columna con:
 
 ```html
 <div class="grid grid-cols-[200px,1fr,10%] gap-4">
 <div>
 
-The first column (200px)
+La primera columna (200px)
 
 </div>
 <div>
 
-The second column (auto fit)
+La segunda columna (auto ajuste)
 
 </div>
 <div>
 
-The third column (10% width to parent container)
+La tercera columna (10% del ancho del elemento padre)
 
 </div>
 </div>
 ```
 
-Learn more about [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+Lee más sobre [Windi CSS Grids](https://windicss.org/utilities/grid.html).
 
-## Positioning
+## Posicionamiento
 
-Slides are defined in fixed sizes (default `980x552px`) and scale to fit with the user screen. You can safely use absolute position in your slides as they will scale along with the screen.
+Las diapositivas se definen en tamaños fijos (por defecto `980x552px`) y se ajustan a la pantalla del usuario. Puede utilizar con seguridad la posición absoluta en sus diapositivas ya que se escalarán junto con la pantalla.
 
-For example:
+Por ejemplo:
 
 ```html
 <div class="absolute left-30px bottom-30px">
@@ -57,7 +57,7 @@ This is a left-bottom aligned footer
 </div>
 ```
 
-To change the canvas' actual size, you can pass the `canvasWidth` options in your first frontmatter:
+Para cambiar el tamaño real del lienzo, puedes pasar las opciones `canvasWidth` en tu primer frontmatter:
 
 ```yaml
 ---
@@ -65,16 +65,16 @@ canvasWidth: 800
 ---
 ```
 
-## Font Size
+## Tamaño de la letra
 
-If you feel the font size in your slides are too small, you can adjust it in a few ways:
+Si cree que el tamaño de la fuente en sus diapositivas es demasiado pequeño, puede ajustarlo de varias maneras:
 
-### Override Local Style
+### Anular el estilo local
 
-You can override styles for each slide with the inlined `<style>` tag.
+Puede anular los estilos de cada diapositiva con la etiqueta `<style>`.
 
 ```md
-# Page 1
+# Página 1
 
 <style>
 h1 {
@@ -84,16 +84,16 @@ h1 {
 
 ---
 
-# Page 2
+# Página 2
 
-This will not be affected.
+No se verá afectado
 ```
 
-Learn more: [Embedded Styles](/guide/syntax.html#embedded-styles)
+Leer más: [Estilos Incrustados](/guide/syntax.html#embedded-styles)
 
-### Override Global Style
+### Reemplazando estilos globales
 
-You can provide custom global styles by creating `./style.css`, for example
+Puedes crear tus propios estilos globales en `./style.css`, por ejemplo
 
 ```css
 /* style.css */ 
@@ -103,16 +103,16 @@ h1 {
 }
 ```
 
-Learn more: [Global Style](/custom/directory-structure.html#style)
+Leer más: [Global Style](/custom/directory-structure.html#style)
 
-### Scale the Canvas
+### Escalar el lienzo
 
-Changing the canvas' actual size will scale all your contents(text, images, components, etc.) and slides
+Al cambiar el tamaño real del lienzo se escalarán todos los contenidos (texto, imágenes, componentes, etc.) y las diapositivas
 
 ```yaml
 ---
-# default: 980
-# since the canvas gets smaller, the visual size will become larger
+# por defecto: 980
+# como el lienzo se hace más pequeño, el tamaño visual será mayor
 canvasWidth: 800
 ---
 ```

@@ -194,7 +194,7 @@ module.exports = {
         items: Guide,
       },
       {
-        text: 'Tema',
+        text: 'Temas',
         items: Theme,
       },
       {

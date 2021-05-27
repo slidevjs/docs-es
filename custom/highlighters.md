@@ -56,9 +56,8 @@ O si quieres usar tu propio tema:
 /* ./setup/shiki.ts */
 
 import { defineShikiSetup } from '@slidev/types'
-import { loadTheme } from 'shiki'
 
-export default defineShikiSetup(async() => {
+export default defineShikiSetup(async({ loadTheme }) => {
   return {
     theme: {
       dark: await loadTheme('path/to/theme.json')),

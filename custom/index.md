@@ -49,6 +49,7 @@ Slidev utiliza convenciones de estructura de directorios para minimizar la super
 
 Consulta la sección de [estructura de directorios](/custom/directory-structure).
 
+<<<<<<< HEAD
 ## `vite.config.ts`
 
 Revisa la sección de [configurar Vite](/custom/config-vite).
@@ -56,3 +57,14 @@ Revisa la sección de [configurar Vite](/custom/config-vite).
 ## `windicss.config.ts`
 
 Revisa la sección de [Configure Windi CSS](/custom/config-windicss).
+=======
+## Config Tools
+
+- [Highlighters](/custom/highlighters)
+- [Configure Vue](/custom/config-vue)
+- [Configure Vite](/custom/config-vite)
+- [Configure Windi CSS](/custom/config-windicss)
+- [Configure Monaco](/custom/config-monaco)
+- [Configure KaTeX](/custom/config-katex)
+- [Configure Mermaid](/custom/config-mermaid)
+>>>>>>> 2725558a0fdb273102dde01cb9b3cfb80a5a7b43

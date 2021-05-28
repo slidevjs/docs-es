@@ -5,7 +5,6 @@ Slidev emplea algunas convenciones de estructura de directorios para minimizar l
 La estructura básica es la siguiente:
 
 ```bash
-<<<<<<< HEAD
 tu-slidev/
   ├── components/       # componentes personalizados
   ├── layouts/          # plantillas personalizadas
@@ -14,21 +13,8 @@ tu-slidev/
   ├── styles/           # estilo personalizado
   ├── index.html        # inyecciones a index.html
   ├── slides.md         # la entrada principal de las diapositivas
-  ├── vite.config.ts    # extender la configuración de vite
-  └── windi.config.ts   # extender la configuración de windicss
-=======
-your-slidev/
-  ├── components/       # custom components
-  ├── layouts/          # custom layouts
-  ├── public/           # static assets
-  ├── setup/            # custom setup / hooks
-  ├── styles/           # custom style
-  ├── index.html        # injections to index.html
-  ├── slides.md         # the main slides entry
-  └── vite.config.ts   # extending vite config
->>>>>>> 2725558a0fdb273102dde01cb9b3cfb80a5a7b43
-```
-
+  ├── vite.config.ts    # extender la configuración de vite```
+  
 Todas ellas son opcionales.
 
 ## Componentes

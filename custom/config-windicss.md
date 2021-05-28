@@ -21,26 +21,22 @@ El modo de [attributify](https://windicss.org/posts/v30.html#attributify-mode) e
 
 ## Configuraciones
 
-<<<<<<< HEAD
-Para configurar Windi CSS, tendrás que ampliar la configuración base de Windi CSS.
-=======
-To configure Windi CSS, create `setup/windicss.ts` with the following content to extend the builtin configurations
->>>>>>> 2725558a0fdb273102dde01cb9b3cfb80a5a7b43
+Para configurar Windi CSS, CREA `setup/windicss.ts` con el siguiente contenido para extender las configuraciones por defecto:
 
 ```ts
 // setup/windicss.ts
 
 import { defineWindiSetup } from '@slidev/types'
 
-// extending the builtin windicss configurations
+// extendiendo las configuraciones por defecto de windicss
 export default defineWindiSetup(() => ({
   shortcuts: {
-    // custom the default background
+    // personalizar el fondo por defecto
     'bg-main': 'bg-white text-[#181818] dark:(bg-[#121212] text-[#ddd])',
   },
   theme: {
     extend: {
-      // fonts can be replaced here, remember to update the web font links in `index.html`
+      // las fuentes pueden ser reemplazadas aquí, recuerda actualizar los enlaces de las fuentes web en `index.html`
       fontFamily: {
         sans: 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"',
         mono: '"Fira Code", monospace',
@@ -50,4 +46,4 @@ export default defineWindiSetup(() => ({
 }))
 ```
 
-Learn more about [Windi CSS configurations](https://windicss.org/guide/configuration.html)
+Lee más sobre [las configuraciones de Windi CSS](https://windicss.org/guide/configuration.html).

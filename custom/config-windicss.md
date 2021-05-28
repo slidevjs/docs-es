@@ -21,7 +21,7 @@ El modo de [attributify](https://windicss.org/posts/v30.html#attributify-mode) e
 
 ## Configuraciones
 
-Para configurar Windi CSS, CREA `setup/windicss.ts` con el siguiente contenido para extender las configuraciones por defecto:
+Para configurar Windi CSS, crea `setup/windicss.ts` con el siguiente contenido para extender las configuraciones por defecto:
 
 ```ts
 // setup/windicss.ts

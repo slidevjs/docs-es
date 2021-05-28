@@ -13,10 +13,8 @@ tu-slidev/
   ├── styles/           # estilo personalizado
   ├── index.html        # inyecciones a index.html
   ├── slides.md         # la entrada principal de las diapositivas
-  ├── vite.config.ts    # extender la configuración de vite
-  └── windi.config.ts   # extender la configuración de windicss
-```
-
+  ├── vite.config.ts    # extender la configuración de vite```
+  
 Todas ellas son opcionales.
 
 ## Componentes

@@ -275,7 +275,7 @@ sequenceDiagram
 //```
 ~~~
 
-Además, puedes pasarle un objeto de opciones para especificar la escala y la temática. La sintaxis del objeto es un literal de objeto de JavaScript, tendrás que añadir comillas (`'`) para las cadenas y utilizar comas (`,`) entre las claves.
+Además, puedes pasarle un objeto de opciones para especificar la escala y el tema. La sintaxis del objeto es un literal de objeto de JavaScript, tendrás que añadir comillas (`'`) para las cadenas y utilizar comas (`,`) entre las claves.
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
@@ -287,3 +287,94 @@ C -->|Two| E[Result 2]
 ~~~
 
 Aprende más: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
+
+## Entradas múltiples
+
+A partir de la versión 0.15.0, hemos incluido soporte para entradas múltiples. Esto significa que puedes dividir tu `slides.md` en múltiples archivos y organizarlos como quieras.
+
+`slides.md` :
+
+```md
+# Página 1
+
+Esta es una página normal
+
+---
+src: ./subpagina2.md
+---
+
+<!-- esta página se cargará desde './subpagina2.md' -->
+El contenido en línea será ignorado
+```
+
+`subpagina2.md` :
+
+```md
+# Página 2
+
+Esta página es de otro archivo
+```
+
+### Fusión de Front Matter
+
+Puedes proporcionar _Front Matters_ tanto de tu entrada principal como de páginas externas de markdown. Si hay las mismas claves en ellas, las de la **entrada principal tienen mayor prioridad**. Por ejemplo:
+
+`slides.md` :
+
+```md
+---
+src: ./cover.md
+background: https://sli.dev/bar.png
+class: text-center
+---
+```
+
+`cover.md` :
+
+```md
+---
+layout: cover
+background: https://sli.dev/foo.png
+---
+
+# Portada
+
+Página de portada
+```
+
+Acabarán siendo equivalentes a la página siguiente:
+
+```md
+---
+layout: cover
+background: https://sli.dev/bar.png
+class: text-center
+---
+
+# Portada
+
+Página de portada
+```
+
+### Reutilización de páginas
+
+Con el soporte de entradas múltiples, la reutilización de páginas puede ser sencilla. Por ejemplo:
+
+```yaml
+---
+src: ./cover.md
+---
+
+---
+src: ./intro.md
+---
+
+---
+src: ./content.md
+---
+
+---
+# reutilización
+src: ./content.md
+---
+```

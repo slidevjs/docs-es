@@ -47,7 +47,7 @@ Lee más sobre [Windi CSS Grids](https://windicss.org/utilities/grid.html).
 
 ## Posicionamiento
 
-Las diapositivas se definen en tamaños fijos (por defecto `980x552px`) y se ajustan a la pantalla del usuario. Puede utilizar con seguridad la posición absoluta en sus diapositivas ya que se escalarán junto con la pantalla.
+Las diapositivas se definen en tamaños fijos (por defecto `980x552px`) y se ajustan a la pantalla del usuario. Puedes utilizar con seguridad la posición absoluta en tus diapositivas ya que se escalarán junto con la pantalla.
 
 Por ejemplo:
 
@@ -67,11 +67,11 @@ canvasWidth: 800
 
 ## Tamaño de la letra
 
-Si cree que el tamaño de la fuente en sus diapositivas es demasiado pequeño, puede ajustarlo de varias maneras:
+Si crees que el tamaño de la fuente en tus diapositivas es demasiado pequeño, puedes ajustarlo de varias maneras:
 
 ### Anular el estilo local
 
-Puede anular los estilos de cada diapositiva con la etiqueta `<style>`.
+Puedes anular los estilos de cada diapositiva con la etiqueta `<style>`.
 
 ```md
 # Página 1

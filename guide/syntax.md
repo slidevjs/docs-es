@@ -275,7 +275,7 @@ sequenceDiagram
 //```
 ~~~
 
-Además, puedes pasarle un objeto de opciones para especificar la escala y la temática. La sintaxis del objeto es un literal de objeto de JavaScript, tendrás que añadir comillas (`'`) para las cadenas y utilizar comas (`,`) entre las claves.
+Además, puedes pasarle un objeto de opciones para especificar la escala y el tema. La sintaxis del objeto es un literal de objeto de JavaScript, tendrás que añadir comillas (`'`) para las cadenas y utilizar comas (`,`) entre las claves.
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
@@ -286,41 +286,38 @@ C -->|Two| E[Result 2]
 //```
 ~~~
 
-<<<<<<< HEAD
 Aprende más: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
-=======
-Learn more: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
-## Multiple Entries
+## Entradas múltiples
 
-From v0.15.0, we shipped multi-entries support. This means you can split your `slides.md` into multiple files and organize them as you want.
+A partir de la versión 0.15.0, hemos incluido soporte para entradas múltiples. Esto significa que puedes dividir tu `slides.md` en múltiples archivos y organizarlos como quieras.
 
 `slides.md` :
 
 ```md
-# Page 1
+# Página 1
 
-This is a normal page
+Esta es una página normal
 
 ---
-src: ./subpage2.md
+src: ./subpagina2.md
 ---
 
-<!-- this page will be loaded from './subpage2.md' -->
-Inline content will be ignored
+<!-- esta página se cargará desde './subpagina2.md' -->
+El contenido en línea será ignorado
 ```
 
-`subpage2.md` :
+`subpagina2.md` :
 
 ```md
-# Page 2
+# Página 2
 
-This page is from another file
+Esta página es de otro archivo
 ```
 
-### Frontmatter Merging
+### Fusión de Front Matter
 
-You can provide frontmatters from both your main entry and external markdown pages. If there are the same keys in them, the ones from the **main entry have the higher priority**. For example
+Puedes proporcionar _Front Matters_ tanto de tu entrada principal como de páginas externas de markdown. Si hay las mismas claves en ellas, las de la **entrada principal tienen mayor prioridad**. Por ejemplo:
 
 `slides.md` :
 
@@ -340,12 +337,12 @@ layout: cover
 background: https://sli.dev/foo.png
 ---
 
-# Cover
+# Portada
 
-Cover Page
+Página de portada
 ```
 
-They will end up being equivalent of the following page:
+Acabarán siendo equivalentes a la página siguiente:
 
 ```md
 ---
@@ -354,14 +351,14 @@ background: https://sli.dev/bar.png
 class: text-center
 ---
 
-# Cover
+# Portada
 
-Cover Page
+Página de portada
 ```
 
-### Page Reusing
+### Reutilización de páginas
 
-With the multi-entries support, reusing pages could be straightforward. For example:
+Con el soporte de entradas múltiples, la reutilización de páginas puede ser sencilla. Por ejemplo:
 
 ```yaml
 ---
@@ -377,8 +374,7 @@ src: ./content.md
 ---
 
 ---
-# reuse
+# reutilización
 src: ./content.md
 ---
 ```
->>>>>>> 6c65fa5e51f6c3d0dec02c647eaa82edecc6a81a

@@ -41,7 +41,8 @@ info: |
 ---
 ```
 
-Revisa las [definiciones de tipos](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L16) para más opciones.
+
+Revisa las [definiciones de tipos](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) para más opciones.
 
 ## Estructura del directorio
 

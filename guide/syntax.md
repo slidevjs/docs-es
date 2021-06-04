@@ -209,12 +209,9 @@ Puedes estilizar los iconos tal y como estilizarías un elemento HTML. Por ejemp
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-orange-400 animate-ping ml-2" />
 
-<<<<<<< HEAD
-## Configuraciones
-=======
 ## Slots
 
-> Available since v0.18
+> Disponible desde v0.18
 
 Some layouts can provide multiple contributing points using [Vue's named slots](https://v3.vuejs.org/guide/component-slots.html).
 
@@ -290,8 +287,7 @@ This shows on the right
 This shows on the left
 ```
 
-## Configurations
->>>>>>> aa3bde2c57d659efb1d2071a573574c0a9e545c6
+## Configuraciones
 
 Todas las configuraciones necesarias se pueden definir en el archivo Markdown. Por ejemplo:
 
@@ -372,13 +368,9 @@ Aprende más: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid
 
 ## Entradas múltiples
 
-<<<<<<< HEAD
-A partir de la versión 0.15.0, hemos incluido soporte para entradas múltiples. Esto significa que puedes dividir tu `slides.md` en múltiples archivos y organizarlos como quieras.
-=======
-> Available since v0.15
+> Disponible desde v0.15
 
-You can split your `slides.md` into multiple files and organize them as you want.
->>>>>>> aa3bde2c57d659efb1d2071a573574c0a9e545c6
+Puedes dividir tu `slides.md` en varios archivos y organizarlos como quieras:
 
 `slides.md` :
 

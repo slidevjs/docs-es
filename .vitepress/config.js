@@ -94,7 +94,15 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
+<<<<<<< HEAD
     text: 'Resaltadores',
+=======
+    text: 'Fonts',
+    link: '/custom/fonts',
+  },
+  {
+    text: 'Highlighters',
+>>>>>>> ebf9abaa42c2dbfabfc2218bf88daf49b3b82ec3
     link: '/custom/highlighters',
   },
   {
@@ -121,6 +129,14 @@ const Customizations = [
     text: 'Configurar Mermaid',
     link: '/custom/config-mermaid',
   },
+  {
+    text: 'Vue Global Context',
+    link: '/custom/vue-context',
+  },
+  {
+    text: 'Global Layers',
+    link: '/custom/global-layers',
+  }
 ]
 
 const Resources = [

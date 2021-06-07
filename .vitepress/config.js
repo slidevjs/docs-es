@@ -82,6 +82,10 @@ const Translations = [
     text: 'Español',
     link: 'https://es.sli.dev{{pathname}}',
   },
+  {
+    text: 'Русский',
+    link: 'https://ru.sli.dev{{pathname}}',
+  },
 ]
 
 const Customizations = [
@@ -94,7 +98,15 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
+<<<<<<< HEAD
     text: 'Resaltadores',
+=======
+    text: 'Fonts',
+    link: '/custom/fonts',
+  },
+  {
+    text: 'Highlighters',
+>>>>>>> 010799691b5c572dba187a5a8bdae3ba6abb319d
     link: '/custom/highlighters',
   },
   {
@@ -121,6 +133,14 @@ const Customizations = [
     text: 'Configurar Mermaid',
     link: '/custom/config-mermaid',
   },
+  {
+    text: 'Vue Global Context',
+    link: '/custom/vue-context',
+  },
+  {
+    text: 'Global Layers',
+    link: '/custom/global-layers',
+  }
 ]
 
 const Resources = [

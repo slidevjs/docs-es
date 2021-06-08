@@ -29,7 +29,18 @@ aspectRatio: '16/9'
 # ancho real del lienzo, unidad en px
 canvasWidth: 980
 
+<<<<<<< HEAD
 # frontmatter por defecto aplicado a todas las diapositivas
+=======
+# fonts will be auto imported from Google fonts
+# Learn more: https://sli.dev/custom/fonts
+fonts:
+  sans: 'Roboto'
+  serif: 'Roboto Slab'
+  mono: 'Fira Code'
+
+# default frontmatter applies to all slides
+>>>>>>> e3f2b5b9036a3ee3ae4affad7388d21f15208d7d
 defaults:
   layout: 'default'
   # ...

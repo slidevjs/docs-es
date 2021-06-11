@@ -209,6 +209,84 @@ Puedes estilizar los iconos tal y como estilizarías un elemento HTML. Por ejemp
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-orange-400 animate-ping ml-2" />
 
+## Slots
+
+> Disponible desde v0.18
+
+Algunas plantillas pueden proporcionar múltiples puntos de contribución utilizando [los <<slots>> nombrados de Vue](https://v3.vuejs.org/guide/component-slots.html).
+
+Por ejemplo, en una estructura de [dos columnas](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), puede tener dos columnas a la izquierda (slot `default`) y a la derecha (slot `right`) una al lado de la otra.
+
+```md
+---
+layout: two-cols
+---
+
+<template v-slot:default>
+
+# Izquierda
+
+Esto muestra a la izquierda
+
+</template>
+<template v-slot:right>
+
+# Derecha
+
+Esto se muestra a la derecha
+
+<template>
+```
+
+<div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
+<div>
+<h3>Izquierda</h3>
+<p>Esto se muestra a la izquierda</p>
+</div>
+<div>
+<h3>Derecha</h3>
+<p>Esto se muestra a la derecha</p>
+</div>
+</div>
+
+También proporcionamos una sintaxis abreviada (`::nombre::`) para el nombre del slot. El siguiente ejemplo funciona exactamente igual que el anterior.
+
+```md
+---
+layout: two-cols
+---
+
+# Izquierda
+
+Esto muestra a la izquierda
+
+::right::
+
+# Derecha
+
+Esto se muestra a la derecha
+```
+
+También puede especificar explícitamente el slot por defecto y proporcionar un orden personalizado
+
+```md
+---
+layout: two-cols
+---
+
+::right::
+
+# Derecha
+
+Esto se muestra a la derecha
+
+::default::
+
+# Izquierda
+
+Esto muestra a la izquierda
+```
+
 ## Configuraciones
 
 Todas las configuraciones necesarias se pueden definir en el archivo Markdown. Por ejemplo:
@@ -290,7 +368,9 @@ Aprende más: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid
 
 ## Entradas múltiples
 
-A partir de la versión 0.15.0, hemos incluido soporte para entradas múltiples. Esto significa que puedes dividir tu `slides.md` en múltiples archivos y organizarlos como quieras.
+> Disponible desde v0.15
+
+Puedes dividir tu `slides.md` en varios archivos y organizarlos como quieras.
 
 `slides.md` :
 

@@ -40,9 +40,6 @@ Aprende más sobre [nuestras tecnologías](/guide/#tech-stack).
 
 Puedes escribir componentes Vue personalizados y utilizarlos directamente dentro de tu archivo markdown. También puedes interactuar con ellos dentro de la presentación para expresar tu idea de una manera más intersante e intuitiva.
 
-## Soporte de grabación
-Slidev proporciona grabación y vista de cámara de forma integrada. Puedes compartir tu presentación con la vista de la cámara, o grabar y guardar por separado la pantalla y la cámara. Todo con una sola pasada, sin necesidad de herramientas adicionales.
-
 Aprende más sobre [grabar aquí](/guide/recording).
 
 ## Portable

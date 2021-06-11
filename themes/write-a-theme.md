@@ -13,26 +13,31 @@ Luego puedes modificar y jugar con él. También puede consultar los [temas ofic
 Un tema puede contribuir a los siguientes puntos:
 
 - Estilos globales
-- Proporcionar fuentes web
+- Provide configuraciones por defecto (fuentes, esquema de colores, resaltadores, etc.)
 - Proporcionar diseños personalizados o anular los existentes
 - Proporcionar componentes personalizados o anular los existentes
 - Extender las configuraciones de Windi CSS
 - Configurar herramientas como Monaco y Prism
+
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+
 
 ## Convenciones
 
 Los temas se publican en el registro npm, y deben seguir las siguientes convenciones:
 
 - El nombre del paquete debe empezar por `slidev-theme-`, por ejemplo: `slidev-theme-awesome`.
-- Añadir `slidev-theme` y `slidev` en el campo `keywords` de tu `package.json`.
+- Añade `slidev-theme` y `slidev` en el campo `keywords` de tu `package.json`.
 
 ## Configuración
 
-Para configurar el campo de pruebas para su tema, puede crear `example.md` con el siguiente frontmatter, para decirle a Slidev que no está heredando de ningún tema existente.
+Para configurar el campo de pruebas para su tema, puede crear `example.md` con el siguiente frontmatter, para decirle a Slidev que estás usando el directorio actual como un tema.
 
 ```md
 ---
-theme: none
+theme: ./
 ---
 ```
 
@@ -54,7 +59,35 @@ Para publicar tu tema, simplemente ejecuta `npm publish` y estarás listo. No se
 
 Los puntos de contribución del tema siguen las mismas convenciones que la personalización local, por favor consulta [los documentos para las convenciones de nomenclatura](/custom/). 
 
-## Esquema de colores
+## Configuraciones por defecto
+
+> Disponible desde v0.19
+
+Un tema puede proporcionar por defecto [configuraciones](/custom/#frontmatter-configures) vía `package.json`.
+
+```json
+// package.json
+{
+  "slidev": {
+    "default": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "fonts": {
+        "sans": "Robot",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}
+```
+
+Las fuentes se importarán automáticamente desde [Google Fonts](https://fonts.google.com/).
+
+Aprende más sobre [las fuentes](/custom/fonts) y [configuraciones de front matter](/custom/#frontmatter-configures).
+
+## Metadatos del tema
+
+### Esquema de colores
 
 Por defecto, Slidev asume que los temas soportan tanto el modo claro como el modo oscuro. Si sólo quieres que tu tema se presente en un esquema de color diseñado, tendrás que especificarlo explícitamente en `package.json`.
 
@@ -104,3 +137,18 @@ Además, recuerda especificar los resaltadores compatibles en su `package.json`.
   }
 }
 ```
+
+### Slidev Version
+
+If the theme is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your theme working properly:
+
+```json
+// package.json
+{
+  "engines": {
+    "slidev": ">=0.19.3"
+  }
+}
+```
+
+If users are using older versions of Slidev, an error will be thrown.

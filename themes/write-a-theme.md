@@ -12,41 +12,28 @@ Luego puedes modificar y jugar con él. También puede consultar los [temas ofic
 
 Un tema puede contribuir a los siguientes puntos:
 
-<<<<<<< HEAD
 - Estilos globales
-- Proporcionar fuentes web
+- Provide configuraciones por defecto (fuentes, esquema de colores, resaltadores, etc.)
 - Proporcionar diseños personalizados o anular los existentes
 - Proporcionar componentes personalizados o anular los existentes
 - Extender las configuraciones de Windi CSS
 - Configurar herramientas como Monaco y Prism
-=======
-- Global styles
+
 - Provide default configurations (fonts, color schema, highlighters, etc.)
 - Provide custom layouts or override the existing one
 - Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+
 
 ## Convenciones
 
 Los temas se publican en el registro npm, y deben seguir las siguientes convenciones:
 
-<<<<<<< HEAD
 - El nombre del paquete debe empezar por `slidev-theme-`, por ejemplo: `slidev-theme-awesome`.
-- Añadir `slidev-theme` y `slidev` en el campo `keywords` de tu `package.json`.
-=======
-- Package name should start with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+- Añade `slidev-theme` y `slidev` en el campo `keywords` de tu `package.json`.
 
 ## Configuración
 
-<<<<<<< HEAD
-Para configurar el campo de pruebas para su tema, puede crear `example.md` con el siguiente frontmatter, para decirle a Slidev que no está heredando de ningún tema existente.
-=======
-To set up the testing playground for your theme, you can create `example.md` with the following frontmatter, to tell Slidev you are using the current directory as a theme.
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+Para configurar el campo de pruebas para su tema, puede crear `example.md` con el siguiente frontmatter, para decirle a Slidev que estás usando el directorio actual como un tema.
 
 ```md
 ---
@@ -72,14 +59,11 @@ Para publicar tu tema, simplemente ejecuta `npm publish` y estarás listo. No se
 
 Los puntos de contribución del tema siguen las mismas convenciones que la personalización local, por favor consulta [los documentos para las convenciones de nomenclatura](/custom/). 
 
-<<<<<<< HEAD
-## Esquema de colores
-=======
-## Default Configurations
+## Configuraciones por defecto
 
-> Available since v0.19
+> Disponible desde v0.19
 
-A theme can provide default [configurations](/custom/#frontmatter-configures) via `package.json`.
+Un tema puede proporcionar por defecto [configuraciones](/custom/#frontmatter-configures) vía `package.json`.
 
 ```json
 // package.json
@@ -97,14 +81,13 @@ A theme can provide default [configurations](/custom/#frontmatter-configures) vi
 }
 ```
 
-Fonts will be auto imported from [Google Fonts](https://fonts.google.com/).
+Las fuentes se importarán automáticamente desde [Google Fonts](https://fonts.google.com/).
 
-Learn more about [fonts](/custom/fonts) and [frontmatter configurations](/custom/#frontmatter-configures).
+Aprende más sobre [las fuentes](/custom/fonts) y [configuraciones de front matter](/custom/#frontmatter-configures).
 
-## Theme Metadata
+## Metadatos del tema
 
-### Color Schema
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+### Esquema de colores
 
 Por defecto, Slidev asume que los temas soportan tanto el modo claro como el modo oscuro. Si sólo quieres que tu tema se presente en un esquema de color diseñado, tendrás que especificarlo explícitamente en `package.json`.
 
@@ -138,11 +121,7 @@ html.dark {
 
 Slidev alterna una clase `dark` en el elemento `html` de la página para cambiar el esquema de color.
 
-<<<<<<< HEAD
 ## Resaltador
-=======
-### Highlighter
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
 
 Los colores de resaltado de sintaxis también se proporcionan en el tema. Soportamos tanto [Prism](https://prismjs.com/) como [Shiki](https://github.com/shikijs/shiki). Para más información, consulte [los documentos de resaltado de sintaxis](/custom/highlighters).
 

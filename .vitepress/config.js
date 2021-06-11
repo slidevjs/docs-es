@@ -98,15 +98,11 @@ const Customizations = [
     link: '/custom/directory-structure',
   },
   {
-<<<<<<< HEAD
-    text: 'Resaltadores',
-=======
-    text: 'Fonts',
+    text: 'Fuentes',
     link: '/custom/fonts',
   },
   {
-    text: 'Highlighters',
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+    text: 'Resaltadores',
     link: '/custom/highlighters',
   },
   {

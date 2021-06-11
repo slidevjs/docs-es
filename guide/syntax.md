@@ -209,16 +209,13 @@ Puedes estilizar los iconos tal y como estilizarías un elemento HTML. Por ejemp
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-orange-400 animate-ping ml-2" />
 
-<<<<<<< HEAD
-## Configuraciones
-=======
 ## Slots
 
-> Available since v0.18
+> Disponible desde v0.18
 
-Some layouts can provide multiple contributing points using [Vue's named slots](https://v3.vuejs.org/guide/component-slots.html).
+Algunas plantillas pueden proporcionar múltiples puntos de contribución utilizando [los <<slots>> nombrados de Vue](https://v3.vuejs.org/guide/component-slots.html).
 
-For example, in [`two-cols` layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), you can have two columns left (`default` slot) and right (`right` slot) side by side.
+Por ejemplo, en una estructura de [dos columnas](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), puede tener dos columnas a la izquierda (slot `default`) y a la derecha (slot `right`) una al lado de la otra.
 
 ```md
 ---
@@ -227,50 +224,50 @@ layout: two-cols
 
 <template v-slot:default>
 
-# Left
+# Izquierda
 
-This shows on the left
+Esto muestra a la izquierda
 
 </template>
 <template v-slot:right>
 
-# Right
+# Derecha
 
-This shows on the right
+Esto se muestra a la derecha
 
 <template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
 <div>
-<h3>Left</h3>
-<p>This shows on the left</p>
+<h3>Izquierda</h3>
+<p>Esto se muestra a la izquierda</p>
 </div>
 <div>
-<h3>Right</h3>
-<p>This shows on the right</p>
+<h3>Derecha</h3>
+<p>Esto se muestra a la derecha</p>
 </div>
 </div>
 
-We also provide a shorthand syntax sugar `::name::` for slot name. The following example works exactly the same as the previous one.
+También proporcionamos una sintaxis abreviada (`::nombre::`) para el nombre del slot. El siguiente ejemplo funciona exactamente igual que el anterior.
 
 ```md
 ---
 layout: two-cols
 ---
 
-# Left
+# Izquierda
 
-This shows on the left
+Esto muestra a la izquierda
 
 ::right::
 
-# Right
+# Derecha
 
-This shows on the right
+Esto se muestra a la derecha
 ```
 
-You can also explicitly specify the default slot and provide in custom order
+También puede especificar explícitamente el slot por defecto y proporcionar un orden personalizado
 
 ```md
 ---
@@ -279,19 +276,18 @@ layout: two-cols
 
 ::right::
 
-# Right
+# Derecha
 
-This shows on the right
+Esto se muestra a la derecha
 
 ::default::
 
-# Left
+# Izquierda
 
-This shows on the left
+Esto muestra a la izquierda
 ```
 
-## Configurations
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+## Configuraciones
 
 Todas las configuraciones necesarias se pueden definir en el archivo Markdown. Por ejemplo:
 
@@ -372,13 +368,9 @@ Aprende más: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid
 
 ## Entradas múltiples
 
-<<<<<<< HEAD
-A partir de la versión 0.15.0, hemos incluido soporte para entradas múltiples. Esto significa que puedes dividir tu `slides.md` en múltiples archivos y organizarlos como quieras.
-=======
-> Available since v0.15
+> Disponible desde v0.15
 
-You can split your `slides.md` into multiple files and organize them as you want.
->>>>>>> fbbeff12ff547b06e3ebc438d08a9235df1b8f6e
+Puedes dividir tu `slides.md` en varios archivos y organizarlos como quieras.
 
 `slides.md` :
 

@@ -12,6 +12,8 @@ Puedes configurar Slidev en el frontmatter de tu primera diapositiva, a continua
 theme: 'default'
 # título de tu diapositiva, se deducirá automáticamente de la primera cabecera si no se especifica
 title: ''
+# titleTemplate for the webpage, `%s` will be replaced by the page's title
+titleTemplate: '%s - Slidev'
 
 # descarga habilitada de pdf en la compilación de SPA, también puede ser una url personalizada
 download: true

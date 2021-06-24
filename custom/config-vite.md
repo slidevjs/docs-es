@@ -15,16 +15,14 @@ Slidev tiene los siguientes plugins preconfigurados:
 - [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons)
 - [vite-plugin-remote-assets](https://github.com/antfu/vite-plugin-remote-assets)
 
-<<<<<<< HEAD
+
 Más información sobre las [preconfiguraciones aquí](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
-=======
-Learn more about the [pre-configurations here](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
 
-## Configure Internal Plugins
+## Configurar plug-ins internos
 
-> Available since v0.21
+> Disponible desde v0.21
 
-To configure the built-in plugins list above, create `vite.config.ts` with the following content. Please note Slidev has some preconfigure options for those plugins, this usage will override some of them, which could potentially cause the app to break. Please treat this as **an advanced feature**, make sure you know what you are doing before moving on.
+Para configurar los plug-ins internos listados más arriba, crea `vite.config.ts` con el siguiente contenido. Por favor, ten en cuenta que Slidev tiene algunas opciones de preconfiguración para esos plugins, haciendo esto podría desconfigurar alguno de ellos, lo que podría causar que la aplicación se rompa. Por favor, trata esto como **una característica avanzada**, asegúrate de saber lo que estás haciendo antes de seguir adelante.
 
 ```ts
 import { defineConfig } from 'vite'
@@ -32,19 +30,18 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   slidev: {
     vue: {
-      /* vue options */
+      /* opciones de vue */
     },
     markdown: {
-      /* markdown-it options */
+      /* opciones de markdown-it */
       markdownItSetup(md) {
-        /* custom markdown-it plugins */
+        /* plugins de markdown-it personalizados */
         md.use(/* ... */)
       },
     },
-    /* options for other plugins */
+    /* opciones para otros plugins */
   },
 })
 ```
 
-See the [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) for more options.
->>>>>>> 661373b820986b8c869419aa33284cc0c0cfb3b1
+Echa un vistazo a las [declaraciones de tipos](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) para más opciones.

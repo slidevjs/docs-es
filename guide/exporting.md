@@ -19,6 +19,16 @@ $ slidev export
 
 Después de unos segundos, tus diapositivas estarán listas en `./slides-exports.pdf`.
 
+### Exportar pasos por clic
+
+> Disponible desde v0.21
+
+Por defecto, Slidev exporta 1 página por diapositiva con las animaciones de los clics desactivadas. Si desea exportar diapositivas con múltiples pasos en múltiples páginas, agrega `--with-clicks`.
+
+```bash
+$ slidev export --with-clicks
+```
+
 ## PNGs
 
 Al pasar la opción `--format png`, Slidev exportará imágenes PNG para cada diapositiva en lugar de un PDF.

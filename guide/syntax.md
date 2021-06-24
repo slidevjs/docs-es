@@ -150,33 +150,29 @@ blockquote {
 </style>
 ```
 
-<<<<<<< HEAD
-## Notas
-=======
-## Static Assets
+## Recursos estáticos
 
-Just like you would do in markdown, you can use images pointing to a remote or local url.
+Al igual que harías en markdown, puedes utilizar imágenes que apunten a una url remota o local.
 
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them into the disk at the first run so you can have instant loading even for large images later on.
+Para los recursos remotos, [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) los almacenará en caché tras la primera ejecución para que puedan tener una carga instantánea incluso para las imágenes más pesadas.
 
 ```md
-![Remote Image](https://sli.dev/favicon.png)
+![Imagen remota](https://sli.dev/favicon.png)
 ```
 
-For local assets, put them into the [`public` folder](/custom/directory-structure.html#public) and reference them with **leading slash**.
+Para recursos locales, muévelos a [la carpeta `public`](/custom/directory-structure.html#public) y referéncialos con una **barrita** (`/`).
 
 ```md
-![Local Image](/pic.png)
+![Imagen local](/pic.png)
 ```
 
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag 
+Si deseas aplicar tamaños o estilos personalizados, puedes convertirlos a la etiqueta `<img>`: 
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
 ```
 
-## Notes
->>>>>>> 661373b820986b8c869419aa33284cc0c0cfb3b1
+## Notas
 
 También puedes tomar notas para cada diapositiva. Se mostrarán en el [Modo Presentador](/guide/presenter-mode) para que puedas consultarlas durante las presentaciones.
 

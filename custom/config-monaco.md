@@ -2,9 +2,13 @@
 
 <Environment type="client" />
 
+<<<<<<< HEAD
 > Por defecto, Mónaco sólo está habilitado en el modo 'dev'. Para que funcione en el modo SPA, añade `monaco: true` a tu configuración de frontmatter.
 
 Crea `./setup/monaco.ts` con el siguiente contenido:
+=======
+Create `./setup/monaco.ts` with the following content:
+>>>>>>> fcc2f07502ee5a4c2865a8717b4ecd4bfafa05c8
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
@@ -46,7 +50,11 @@ plusOne.value++ // error
 
 ## Exportando
 
+<<<<<<< HEAD
 Por defecto, Monaco sólo funcionará en modo `dev`. Si también quieres tenerlo disponible en el SPA exportado, puedes configurarlo en tu frontmatter:
+=======
+By default, Monaco will ONLY work on `dev` mode. If you would like to have it available in the exported SPA, configure it in your frontmatter:
+>>>>>>> fcc2f07502ee5a4c2865a8717b4ecd4bfafa05c8
 
 ```yaml
 ---
@@ -56,7 +64,11 @@ monaco: true # default "dev"
 
 ## Instalación automática de tipos
 
+<<<<<<< HEAD
 Cuando se utiliza TypeScript con Monaco, los tipos para las dependencias se instalarán en el lado del cliente automáticamente.
+=======
+When use TypeScript with Monaco, types for dependencies will be installed to the client-side automatically.
+>>>>>>> fcc2f07502ee5a4c2865a8717b4ecd4bfafa05c8
 
 ~~~ts
 //```ts {monaco}
@@ -67,5 +79,9 @@ const counter = ref(0)
 //```
 ~~~
 
+<<<<<<< HEAD
 En el ejemplo anterior, sólo asegúrate de que `vue` y `@vueuse/core` están instalados localmente como dependencias / devDependencies, ¡Slidev se encargará del resto y tu editor simplemente funcionará!
 
+=======
+In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
+>>>>>>> fcc2f07502ee5a4c2865a8717b4ecd4bfafa05c8

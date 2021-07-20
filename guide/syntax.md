@@ -32,7 +32,11 @@ Puedes utilizar directamente Windi CSS y los componentes de Vue para estilizar y
 
 ## Front Matter y plantillas
 
+<<<<<<< HEAD
 Puede especificar plantillas y otros metadatos para cada diapositiva convirtiendo los separadores en [bloques de Front Matter](https://jekyllrb.com/docs/front-matter/). Cada bloque de entrada comienza con un guión triple y termina con otro. Los textos entre ellos son objetos de datos en formato [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Por ejemplo:
+=======
+Specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+>>>>>>> bd10ae885e3df3f4bbb3d4d49b790109089c1e1a
 
 ~~~md
 ---
@@ -72,7 +76,13 @@ console.log('Hello, World!')
 //```
 ~~~
 
+<<<<<<< HEAD
 ### Resaltado de línea
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shiki/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+
+### Line Highlighting
+>>>>>>> bd10ae885e3df3f4bbb3d4d49b790109089c1e1a
 
 Para resaltar líneas específicas, simplemente añade los números de línea dentro del paréntesis `{}`. Los números de línea empiezan a contar desde 1.
 
@@ -215,7 +225,11 @@ El nombrado sigue la convención de [Iconify](https://iconify.design/): `{collec
 - `<logos-vue />` - <logos-vue /> de [SVG Logos](https://github.com/gilbarbara/logos)
 - Y mucho más...
 
+<<<<<<< HEAD
 Puedes navegar y buscar todos los iconos con [Icônes](https://icones.js.org/).
+=======
+Browse and search for all the icons available with [Icônes](https://icones.js.org/).
+>>>>>>> bd10ae885e3df3f4bbb3d4d49b790109089c1e1a
 
 ### Estilizando iconos
 
@@ -257,7 +271,7 @@ Esto muestra a la izquierda
 
 Esto se muestra a la derecha
 
-<template>
+</template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
@@ -289,7 +303,11 @@ Esto muestra a la izquierda
 Esto se muestra a la derecha
 ```
 
+<<<<<<< HEAD
 También puede especificar explícitamente el slot por defecto y proporcionar un orden personalizado
+=======
+You can also explicitly specify the default slot and provide in the custom order
+>>>>>>> bd10ae885e3df3f4bbb3d4d49b790109089c1e1a
 
 ```md
 ---

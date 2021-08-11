@@ -21,7 +21,11 @@ La segunda columna
 </div>
 ```
 
+<<<<<<< HEAD
 Yendo más allá, puedes personalizar el tamaño de cada columna con:
+=======
+Go further, you can customize the size of each column like:
+>>>>>>> 9ea35932b94caae076abe8c4e0df6914298d4ebe
 
 ```html
 <div class="grid grid-cols-[200px,1fr,10%] gap-4">
@@ -122,7 +126,7 @@ canvasWidth: 800
 We provide a built-in component `<Transform />`, which is a thin wrapper of CSS transform property.
 
 ```md
-<Tranform :scale="1.4">
+<Transform :scale="1.4">
 
 - Item 1
 - Item 2

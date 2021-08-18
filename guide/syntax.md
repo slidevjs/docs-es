@@ -99,7 +99,7 @@ function sumar(
 //```
 ~~~
 
-Esto resaltará primero`a: Ref<number> | number` y `b: Ref<number> | number`, y después `return computed(() => unref(a) + unref(b))` tras un clic, y finalmente, todo el bloque. Aprende más en la [guía de animaciones de clics](/guide/animations).
+Esto resaltará primero `a: Ref<number> | number` y `b: Ref<number> | number`, y después `return computed(() => unref(a) + unref(b))` tras un clic, y finalmente, todo el bloque. Aprende más en la [guía de animaciones de clics](/guide/animations).
 
 ### Editor de Monaco
 
@@ -132,7 +132,7 @@ h1 {
 # La siguiente diapositiva no se ve afectada
 ```
 
-La etiqueta`<style>` en Markdown siempre está [focalizada](https://vue-loader.vuejs.org/guide/scoped-css.html). Para reemplazar los estilos globales, echa un vistazo a la [sección de personalización](/custom/directory-structure#style).
+La etiqueta `<style>` en Markdown siempre está [focalizada](https://vue-loader.vuejs.org/guide/scoped-css.html). Para reemplazar los estilos globales, echa un vistazo a la [sección de personalización](/custom/directory-structure#style).
 
 Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directivas](https://windicss.org/features/directives.html) (por `@apply`)
 
@@ -235,7 +235,7 @@ Puedes estilizar los iconos tal y como estilizarías un elemento HTML. Por ejemp
 
 > Disponible desde v0.18
 
-Algunas plantillas pueden proporcionar múltiples puntos de contribución utilizando [los <<slots>> nombrados de Vue](https://v3.vuejs.org/guide/component-slots.html).
+Algunas plantillas pueden proporcionar múltiples puntos de contribución utilizando [los `<slots>` nombrados de Vue](https://v3.vuejs.org/guide/component-slots.html).
 
 Por ejemplo, en una estructura de [dos columnas](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), puede tener dos columnas a la izquierda (slot `default`) y a la derecha (slot `right`) una al lado de la otra.
 
@@ -363,6 +363,7 @@ $$
 Aprende más: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
 ## Diagramas
+
 También puedes crear diagramas / gráficos a partir de descripciones textuales en tu Markdown, gracias a [Mermaid](https://mermaid-js.github.io/mermaid).
 
 Los bloques de código marcados como  `mermaid` se convertirán en diagramas, por ejemplo:

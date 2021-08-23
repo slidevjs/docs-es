@@ -19,7 +19,13 @@ titleTemplate: '%s - Slidev'
 download: true
 # resaltador de sintaxis, puede ser 'prisma' o 'shiki'
 highlighter: 'prism'
+<<<<<<< HEAD
 #  habilitar el editor de monaco, por defecto solo en 'dev'
+=======
+# show line numbers in code blocks
+lineNumbers: false
+# enable monaco editor, default to dev only
+>>>>>>> 3d7250800ddac904f7a1b1b24f2830f892a27a03
 monaco: 'dev'
 
 # forzar el esquema de colores para las diapositivas, podría ser 'auto', 'light', o 'dark'
@@ -50,6 +56,10 @@ info: |
 ---
 ```
 
+<<<<<<< HEAD
+=======
+Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) for more options.
+>>>>>>> 3d7250800ddac904f7a1b1b24f2830f892a27a03
 
 Revisa las [definiciones de tipos](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) para más opciones.
 

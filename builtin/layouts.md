@@ -6,7 +6,7 @@
 
 ## Plantillas personalizadas
 
-Crea un directorio `layouts/` en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él.
+Crea un directorio `layouts/` en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla (layout) Vue en él.
 
 Lee más en la sección de [personalización](/custom/directory-structure#layouts).
 

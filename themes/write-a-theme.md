@@ -138,9 +138,9 @@ Además, recuerda especificar los resaltadores compatibles en su `package.json`.
 }
 ```
 
-### Slidev Version
+### Versión de Slidev
 
-If the theme is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your theme working properly:
+Si el tema depende de una característica específica de Slidev que se ha introducido recientemente, puedes establecer la versión mínima de Slidev necesaria para que tu tema funcione correctamente:
 
 ```json
 // package.json
@@ -151,4 +151,4 @@ If the theme is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+Si los usuarios utilizan versiones anteriores de Slidev, se producirá un error.

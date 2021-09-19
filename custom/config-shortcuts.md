@@ -1,10 +1,10 @@
-# Configure Shortcuts
+# Configurar atajos
 
-> Available since v0.20
+> Disponible desde v0.20
 
 <Environment type="client" />
 
-Create `./setup/shortcuts.ts` with the following content:
+Crea `./setup/shortcuts.ts` con el siguiente contenido:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -25,8 +25,8 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-With the setup, you can provide the custom setting for shortcuts mentioned in [Navigation](/guide/navigation#navigation-bar). The above configuration binds next animation or slide to <kbd>enter</kbd> and previous animation or slide to <kbd>backspace</kbd>.
+Con esta configuración, puedes dar ajustes personalizados a los atajos mencionados en [Navegación](/guide/navigation#navigation-bar). La configuración anterior vincula la siguiente animación o diapositiva a <kbd>enter</kbd> y la animación o diapositiva anterior a <kbd>retroceso</kbd>.
 
-The configuration function receives an object with some navigation methods, and returns an array containing some shortcut configuration. Refer to the type definitions for more details.
+La función de configuración recibe un objeto con algunos métodos de navegación, y devuelve un array que contiene alguna configuración de accesos directos. Consulta las definiciones de tipo para más detalles.
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+Echa un vistazo a [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) para más detalles sobre el evento de tecla pulsada.

@@ -1,61 +1,60 @@
-# Fonts
+# Fuentes
 
-> Available since v0.20
+> Disponible desde v0.20
 
-While you can use HTML and CSS to custom the fonts and style for your slides as you want, Slidev also provides a convenient way to use them effortlessly.
+Aunque puedes utilizar HTML y CSS para personalizar las fuentes y el estilo de tus diapositivas como quieras, Slidev también te ofrece una forma cómoda de utilizarlas sin esfuerzo alguno.
 
-In your fontmatter, configure as following
+En tu *frontmatter*, configúralo de la siguiente manera:
 
 ```yaml
 ---
 fonts:
-  # basically the text
+  # normalmente, el texto
   sans: 'Robot'
-  # use with `font-serif` css class from windicss
+  # utilizado junto a la clase 'font-serif' de windicss
   serif: 'Robot Slab'
-  # for code blocks, inline code, etc.
+  # para bloques de código, código en línea, etc.
   mono: 'Fira Code'
 ---
 ```
 
-And that's all.
+Y eso es todo.
 
-Fonts will be **imported automatically from [Google Fonts](https://fonts.google.com/)**. That means you can use any fonts available on Google Fonts directly.
+Las fuentes serán **importadas automáticamente desde [Google Fonts](https://fonts.google.com/)**. Eso significa que puedes utilizar cualquier fuente alojada en Google Fonts.
 
-## Local Fonts
-
-By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing. 
+## Fuentes locales
+Por defecto, Slidev asume que todas las fuentes especificadas a través de las configuraciones `fonts` provienen de Google Fonts. Si deseas utilizar fuentes locales, especifica `fonts.local` para evitar que colisione con Google Fonts. 
 
 ```yaml
 ---
 fonts:
-  # like font-family in css, you can use `,` to separate multiple fonts for fallback
+  # Igual que font-family en CSS, puedes separar con una coma para el fallback
   sans: 'Helvetica Neue,Robot'
-  # mark 'Helvetica Neue' as local font
+  # marca 'Helvetica Neue' como una fuente local
   local: 'Helvetica Neue'
 ---
 ```
 
-## Weights & Italic
+## Grosores e itálicas
 
-By default, Slidev imports three weights `200`,`400`,`600` for each font. You can configure them by:
+Por defecto, Slidev viene con tres grosores: `200`,`400`,`600` para cada fuente. Puedes configurarlo mediante:
 
 ```yaml
 ---
 fonts:
   sans: 'Robot'
-  # default
+  # por defecto
   weights: '200,400,600'
-  # import italic fonts, default `false`
+  # importa fuentes itálicas, `false` por defecto
   italic: false
 ---
 ```
 
-This configuration applies to all web fonts. For more fine-grained controls of each font's weights, you will need to manually import them with [HTML](/custom/directory-structure.html#index-html) and CSS.
+Esta configuración se aplica a todas las fuentes web. Para un control más preciso de los grosores de cada fuente, deberás importarlos manualmente con [HTML](/custom/directory-structure.html#index-html) y CSS.
 
-## Fallback Fonts
+## Fuentes fallback
 
-For most of the scenarios, you only need to specify the "special font" and Slidev will append the fallback fonts for you, for example:
+En la mayoría de los casos, bastará con marcar la "fuente especial" y Slidev se encargará de añadir el resto de fallbacks. Por ejemplo:
 
 ```yaml
 ---
@@ -66,7 +65,7 @@ fonts:
 ---
 ```
 
-will result in 
+resultará en:
 
 ```css
 .font-sans {
@@ -80,7 +79,7 @@ will result in
 }
 ```
 
-If you want to disable the fallback fonts, configure as following
+Si quieres desactivar este comportamiento, puedes hacerlo con:
 
 ```yaml
 ---
@@ -90,12 +89,12 @@ fonts:
 ---
 ```
 
-## Providers
+## Proveedores
 
-- Options: `google` | `none`
-- Default: `google`
+- Opciones: `google` | `none`
+- Por defecto: `google`
 
-Currently, only Google Fonts is supported, we are planned to add more providers in the future. Specify to `none` will disable the auto-importing feature entirely and treat all the fonts local.
+Por el momento, solo se soporta Google como proveedor de fuentes aunque está planeado integrar otros en el futuro. Específicalo como `none` para desactivar toda la funcionalidad de auto-importes y depender de fuentes locales.
 
 ```yaml
 ---

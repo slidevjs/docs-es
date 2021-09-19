@@ -67,5 +67,5 @@ const counter = ref(0)
 //```
 ~~~
 
-En el ejemplo anterior, sólo asegúrate de que `vue` y `@vueuse/core` están instalados localmente como dependencias / devDependencies, ¡Slidev se encargará del resto y tu editor simplemente funcionará!
+En el ejemplo anterior, solo asegúrate de que `vue` y `@vueuse/core` están instalados localmente bajo `dependencies` / `devDependencies`, ¡Slidev se encargará del resto y tu editor funcionará mágicamente!
 

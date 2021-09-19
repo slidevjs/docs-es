@@ -33,9 +33,9 @@ La extensión de VS Code ofrece algunas funciones que te ayudarán a organizar m
 ### Características
 
 - Ver diapositivas en el panel lateral
-- Botones de ir a la siguiente/previa
+- Botones para ir a la siguiente/anterior
 - Reordenación de diapositivas
-- Plegado de bloques de diapositivas
+- Plegado de diapositivas
 - Convertir Markdown a HTML
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)

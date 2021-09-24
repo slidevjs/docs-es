@@ -23,7 +23,11 @@ Después de unos segundos, tus diapositivas estarán listas en `./slides-exports
 
 > Disponible desde v0.21
 
+<<<<<<< HEAD
 Por defecto, Slidev exporta 1 página por diapositiva con las animaciones de los clics desactivadas. Si desea exportar diapositivas con múltiples pasos en múltiples páginas, agrega `--with-clicks`.
+=======
+By default, Slidev exports one page per slide with clicks animations disabled. If you want export slides with multiple steps into multiple pages, pass the `--with-clicks` options.
+>>>>>>> d0e3a01b753625e63d3c1611ce90c8118ce93553
 
 ```bash
 $ slidev export --with-clicks
@@ -39,6 +43,7 @@ $ slidev export --format png
 
 ## Single-Page Application (SPA)
 
+<<<<<<< HEAD
 También puedes compilar las diapositivas en un SPA auto-alojable:
 
 ```bash
@@ -83,3 +88,6 @@ A continuación se muestran algunos ejemplos de la SPA exportada:
 
 - [Starter Template](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) by [Anthony Fu](https://github.com/antfu)
+=======
+See [Static Hosting](/guide/hosting).
+>>>>>>> d0e3a01b753625e63d3c1611ce90c8118ce93553

@@ -4,11 +4,7 @@
 
 Aunque puedes utilizar HTML y CSS para personalizar las fuentes y el estilo de tus diapositivas como quieras, Slidev también te ofrece una forma cómoda de utilizarlas sin esfuerzo alguno.
 
-<<<<<<< HEAD
 En tu *frontmatter*, configúralo de la siguiente manera:
-=======
-In your frontmatter, configure as following
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ```yaml
 ---

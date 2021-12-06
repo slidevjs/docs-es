@@ -45,7 +45,7 @@ $slidev.nav.currentLayout // plantilla (layout) actual
 $slidev.nav.clicks // contador actual de clics
 ```
 
-FPara conocer más propiedades disponibles, consulta los miembros exportados por [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts).
+Para conocer más propiedades disponibles, consulta los miembros exportados por [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts).
 
 ### `$slidev.configs`
 

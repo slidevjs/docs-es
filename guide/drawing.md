@@ -1,6 +1,6 @@
-# Drawing & Annotations
+# Dibujos y anotaciones
 
-> Available since v0.23
+> Disponible desde v0.23
 
 We have [drauu](https://github.com/antfu/drauu) built-in for drawing and annotation that could enhance your presentation further.
 

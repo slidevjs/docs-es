@@ -2,13 +2,7 @@
 
 <Environment type="client" />
 
-<<<<<<< HEAD
-> Por defecto, Mónaco sólo está habilitado en el modo 'dev'. Para que funcione en el modo SPA, añade `monaco: true` a tu configuración de frontmatter.
-
 Crea `./setup/monaco.ts` con el siguiente contenido:
-=======
-Create `./setup/monaco.ts` with the following content:
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
@@ -50,11 +44,7 @@ plusOne.value++ // error
 
 ## Exportando
 
-<<<<<<< HEAD
 Por defecto, Monaco sólo funcionará en modo `dev`. Si también quieres tenerlo disponible en el SPA exportado, puedes configurarlo en tu frontmatter:
-=======
-By default, Monaco will ONLY work on `dev` mode. If you would like to have it available in the exported SPA, configure it in your frontmatter:
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ```yaml
 ---
@@ -64,11 +54,7 @@ monaco: true # default "dev"
 
 ## Instalación automática de tipos
 
-<<<<<<< HEAD
 Cuando se utiliza TypeScript con Monaco, los tipos para las dependencias se instalarán en el lado del cliente automáticamente.
-=======
-When use TypeScript with Monaco, types for dependencies will be installed to the client-side automatically.
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ~~~ts
 //```ts {monaco}
@@ -79,15 +65,10 @@ const counter = ref(0)
 //```
 ~~~
 
-<<<<<<< HEAD
 En el ejemplo anterior, solo asegúrate de que `vue` y `@vueuse/core` están instalados localmente bajo `dependencies` / `devDependencies`, ¡Slidev se encargará del resto y tu editor funcionará mágicamente!
 
-=======
-In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
-
-## Configure Themes
-
-The theme is controlled by Slidev based on the light/dark theme. If you want to customize it, you can pass the theme id to the setup function:
+## Configurar un tema
+El tema es controlado por Slidev basado en el tema claro/oscuro. Si quieres personalizarlo, puedes pasar el id del tema a las funciones de configuración:
 
 ```ts
 // ./setup/monaco.ts
@@ -103,12 +84,12 @@ export default defineMonacoSetup(() => {
 })
 ```
 
-If you want to load custom themes:
+Si quieres cargar temas personalizados:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
 
-// change to your themes
+// cambios a tus temas
 import dark from 'theme-vitesse/themes/vitesse-dark.json'
 import light from 'theme-vitesse/themes/vitesse-light.json'
 
@@ -125,5 +106,4 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
-> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+> Si estás creando un tema para Slidev, puedes usar el `import()` dinámico dentro de la función de configuración para obtener resultados con tree-shaking o code-splitting.

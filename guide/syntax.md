@@ -32,11 +32,7 @@ Puedes utilizar directamente Windi CSS y los componentes de Vue para estilizar y
 
 ## Front Matter y plantillas
 
-<<<<<<< HEAD
-Puede especificar plantillas y otros metadatos para cada diapositiva convirtiendo los separadores en [bloques de Front Matter](https://jekyllrb.com/docs/front-matter/). Cada bloque de entrada comienza con un guión triple y termina con otro. Los textos entre ellos son objetos de datos en formato [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Por ejemplo:
-=======
-Specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+Puedes especificar plantillas y otros metadatos para cada diapositiva convirtiendo los separadores en [bloques de Front Matter](https://jekyllrb.com/docs/front-matter/). Cada bloque de entrada comienza con un guión triple y termina con otro. Los textos entre ellos son objetos de datos en formato [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Por ejemplo:
 
 ~~~md
 ---
@@ -76,13 +72,9 @@ console.log('Hello, World!')
 //```
 ~~~
 
-<<<<<<< HEAD
-### Resaltado de línea
-=======
-We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shiki/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+Damos soporte a [Prism](http://prismjs.com) y [Shiki](https://github.com/shiki/shiki) como resaltadores de sintaxis. Revisa la [sección de resaltadores](/custom/highlighters) para más detalles.
 
-### Line Highlighting
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+### Resaltado de línea
 
 Para resaltar líneas específicas, simplemente añade los números de línea dentro del paréntesis `{}`. Los números de línea empiezan a contar desde 1.
 
@@ -225,11 +217,7 @@ El nombrado sigue la convención de [Iconify](https://iconify.design/): `{collec
 - `<logos-vue />` - <logos-vue /> de [SVG Logos](https://github.com/gilbarbara/logos)
 - Y mucho más...
 
-<<<<<<< HEAD
 Puedes navegar y buscar todos los iconos con [Icônes](https://icones.js.org/).
-=======
-Browse and search for all the icons available with [Icônes](https://icones.js.org/).
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ### Estilizando iconos
 
@@ -303,11 +291,7 @@ Esto muestra a la izquierda
 Esto se muestra a la derecha
 ```
 
-<<<<<<< HEAD
 También puede especificar explícitamente el slot por defecto y proporcionar un orden personalizado
-=======
-You can also explicitly specify the default slot and provide in the custom order
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ```md
 ---
@@ -384,11 +368,7 @@ Aprende más: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org
 
 También puedes crear diagramas / gráficos a partir de descripciones textuales en tu Markdown, gracias a [Mermaid](https://mermaid-js.github.io/mermaid).
 
-<<<<<<< HEAD
 Los bloques de código marcados como  `mermaid` se convertirán en diagramas, por ejemplo:
-=======
-Code blocks marked as `mermaid` will be converted to diagrams, for example:
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ~~~md
 //```mermaid

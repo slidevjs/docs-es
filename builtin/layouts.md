@@ -2,9 +2,6 @@
 
 ## Plantillas integradas
 
-<<<<<<< HEAD
-> La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directamente.
-=======
 > As themes may override layouts behaviour, the best way to know exactly the usage, parameters and examples is referring their documentation.
 
 
@@ -178,7 +175,6 @@ This shows on the left
 
 This shows on the right
 ```
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
 
 ## Plantillas personalizadas
 

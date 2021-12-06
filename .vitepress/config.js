@@ -30,15 +30,11 @@ const Guide = [
     link: '/guide/exporting',
   },
   {
-<<<<<<< HEAD
-    text: 'Grabar una presentación',
-=======
-    text: 'Static Hosting',
+    text: 'Alojamiento estático',
     link: '/guide/hosting',
   },
   {
-    text: 'Record Presentation',
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+    text: 'Grabar una presentación',
     link: '/guide/recording',
   },
   {
@@ -46,19 +42,11 @@ const Guide = [
     link: '/guide/presenter-mode',
   },
   {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    text: 'Integraciones del editor',
-=======
-    text: 'Drawing & Annonations',
-=======
-    text: 'Drawing & Annotations',
->>>>>>> c393c03ca6c46af4a218f37db04bc399bde16088
+    text: 'Dibujos y anotaciones',
     link: '/guide/drawing',
   },
   {
-    text: 'Editor Integrations',
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+    text: 'Integraciones del editor',
     link: '/guide/editors',
   },
   {
@@ -185,15 +173,11 @@ const Resources = [
     link: '/showcases',
   },
   {
-<<<<<<< HEAD
-    text: 'Portadas seleccionadas',
-=======
-    text: 'Learning Resources',
+    text: 'Recursos de aprendizaje',
     link: '/resources/learning',
   },
   {
-    text: 'Curated Covers',
->>>>>>> ee7ae42035591cb6565a72f5217129c670a59b0c
+    text: 'Portadas seleccionadas',
     link: '/resources/covers',
   },
 ]

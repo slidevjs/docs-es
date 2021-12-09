@@ -99,7 +99,7 @@ Por el momento, solo se soporta Google como proveedor de fuentes aunque está pl
 ```yaml
 ---
 fonts:
-  provide: 'none'
+  provider: 'none'
 ---
 ```
 

@@ -125,7 +125,11 @@ Slidev alterna una clase `dark` en el elemento `html` de la página para cambiar
 
 Los colores de resaltado de sintaxis también se proporcionan en el tema. Soportamos tanto [Prism](https://prismjs.com/) como [Shiki](https://github.com/shikijs/shiki). Para más información, consulte [los documentos de resaltado de sintaxis](/custom/highlighters).
 
+<<<<<<< HEAD
 Puede soportar uno de ellos, o ambos. Consulta el tema por defecto para los ejemplos de configuración [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts).
+=======
+You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+>>>>>>> 1abac97d69f2a4c1bf1ea213947287922b7adba4
 
 Además, recuerda especificar los resaltadores compatibles en su `package.json`.
 

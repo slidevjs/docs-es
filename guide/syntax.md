@@ -72,7 +72,11 @@ console.log('Hello, World!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Damos soporte a [Prism](http://prismjs.com) y [Shiki](https://github.com/shiki/shiki) como resaltadores de sintaxis. Revisa la [sección de resaltadores](/custom/highlighters) para más detalles.
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 1abac97d69f2a4c1bf1ea213947287922b7adba4
 
 ### Resaltado de línea
 

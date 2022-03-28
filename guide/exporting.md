@@ -19,6 +19,11 @@ $ slidev export
 
 Después de unos segundos, tus diapositivas estarán listas en `./slides-exports.pdf`.
 
+En el caso que quieras exportar tus diapositivas usando la versión oscura del tema, utiliza la opción `--dark`:
+```bash
+$ slidev export --dark
+```
+
 ### Exportar pasos por clic
 
 > Disponible desde v0.21

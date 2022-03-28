@@ -33,6 +33,8 @@ aspectRatio: '16/9'
 # ancho real del lienzo, unidad en px
 canvasWidth: 980
 
+# favicon, puede ser una ruta local o una URL
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 # fuentes que se importarán desde Google Fonts
 # Leer más: https://es.sli.dev/custom/fonts
 fonts:

@@ -110,6 +110,10 @@ const Translations = [
     text: 'Ελληνικά',
     link: 'https://el.sli.dev{{pathname}}',
   },
+  {
+    text: '日本語',
+    link: 'https://ja.sli.dev{{pathname}}',
+  },
 ]
 
 const Customizations = [
@@ -158,11 +162,11 @@ const Customizations = [
     link: '/custom/config-shortcuts',
   },
   {
-    text: 'Vue Global Context',
+    text: 'Contexto global de Vue',
     link: '/custom/vue-context',
   },
   {
-    text: 'Global Layers',
+    text: 'Capas globales',
     link: '/custom/global-layers',
   }
 ]

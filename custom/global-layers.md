@@ -4,13 +4,15 @@
 
 Las capas globales le permiten tener componentes personalizados que **persisten** a través de las diapositivas. Esto podría ser útil para tener pies de página, animaciones entre diapositivas, efectos globales, etc.
 
-Slidev proporciona dos capas para este uso, crea `global-top.vue` o `global-bottom.vue` en la raíz de tu proyecto y lo detectará automáticamente.
+Slidev proporciona tres capas para este uso, crea `global-top.vue` o `global-bottom.vue` o `custom-nav-controls.vue` en la raíz de tu proyecto y lo detectará automáticamente.
 
 Relación de capas:
 
 - Global superior (`global-top.vue`)
 - Diapositivas
 - Global inferior (`global-bottom.vue`)
+- Controles de navegación
+  - Controles de navegación personalizados (`custom-nav-controls.vue`)
 
 ## Ejemplo
 
@@ -22,6 +24,18 @@ Relación de capas:
 ```
 
 El texto `Tu nombre` aparecerá en todas tus diapositivas.
+
+
+```html
+<!-- custom-nav-controls -->
+<template>
+  <button class="icon-btn" title="Siguiente" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
+</template>
+```
+
+El botón "Siguiente" aparecerá en la navegación.
 
 Para habilitarlo condicionalmente, puedes aplicarlo con el [contexto global de Vue](/custom/vue-context).
 
@@ -58,5 +72,15 @@ Para habilitarlo condicionalmente, puedes aplicarlo con el [contexto global de V
   >
     {{ $slidev.nav.currentPage }} / {{ $slidev.nav.total }}
   </footer>
+</template>
+```
+
+```html
+<!-- custom-nav-controls -->
+<!-- oculta el botón en el modo presentador -->
+<template>
+  <button v-if="!$slidev.nav.isPresenter" class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
 </template>
 ```

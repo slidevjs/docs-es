@@ -162,11 +162,11 @@ const Customizations = [
     link: '/custom/config-shortcuts',
   },
   {
-    text: 'Vue Global Context',
+    text: 'Contexto global de Vue',
     link: '/custom/vue-context',
   },
   {
-    text: 'Global Layers',
+    text: 'Capas globales',
     link: '/custom/global-layers',
   }
 ]

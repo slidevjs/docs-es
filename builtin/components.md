@@ -4,47 +4,42 @@
 
 > La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directamente.
 
-<<<<<<< HEAD
-## Componentes personalizados
-=======
 ### `TOC`
 
-Insert a Table Of Content.
+Inserta una tabla de contenidos (TOC).
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
+Los títulos y sus niveles se corresponden al primer elemento del título de cada diapositiva.
 
-You can override this automatic behaviour for a slide by using the front matter syntax:
+Puedes sobreescribir este comportamiento en cada diapositiva usando la sintaxis de frontmatter:
 ```yml
 ---
-title: Amazing slide title
+title: Mi presentación
 level: 2
 ---
 ```
-
-Or if you prefer the slide to not appear in the TOC at all, you can use:
+O si prefieres que la diapositiva no aparezca en la tabla de contenido, puedes ocultarla:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-#### Usage
+#### Uso
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Parámetros
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+* `columns` (`string | number`, por defecto: `1`) El número de columnas a mostrar
+* `maxDepth` (`string | number`, por defecto: `Infinity`): La profundidad máxima a mostrar
+* `minDepth` (`string | number`, por defecto: `1`): La profundidad mínima a mostrar
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, por defecto: `'all'`):
+  * `'all'`: Muestra todos los items.
+  * `'onlyCurrentTree'`: Muestra solo los items que están en el árbol actual (el ítem activo, su padre y sus hijos)
+  * `'onlySiblings'`: Muestra solo los items que están en el árbol actual y sus hijos directos.
 
-## Custom Components
->>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
+## Componentes personalizados
 
 Crea un directorio`components/`en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él; entonces podrás usarlo con el mismo nombre que en tu archivo markdown.
 

@@ -19,17 +19,12 @@ $ slidev export
 
 Después de unos segundos, tus diapositivas estarán listas en `./slides-exports.pdf`.
 
-<<<<<<< HEAD
-### Exportar pasos por clic
-=======
-In case you want to export your slides using the dark version of the theme, use the `--dark` option:
-
+En el caso que quieras exportar tus diapositivas usando la versión oscura del tema, utiliza la opción `--dark`:
 ```bash
 $ slidev export --dark
 ```
 
-### Export Clicks Steps
->>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
+### Exportar pasos por clic
 
 > Disponible desde v0.21
 

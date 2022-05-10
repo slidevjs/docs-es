@@ -4,27 +4,22 @@
 
 > La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directamente.
 
-### `TOC`
+### `Toc`
 
 Inserta una tabla de contenidos (TOC).
 
-Los títulos y sus niveles se corresponden al primer elemento del título de cada diapositiva.
+Si deseas que una diapositiva no aparezca en el componente `<Toc>`, puedes usar el siguiente frontmatter:
 
-Puedes sobreescribir este comportamiento en cada diapositiva usando la sintaxis de frontmatter:
-```yml
----
-title: Mi presentación
-level: 2
----
-```
-O si prefieres que la diapositiva no aparezca en la tabla de contenido, puedes ocultarla:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
+Los títulos se muestran con el [componente `<Titles>`](#titles)
+
 #### Uso
+
 ~~~md
 <Toc />
 ~~~
@@ -39,9 +34,56 @@ Parámetros
   * `'onlyCurrentTree'`: Muestra solo los items que están en el árbol actual (el ítem activo, su padre y sus hijos)
   * `'onlySiblings'`: Muestra solo los items que están en el árbol actual y sus hijos directos.
 
+### `Link`
+
+Inserta un enlace que pueda utilizar para navegar a una diapositiva determinada.
+
+
+#### Uso
+
+~~~md
+<Link to="42">Ir a la diapositiva 42</Link>
+<Link to="42" title="Ir a la diapositiva 42"/>
+~~~
+
+Parámetros:
+
+* `to` (`string | number`): La ruta de la diapositiva a la que se va a navegar (las diapositivas empiezan por `1`)
+* `title` (`string`): El título a mostrar
+
+### `Titles`
+
+Inserta el título principal de una diapositiva analizada como HTML.
+
+Los títulos y los niveles de título se heredan automáticamente del primer elemento de título de cada diapositiva.
+
+Puedes sobreescribir este comportamiento en cada diapositiva usando la sintaxis de frontmatter:
+```yml
+---
+title: Mi presentación
+level: 2
+---
+```
+
+#### Uso
+
+El componente `<Titles>` es un componente virtual que se puede importar con:
+```js
+import Titles from '/@slidev/titles.md'
+```
+
+Y puedes usarlo así:
+~~~md
+<Titles no="42" />
+~~~
+
+Parámetros
+
+* `no` (`string | number`): El numero de la diapositiva de la cual extraer el título (las diapositivas empiezan por `1`)
+
 ## Componentes personalizados
 
-Crea un directorio`components/`en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él; entonces podrás usarlo con el mismo nombre que en tu archivo markdown.
+Crea un directorio llamado `components/` en la raíz de tu proyecto, y simplemente mueve allí los componentes de Vue. Una vez lo hagas, podrás usarlo con el mismo nombre que en tu archivo de Markdown.
 
 Lea más en la sección de [personalización](/custom/directory-structure#components).
 

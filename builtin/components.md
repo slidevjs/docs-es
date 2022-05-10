@@ -8,57 +8,54 @@
 
 Inserta una tabla de contenidos (TOC).
 
-<<<<<<< HEAD
-Los títulos y sus niveles se corresponden al primer elemento del título de cada diapositiva.
-=======
-If you want a slide to not appear in the `<Toc>` component, you can use in the front matter block of the slide:
+Si deseas que una diapositiva no aparezca en el componente <Toc>, puedes usar el siguiente frontmatter:
+
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-Titles are displayed using the [`<Titles>` component](#titles)
+Los títulos se muestran con el [componente `<Titles>`](#titles)
 
-#### Usage
+#### Uso
 
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Parámetros
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `listClass` (`string | string[]`, default: `''`): Classes to apply to the table of contents list
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+* `columns` (`string | number`, por defecto: `1`) El número de columnas a mostrar
+* `maxDepth` (`string | number`, por defecto: `Infinity`): La profundidad máxima a mostrar
+* `minDepth` (`string | number`, por defecto: `1`): La profundidad mínima a mostrar
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, por defecto: `'all'`):
+  * `'all'`: Muestra todos los items.
+  * `'onlyCurrentTree'`: Muestra solo los items que están en el árbol actual (el ítem activo, su padre y sus hijos)
+  * `'onlySiblings'`: Muestra solo los items que están en el árbol actual y sus hijos directos.
 
 ### `Link`
 
-Insert a link you can use to navigate to a given slide.
+Inserta un enlace que pueda utilizar para navegar a una diapositiva determinada.
 
-#### Usage
+
+#### Uso
 
 ~~~md
-<Link to="42">Go to slide 42</Link>
-<Link to="42" title="Go to slide 42"/>
+<Link to="42">Ir a la diapositiva 42</Link>
+<Link to="42" title="Ir a la diapositiva 42"/>
 ~~~
 
-Parameters:
+Parámetros:
 
-* `to` (`string | number`): The path of the slide to navigate to (slides starts from `1`)
-* `title` (`string`): The title to display
+* `to` (`string | number`): La ruta de la diapositiva a la que se va a navegar (las diapositivas empiezan por `1`)
+* `title` (`string`): El título a mostrar
 
 ### `Titles`
 
-Insert the main title from a slide parsed as HTML.
+Inserta el título principal de una diapositiva analizada como HTML.
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
->>>>>>> 030576270f137f7a9f12dda14c167d21a7eb432c
+Los títulos y los niveles de título se heredan automáticamente del primer elemento de título de cada diapositiva.
 
 Puedes sobreescribir este comportamiento en cada diapositiva usando la sintaxis de frontmatter:
 ```yml
@@ -67,47 +64,26 @@ title: Mi presentación
 level: 2
 ---
 ```
-<<<<<<< HEAD
-O si prefieres que la diapositiva no aparezca en la tabla de contenido, puedes ocultarla:
-```yml
----
-hideInToc: true
----
-```
 
 #### Uso
-=======
 
-#### Usage
-
-The `<Titles>` component is a virtual component you can import with:
+El componente `<Titles>` es un componente virtual que se puede importar con:
 ```js
 import Titles from '/@slidev/titles.md'
 ```
 
-Then you can use it with:
->>>>>>> 030576270f137f7a9f12dda14c167d21a7eb432c
+Y puedes usarlo así:
 ~~~md
 <Titles no="42" />
 ~~~
 
 Parámetros
 
-<<<<<<< HEAD
-* `columns` (`string | number`, por defecto: `1`) El número de columnas a mostrar
-* `maxDepth` (`string | number`, por defecto: `Infinity`): La profundidad máxima a mostrar
-* `minDepth` (`string | number`, por defecto: `1`): La profundidad mínima a mostrar
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, por defecto: `'all'`):
-  * `'all'`: Muestra todos los items.
-  * `'onlyCurrentTree'`: Muestra solo los items que están en el árbol actual (el ítem activo, su padre y sus hijos)
-  * `'onlySiblings'`: Muestra solo los items que están en el árbol actual y sus hijos directos.
-=======
-* `no` (`string | number`): The number of the slide to display the title from (slides starts from `1`)
->>>>>>> 030576270f137f7a9f12dda14c167d21a7eb432c
+* `no` (`string | number`): El numero de la diapositiva de la cual extraer el título (las diapositivas empiezan por `1`)
 
 ## Componentes personalizados
 
-Crea un directorio`components/`en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla Vue bajo él; entonces podrás usarlo con el mismo nombre que en tu archivo markdown.
+Crea un directorio llamado `components/` en la raíz de tu proyecto, y simplemente mueve allí los componentes de Vue. Una vez lo hagas, podrás usarlo con el mismo nombre que en tu archivo de Markdown.
 
 Lea más en la sección de [personalización](/custom/directory-structure#components).
 

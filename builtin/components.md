@@ -8,7 +8,7 @@
 
 Inserta una tabla de contenidos (TOC).
 
-Si deseas que una diapositiva no aparezca en el componente <Toc>, puedes usar el siguiente frontmatter:
+Si deseas que una diapositiva no aparezca en el componente `<Toc>`, puedes usar el siguiente frontmatter:
 
 ```yml
 ---

@@ -37,7 +37,11 @@ El texto `Tu nombre` aparecerá en todas tus diapositivas.
 
 El botón "Siguiente" aparecerá en la navegación.
 
+<<<<<<< HEAD
 Para habilitarlo condicionalmente, puedes aplicarlo con el [contexto global de Vue](/custom/vue-context).
+=======
+To enable it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+>>>>>>> 0d7183dcb5054d1cc1d9af406b951526a92f09b6
 
 ```html
 <!-- oculta el pie de página de la página 4 -->

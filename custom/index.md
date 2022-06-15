@@ -8,7 +8,12 @@ Puedes configurar Slidev en el frontmatter de tu primera diapositiva, a continua
 
 ```yaml
 ---
+<<<<<<< HEAD
 # ID del tema o nombre del paquete
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+>>>>>>> 55faf79109ec7628fa7fd3ed717d79edc91e9433
 theme: 'default'
 # título de tu diapositiva, se deducirá automáticamente de la primera cabecera si no se especifica
 title: 'Slidev'

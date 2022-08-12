@@ -70,6 +70,17 @@ const Theme = [
   },
 ]
 
+const Addon = [
+  {
+    text: 'Use Addon',
+    link: '/addons/use',
+  },
+  {
+    text: 'Write an Addon',
+    link: '/addons/write-an-addon',
+  },
+]
+
 const Translations = [
   {
     text: 'Español',
@@ -196,7 +207,15 @@ const slidebars = [
     children: Theme,
   },
   {
+<<<<<<< HEAD
     text: 'Personalizaciones',
+=======
+    text: 'Addons',
+    children: Addon,
+  },
+  {
+    text: 'Customizations',
+>>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
     children: Customizations,
   },
   {
@@ -259,7 +278,15 @@ module.exports = {
         items: Theme,
       },
       {
+<<<<<<< HEAD
         text: 'Personalizar',
+=======
+        text: 'Addon',
+        items: Addon,
+      },
+      {
+        text: 'Customize',
+>>>>>>> e9156da7e3b01f48ac2a90552936da50c797d88d
         items: Customizations,
       },
       {
@@ -275,6 +302,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

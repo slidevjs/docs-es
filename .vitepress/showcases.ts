@@ -120,6 +120,29 @@ export const showcases: ShowCaseInfo[] = [
     at: 'Internal Tech Talk',
     datetime: '2022-03-11',
   },
+  {
+    title: 'OpenFunction 202',
+    cover: 'https://s2.loli.net/2022/05/22/4zsCnkQRFoAU1E5.png',
+    author: {
+      name: 'Haili Zhang',
+      link: 'https://github.com/webup',
+    },
+    slidesLink: 'https://openfunction-talks.netlify.app/2022/202-node-async/',
+    sourceLink: 'https://github.com/webup/openfunction-talks/tree/main/202-node-async',
+    at: 'OpenFunction Tutorial Sharing',
+    datetime: '2022-05-08',
+  },
+    {
+    title: 'Is it Okay to Pursue Functional Programming on Frontend?',
+    author: {
+      name: 'Minsu Kim , Changhui Lee',
+    },
+    at: '2022 JSConf Korea',
+    slidesLink: 'https://moonlit-nougat-422445.netlify.app/1',
+    sourceLink: 'https://github.com/alstn2468/2022-jsconf-presentation',
+    cover: 'https://raw.githubusercontent.com/alstn2468/2022-jsconf-presentation/main/public/images/og.png',
+    datetime: '2022-09-16',
+  },
   // Add yours here!
   {
     title: 'Yours?',

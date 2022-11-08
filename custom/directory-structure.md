@@ -5,6 +5,7 @@ Slidev emplea algunas convenciones de estructura de directorios para minimizar l
 La estructura básica es la siguiente:
 
 ```bash
+<<<<<<< HEAD
 tu-slidev/
   ├── components/       # componentes personalizados
   ├── layouts/          # plantillas personalizadas
@@ -16,6 +17,18 @@ tu-slidev/
   ├── vite.config.ts    # extender la configuración de vite```
   
 Todas ellas son opcionales.
+=======
+your-slidev/
+  ├── components/       # custom components
+  ├── layouts/          # custom layouts
+  ├── public/           # static assets
+  ├── setup/            # custom setup / hooks
+  ├── styles/           # custom style
+  ├── index.html        # injections to index.html
+  ├── slides.md         # the main slides entry
+  └── vite.config.ts    # extending vite config
+```
+>>>>>>> eb148aa43004e4f35f192bf482a90cc220e943c3
 
 ## Componentes
 
@@ -47,7 +60,11 @@ tu-slidev/
 </hello-world>
 ```
 
+<<<<<<< HEAD
 Esta función usa [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), aprende más ahí.
+=======
+This feature is powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), learn more there.
+>>>>>>> eb148aa43004e4f35f192bf482a90cc220e943c3
 
 Slidev también provee [componentes por defecto](/builtin/components) para tu uso.
 
@@ -114,7 +131,11 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Los estilos serán procesados por [Windi CSS](http://windicss.org/) y [PostCSS](https://postcss.org/), así que puedes usar CSS anidado y [directivas @](https://windicss.org/features/directives.html) por defecto. Por ejemplo:
+=======
+Styles will be processed by [Windi CSS](https://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+>>>>>>> eb148aa43004e4f35f192bf482a90cc220e943c3
 
 ```less
 .slidev-layout {

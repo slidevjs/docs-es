@@ -17,7 +17,7 @@ Relación de capas:
 ## Ejemplo
 
 ```html
-<!-- global-top.vue -->
+<!-- global-bottom.vue -->
 <template>
   <footer class="absolute bottom-0 left-0 right-0 p-2">Tu nombre</footer>
 </template>
@@ -37,7 +37,11 @@ El texto `Tu nombre` aparecerá en todas tus diapositivas.
 
 El botón "Siguiente" aparecerá en la navegación.
 
+<<<<<<< HEAD
 Para habilitarlo condicionalmente, puedes aplicarlo con el [contexto global de Vue](/custom/vue-context).
+=======
+To enable it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+>>>>>>> dbdc820c8574243d4ae38131ae2a53f6a35a9104
 
 ```html
 <!-- oculta el pie de página de la página 4 -->

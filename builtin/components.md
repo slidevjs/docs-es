@@ -81,7 +81,54 @@ Parámetros
 
 * `no` (`string | number`): El numero de la diapositiva de la cual extraer el título (las diapositivas empiezan por `1`)
 
+<<<<<<< HEAD
 ## Componentes personalizados
+=======
+### `LightOrDark`
+
+Use it to display one thing or another depending on the active light or dark theme.
+
+#### Usage
+
+Use it with the two named Slots `#dark` and `#light`:
+~~~md
+<LightOrDark>
+  <template #dark>Dark mode is on</template>
+  <template #light>Light mode is on</template>
+</LightOrDark>
+~~~
+
+Provided props on `LightOrDark` component will be available using scoped slot props:
+~~~md
+<LightOrDark width="100" alt="some image">
+  <template #dark="props">
+    <img src="/dark.png" v-bind="props"/>
+  </template>
+  <template #light="props">
+    <img src="/light.png" v-bind="props"/>
+  </template>
+</LightOrDark>
+~~~
+
+You can provide markdown in the slots, but you will need to surround the content with blank lines:
+~~~md
+<LightOrDark>
+  <template #dark>
+  
+![dark](/dark.png)
+
+  </template>
+  <template #light>
+  
+![light](/light.png)
+
+  </template>
+</LightOrDark>
+~~~
+
+
+## Custom Components
+>>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 Crea un directorio llamado `components/` en la raíz de tu proyecto, y simplemente mueve allí los componentes de Vue. Una vez lo hagas, podrás usarlo con el mismo nombre que en tu archivo de Markdown.
 

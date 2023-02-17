@@ -8,7 +8,12 @@ Puedes configurar Slidev en el frontmatter de tu primera diapositiva, a continua
 
 ```yaml
 ---
+<<<<<<< HEAD
 # ID del tema o nombre del paquete
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+>>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 theme: 'default'
 # título de tu diapositiva, se deducirá automáticamente de la primera cabecera si no se especifica
 title: 'Slidev'
@@ -17,11 +22,21 @@ titleTemplate: '%s - Slidev'
 # information for your slides, can be a markdown string
 info: false
 
+<<<<<<< HEAD
 # descarga habilitada de pdf en la compilación de SPA, también puede ser una url personalizada
 download: false
 # nombre del archivo exportado
 exportFilename: 'slidev-exported.pdf'
 # resaltador de sintaxis, puede ser 'prisma' o 'shiki'
+=======
+# enable presenter mode, can be boolean, 'dev' or 'build'
+presenter: true
+# enabled pdf downloading in SPA build, can also be a custom url
+download: false
+# filename of the export file
+exportFilename: 'slidev-exported'
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 highlighter: 'prism'
 # muestra el número de línea
 lineNumbers: false

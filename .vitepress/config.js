@@ -70,6 +70,17 @@ const Theme = [
   },
 ]
 
+const Addon = [
+  {
+    text: 'Use Addon',
+    link: '/addons/use',
+  },
+  {
+    text: 'Write an Addon',
+    link: '/addons/write-an-addon',
+  },
+]
+
 const Translations = [
   {
     text: 'Español',
@@ -158,6 +169,10 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
+    text: 'Configure Parser',
+    link: '/custom/config-parser',
+  },
+  {
     text: 'Configure Shortcuts',
     link: '/custom/config-shortcuts',
   },
@@ -169,6 +184,17 @@ const Customizations = [
     text: 'Capas globales',
     link: '/custom/global-layers',
   }
+]
+
+const BuiltIn = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
 ]
 
 const Resources = [
@@ -196,6 +222,7 @@ const slidebars = [
     children: Theme,
   },
   {
+<<<<<<< HEAD
     text: 'Personalizaciones',
     children: Customizations,
   },
@@ -211,6 +238,18 @@ const slidebars = [
         link: '/builtin/layouts',
       },
     ],
+=======
+    text: 'Addons',
+    children: Addon,
+  },
+  {
+    text: 'Customizations',
+    children: Customizations,
+  },
+  {
+    text: 'Built-in',
+    children: BuiltIn,
+>>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
   },
 ]
 
@@ -241,7 +280,8 @@ module.exports = {
     editLinkText: 'Sugerir cambios a esta página',
 
     algolia: {
-      apiKey: '1a5c5a504139c58f428974c78c55291d',
+      appId: 'LCBV6MIFS6',
+      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
       indexName: 'slidev',
       searchParameters: {
         // for translations maintainers: change the filter to your locale code (subdomain name)
@@ -259,11 +299,27 @@ module.exports = {
         items: Theme,
       },
       {
+<<<<<<< HEAD
         text: 'Personalizar',
         items: Customizations,
       },
       {
         text: 'Recursos',
+=======
+        text: 'Addon',
+        items: Addon,
+      },
+      {
+        text: 'Customize',
+        items: Customizations,
+      },
+      {
+        text: 'Built-in',
+        items: BuiltIn,
+      },
+      {
+        text: 'Resources',
+>>>>>>> b66a4ce1191b87de4c77e9317fce3a7c22d6c624
         items: Resources,
       },
       {
@@ -275,6 +331,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

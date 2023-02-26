@@ -2,7 +2,7 @@
   <div class="theme">
     <h1>404</h1>
     <blockquote>{{ getMsg() }}</blockquote>
-    <a :href="site.base" aria-label="go to home">Take me home.</a>
+    <a :href="site.base" aria-label="ir al inicio">Llévame al inicio.</a>
   </div>
 </template>
 
@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 
 const {site} = useData()
 const msgs = [
-  'There\'s nothing here.',
-  'How did we get here?',
-  'That\'s a Four-Oh-Four.',
-  'Looks like we\'ve got some broken links.',
+  'No hay nada aquí.',
+  '¿Cómo terminamos aquí?',
+  'Eso es un Cuatro-cero-cuatro.',
+  'Recórcholis, parece que se rompió algún link.',
 ]
 
 function getMsg() {

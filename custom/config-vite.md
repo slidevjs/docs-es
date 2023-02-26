@@ -2,11 +2,7 @@
 
 <Environment type="node" />
 
-<<<<<<< HEAD
-Slidev es impulsado por [Vite](http://vitejs.dev/) detrás de las escenas. Esto significa que puedes aprovechar el gran sistema de plugins de Vite para personalizar aún más tus diapositivas.
-=======
-Slidev is powered by [Vite](https://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
+Slidev está potenciado por [Vite](http://vitejs.dev/). Esto significa que puedes aprovechar el gran sistema de plugins de Vite para personalizar aún más tus diapositivas.
 
 `vite.config.ts` será respetado si tienes uno.
 

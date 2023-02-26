@@ -28,7 +28,7 @@ export default defineComponent({
     })
 
     onMounted(() => {
-      datetime.value = new Date(page.value.lastUpdated || 0).toLocaleString('en-US')
+      datetime.value = new Date(page.value.lastUpdated || 0).toLocaleString('es-ES')
     })
 
     return {

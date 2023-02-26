@@ -14,14 +14,12 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-<<<<<<< HEAD
 Con la configuración, puede proporcionar una configuración personalizada por defecto para [Mermaid](https://mermaid-js.github.io/). Consulta las definiciones de tipo y su documentación para obtener más detalles.
-=======
-With the setup, you can provide a custom default setting for [Mermaid](https://mermaid-js.github.io/). Refer to the type definitions and its documentation for more details.
 
-## Custom theme/styles
 
-In case you want to create your custom Mermaid themes or styles, you can do this by defining `themeVariables` like in the following example:
+## Estilos/tema personalizados
+
+En caso de que quieras crear tus temas o estilos personalizados para Mermaid, puedes hacerlo definiendo `themeVariables` como en el siguiente ejemplo:
 
 ```ts
 import { defineMermaidSetup } from '@slidev/types'
@@ -30,12 +28,12 @@ export default defineMermaidSetup(() => {
   return {
     theme: 'base',
     themeVariables: {
-      // General theme variables
+      // Variables del tema
       noteBkgColor: "#181d29",
       noteTextColor: "#F3EFF5cc",
       noteBorderColor: "#404551",
 
-      // Sequence diagram variables
+      // Variables de las secuencias del diagrama
       actorBkg: "#0E131F",
       actorBorder: "#44FFD2",
       actorTextColor: "#F3EFF5",
@@ -47,5 +45,5 @@ export default defineMermaidSetup(() => {
 })
 ```
 
-You can find all theme variables on the [Mermaid Theme Configuration](https://mermaid.js.org/config/theming.html) page.
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
+Puedes encontrar todas las variables del tema en la página [de Mermaid](https://mermaid.js.org/config/theming.html).
+

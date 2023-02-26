@@ -10,7 +10,7 @@ const themeConfig = computed(()=>site.value.themeConfig)
   <a
     class="nav-bar-title"
     :href="site.base"
-    :aria-label="`${site.title}, back to home`"
+    :aria-label="`${site.title}, volver al inicio`"
   >
     <img
       v-if="themeConfig.logo"

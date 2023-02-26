@@ -72,11 +72,11 @@ const Theme = [
 
 const Addon = [
   {
-    text: 'Use Addon',
+    text: 'Usar addons',
     link: '/addons/use',
   },
   {
-    text: 'Write an Addon',
+    text: 'Escribir un addon',
     link: '/addons/write-an-addon',
   },
 ]
@@ -169,7 +169,7 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
-    text: 'Configure Parser',
+    text: 'Configurar Parser',
     link: '/custom/config-parser',
   },
   {
@@ -211,15 +211,11 @@ const slidebars = [
     children: Theme,
   },
   {
-<<<<<<< HEAD
-    text: 'Personalizaciones',
-=======
     text: 'Addons',
     children: Addon,
   },
   {
-    text: 'Customizations',
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
+    text: 'Personalizaciones',
     children: Customizations,
   },
   {
@@ -283,15 +279,11 @@ module.exports = {
         items: Theme,
       },
       {
-<<<<<<< HEAD
-        text: 'Personalizar',
-=======
-        text: 'Addon',
+        text: 'Addons',
         items: Addon,
       },
       {
-        text: 'Customize',
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
+        text: 'Personalizar',
         items: Customizations,
       },
       {

@@ -18,11 +18,7 @@ Con Yarn:
 $ yarn create slidev
 ```
 
-<<<<<<< HEAD
 Sigue las indicaciones y se abrirá la presentación en http://localhost:3030/ automáticamente para ti.
-=======
-Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 También contiene la configuración básica y una breve demostración con instrucciones sobre cómo empezar a utilizar Slidev.
 
@@ -80,11 +76,8 @@ docker run --name slidev --rm -it \
 
 Si tu carpeta de trabajo está vacía, generará una plantilla de `slides.md` y otros archivos relacionados en tu carpeta de trabajo, y lanzará el servidor en el puerto `3030`. 
 
-<<<<<<< HEAD
+
 Puedes acceder a tus diapositivas desde http://localhost:3030/
-=======
-You can access your slides from `http://localhost:3030/`
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 
 ### Construir una imagen desplegable
@@ -102,11 +95,7 @@ Crea la imagen de Docker: `docker build -t mippt .`
 
 Y ejecuta el contenedor: `docker run --name misdiapos --rm --user node -p 3030:3030 mippt`
 
-<<<<<<< HEAD
 Puedes visitar tus diapositivas desde http://localhost:3030/
-=======
-You can visit your slides from `http://localhost:3030/`
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 
 ### Constuir una SPA alojable (Single Page Application)
@@ -145,15 +134,11 @@ Y ejecuta el contendor: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
 Puedes acceder a tus diapositivas desde http://localhost/
 
-<<<<<<< HEAD
-
 Echa un vistazo a [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) para más detalles.
-=======
-Refer to the [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) for more details.
 
-## Command Line Interface (CLI)
+## Interfaz de la línea de comandos (CLI)
 
-`@slidev/cli` Expose a few commands you can use with `npx slidev ...` or by adding scripts in your `package.json`:
+`@slidev/cli` expone algunos comandos que puedes usar con `npx slidev ...` o añadiendo scripts en tu `package.json`:
 ```json
 {
   "script": {
@@ -162,78 +147,77 @@ Refer to the [tangramor/slidev_docker](https://github.com/tangramor/slidev_docke
 }
 ```
 
-In that case you will be able to run `npm run dev`.
+En ese caso podrás ejecutar `npm run dev`.
 
-You can pass options to any commands:
+Puedes pasar opciones a cualquier comando:
 
-* boolean option are `true` if they are present, false otherwise (example: `slidev --open`)
-* some options can have values you can add just after the option or by using the `=` character (example: `slidev --port 8080` or `slidev --port=8080`)
+* las opciones booleanas son `true` si están presentes, `false` en caso contrario (ejemplo: `slidev --open`)
+* algunas opciones pueden tener valores que puedes añadir justo después de la opción o usando el carácter `=` ( por ejemplo: `slidev --port 8080` o `slidev --port=8080`)
 
-If you use npm scripts, don't forget to add `--` after the npm command:
+Si usas scripts de npm, no olvides añadir `--` después del comando de npm:
 ```bash
 npm run slidev -- --open
 ```
 
-### `slidev [entry]`
+### `slidev [entrada]`
 
-Start a local server for Slidev.
+Inicia un servidor local para Slidev.
 
-* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+* `[entrada]` (`string`, por defecto: `slides.md`): ruta al Markdown de las diapositivas.
 
-Options:
+Opciones:
 
-* `--port`, `-p` (`number`, default: `3030`): port number.
-* `--open`, `-o` (`boolean`, default: `false`): open in browser.
-* `--remote [password]` (`string`): listen to public host and enable remote control, if a value is passed then the presenter mode is private and only accessible by passing the given password in the URL query `password` parameter.
-* `--log` (`'error', 'warn', 'info', 'silent'`, default: `'warn'`): Log level.
-* `--force`, `-f` (`boolean`, default `false`): force the optimizer to ignore the cache and re-bundle.
+* `--port`, `-p` (`number`, por defecto: `3030`): número del puerto.
+* `--open`, `-o` (`boolean`, por defecto: `false`): abrir en el navegador.
+* `--remote [password]` (`string`): escucha al host público y habilita el control remoto, si se pasa un valor entonces el modo presentador es privado y sólo accesible pasando la contraseña dada en el parámetro `password`.
+* `--log` (`'error', 'warn', 'info', 'silent'`, por defecto: `'warn'`): Nivel de registro.
+* `--force`, `-f` (`boolean`, por defecto `false`): fuerza al optimizador a ignorar la caché.
+* `--theme`, `-t` (`string`): reemplaza el tema.
+
+### `slidev build [entrada]`
+
+Genera una SPA alojable.
+
+* `[entrada]` (`string`, por defecto: `slides.md`): ruta al Markdown de las diapositivas.
+
+Opciones:
+
+* `--watch`, `-w` (`boolean`, por defecto: `false`): observa cambios a las diapositivas.
+* `--out`, `-o` (`string`, por defecto: `dist`): directorio de salida.
+* `--base` (`string`, por defectopor defecto `/`): URL base (véase https://cli.vuejs.org/config/#publicpath)
+* `--download` (`boolean`, por defecto: `false`): allow to download the slides as PDF inside the SPA.
 * `--theme`, `-t` (`string`): override theme.
 
-### `slidev build [entry]`
+### `slidev export [entrada]`
 
-Build hostable SPA.
+Exporta diapositivas a PDF (u otro formato).
 
-* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+* `[entrada]` (`string`, por defecto: `slides.md`): ruta al Markdown de las diapositivas.
 
-Options:
+Opciones:
 
-* `--watch`, `-w` (`boolean`, default: `false`): build watch.
-* `--out`, `-o` (`string`, default: `dist`): output dir.
-* `--base` (`string`, default: `/`): base URL (see https://cli.vuejs.org/config/#publicpath)
-* `--download` (`boolean`, default: `false`): allow to download the slides as PDF inside the SPA.
-* `--theme`, `-t` (`string`): override theme.
-
-### `slidev export [entry]`
-
-Export slides to PDF (or other format).
-
-* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
-
-Options:
-
-* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
-* `--base` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
-* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+* `--output` (`string`, por defecto: usa `exportFilename` (véase https://sli.dev/custom/#frontmatter-configures) o usa`[entrada]-export`): ruta a la salida.
+* `--base` (`'pdf', 'png', 'md'`, por defecto: `'pdf'`): formato de salida.
+* `--timeout` (`number`, por defecto: `30000`): tiempo de espera para renderizar la impresión (véase https://playwright.dev/docs/api/class-page#page-goto).
 * `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
-* `--dark` (`boolean`, default: `false`): export as dark theme.
-* `--with-clicks`, `-c` (`boolean`, default: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
+* `--dark` (`boolean`, por defecto: `false`): export as dark theme.
+* `--with-clicks`, `-c` (`boolean`, por defecto: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
 * `--theme`, `-t` (`string`): override theme.
 
-### `slidev format [entry]`
+### `slidev format [entrada]`
 
-Format the markdown file.
+Aplica formato al archivo de Markdown.
 
-* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+* `[entrada]` (`string`, por defecto: `slides.md`): ruta al Markdown de las diapositivas.
 
-### `slidev theme [subcommand]`
+### `slidev theme [subcomando]`
 
-Theme related operations.
+Operaciones relacionadas con el tema.
 
-Subcommands:
+Subcomandos:
 
-* `eject [entry]`: Eject current theme into local file system
-  * `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
-  * Options:
-    * `--dir` (`string`, default: `theme`): output dir.
-    * `--theme`, `-t` (`string`): override theme.
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
+* `eject [entrada]`: Eyecta el tema actual al sistema de archivos
+  * `[entrada]` (`string`, por defecto: `slides.md`): ruta al Markdown de las diapositivas.
+  * Opciones:
+    * `--dir` (`string`, por defecto: `theme`): directorio de salida.
+    * `--theme`, `-t` (`string`): sustituir tema.

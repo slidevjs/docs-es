@@ -1,6 +1,6 @@
 # Exportando
 
-## Slides
+## Diapositivas
 
 ### PDF
 
@@ -26,11 +26,7 @@ En el caso que quieras exportar tus diapositivas usando la versión oscura del t
 $ slidev export --dark
 ```
 
-<<<<<<< HEAD
 ### Exportar pasos por clic
-=======
-#### Export Clicks Steps
->>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 > Disponible desde v0.21
 
@@ -47,24 +43,23 @@ Al pasar la opción `--format png`, Slidev exportará imágenes PNG para cada di
 ```bash
 $ slidev export --format png
 ```
+### Exportar un rango de diapositivas
 
-### Export a range of slides
-
-By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export. 
+Por defecto, se exportan todas las diapositivas de la presentación. Si deseas exportar una diapositiva específica o un rango de diapositivas, puede sactivar la opción `--range` y especificar qué diapositivas desea exportar. 
 
 ```bash
 $ slidev export --range 1,6-8,10
 ```
 
-This option accepts both specific slide numbers and ranges.
+Esta opción acepta tanto números específicos de diapositivas como rangos.
 
-The example above would export slides 1,6,7,8, and 10. 
+El ejemplo anterior exportaría las diapositivas 1,6,7,8 y 10. 
 
-## Presenter notes
+## Notas de presentador
 
-> Available since v0.36.8
+> Disponible desde v0.36.8
 
-Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+Exporta todas las notas del presentador (el último comentario al final de cada diapositiva) como un documento de texto.
 
 ```bash
 $ slidev export-notes

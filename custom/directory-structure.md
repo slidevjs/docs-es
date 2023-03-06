@@ -9,11 +9,11 @@ tu-slidev/
   ├── components/       # componentes personalizados
   ├── layouts/          # plantillas personalizadas
   ├── public/           # archivos estáticos
-  ├── setup/            # configuración personalizada / hook
-  ├── styles/           # estilo personalizado
+  ├── setup/            # configuración personalizada y hooks de Vue
+  ├── styles/           # estilos personalizados
   ├── index.html        # inyecciones a index.html
   ├── slides.md         # la entrada principal de las diapositivas
-  ├── vite.config.ts    # extender la configuración de vite```
+  ├── vite.config.ts    # extensiones de la configuración de vite```
   
 Todas ellas son opcionales.
 
@@ -47,7 +47,7 @@ tu-slidev/
 </hello-world>
 ```
 
-Esta función usa [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), aprende más ahí.
+Esta función usa [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), aprende más ahí.
 
 Slidev también provee [componentes por defecto](/builtin/components) para tu uso.
 

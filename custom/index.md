@@ -9,6 +9,8 @@ Puedes configurar Slidev en el frontmatter de tu primera diapositiva, a continua
 ```yaml
 ---
 # ID del tema o nombre del paquete
+# Para más información: https://es.sli.dev/themes/use.html
+
 theme: 'default'
 # título de tu diapositiva, se deducirá automáticamente de la primera cabecera si no se especifica
 title: 'Slidev'
@@ -16,7 +18,8 @@ title: 'Slidev'
 titleTemplate: '%s - Slidev'
 # information for your slides, can be a markdown string
 info: false
-
+# activa el modo de presentador, puede ser un booleano, 'dev' o 'build'
+presenter: true
 # descarga habilitada de pdf en la compilación de SPA, también puede ser una url personalizada
 download: false
 # nombre del archivo exportado

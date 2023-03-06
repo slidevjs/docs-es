@@ -2,7 +2,7 @@
 
 ## Introducción
 
-Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> es un creador y presentador de diapositivas basado en la web. Está diseñado para que los desarrolladores se centren en la escritura de contenido en Markdown, mientras que también tiene el poder de los componentes HTML y Vue para ofrecer diseños y plantillas *pixel-perfect* con demostraciones interactivas incrustadas en sus presentaciones.
+Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> es un creador y presentador de diapositivas basado en la web. Está diseñado para que los desarrolladores se centren en la escritura de contenido en Markdown, mientras que también tiene el poder de los componentes HTML y Vue para ofrecer diseños y plantillas _pixel-perfect_ con demostraciones interactivas incrustadas en sus presentaciones.
 
 Utiliza un archivo Markdown rico en funciones para generar diapositivas bonitas con una experiencia de recarga instantánea, junto con muchas integraciones incorporadas como la escritura de código en vivo, la exportación de PDF, la grabación de presentaciones, etc. Dado que está impulsado por la web, puedes hacer cualquier cosa con Slidev: las posibilidades son infinitas.
 
@@ -13,7 +13,7 @@ Puedes obtener más información sobre la justificación del proyecto en la secc
 - 📝 [**Basado en Markdown**](/guide/syntax.html) - utiliza tus editores y forma de trabajar favoritos.
 - 🧑‍💻 [**Pensado para desarrolladores**](/guide/syntax.html#code-blocks) - resaltado de sintaxis integrado, escritura de código en vivo, etc.
 - 🎨 [**Tematizable**](/themes/gallery.html) - un tema puede ser compartido y usado con paquetes npm.
-- 🌈 [**Con estilo**](/guide/syntax.html#embedded-styles) - Utilidades de [Windi CSS](https://windicss.org/) bajo demanda, hojas de estilos fáciles de incrustar.
+- 🌈 [**Con estilo**](/guide/syntax.html#embedded-styles) - Utilidades de [Windi CSS](https://windicss.org/) bajo demanda o [UnoCSS](https://uno.antfu.me).
 - 🤹 [**Interactivo**](/custom/directory-structure.html#components) - incrusta componentes de Vue sin problemas
 - 🎙 [**Modo Presentador**](/guide/presenter-mode.html) - usa otra ventana, o incluso tu teléfono para controlar las diapositivas
 - 🎨 [**Drawing**](/guide/drawing.html) - dibuja y anota en tus diapositivas
@@ -32,7 +32,7 @@ Slidev es posible gracias a la combinación de estas herramientas y tecnologías
 
 - [Vite](https://vitejs.dev) - Una herramienta de frontend extremadamente rápida
 - [Vue 3](https://v3.vuejs.org/) potenciado por [Markdown](https://daringfireball.net/projects/markdown/syntax) - Céntrate en el contenido mientras dispones de la potencia de los componentes HTML y Vue siempre que lo necesites
-- [Windi CSS](https://github.com/windicss/windicss) - Framework de CSS de utilidades bajo demanda, estilizando tus diapositivas con facilidad
+- [Windi CSS](https://github.com/windicss/windicss) o [UnoCSS](https://github.com/unocss/unocss) - Framework de CSS de utilidades bajo demanda, estilizando tus diapositivas con facilidad
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Fragmentos de código con edición en vivo de primera clase
 - [RecordRTC](https://recordrtc.org) - Grabación y vista de cámara integrados
 - [VueUse](https://vueuse.org) -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.

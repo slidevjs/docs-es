@@ -31,7 +31,8 @@ download: true
 ```
 
 Slidev generará un archivo PDF junto al resto de archivos, y un botón de descargar se mostrará en la SPA.
-También puedes dar un link personalizado, en tal caso se omitirá la generación del PDF.
+
+También puedes dar un link personalizado para el PDF, en tal caso se omitirá generarlo.
 
 ```md
 ---
@@ -72,8 +73,7 @@ Crea `netlify.toml` en tu carpeta con el siguiente contenido:
   status = 200
 ```
 
-Después, en tu panel de Netlify crea un nuevo sitio con esos archivos.
-
+Después crea un sitio en Netlify y enlázalo al repositorio.
 ### Vercel
 
 - [Vercel](https://vercel.com/)
@@ -88,13 +88,15 @@ Crea `vercel.json` en tu proyecto con la siguiente configuración.
 }
 ```
 
-Después, en tu panel de Vercel crea un nuevo sitio con esos archivos.
+Después, en tu panel de Vercel crea un nuevo sitio enlazado al repositorio.
 
 ## GitHub Pages
 
 - [GitHub Pages](https://pages.github.com/)
 
-Crea `.github/workflows/deploy.yml` con el siguiente contenido para automatizar el despliegue de diapositivas con Github Pages mediante Github Actions.
+Paa desplegar el proyecto en Github Pages:
+- Sube todos los archivos al repositorio
+- Crea `.github/workflows/deploy.yml` con el siguiente contenido para automatizar el despliegue de diapositivas con Github Pages mediante Github Actions. En este archivo, reeemplaza `<nombre_del_repo>` como corresponda.
 
 ```yaml
 name: Desplegar páginas
@@ -108,9 +110,9 @@ jobs:
         with:
           node-version: '14'
       - name: Instalando dependencias
-        run: npm install
+        run: npm i -g @slidev/cli
       - name: Construyendo
-        run: npm run build
+        run: npm run build --base <nombre_del_repo>
       - name: Desplegando
         uses: crazy-max/ghaction-github-pages@v2
         with:
@@ -118,3 +120,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+- En tu repositorio, ve a "Settings>Pages". En "Build and deployment", selecciona "Deploy from a branch", selecciona "gh-pages" y "root". Haz clic en Guardar.
+- Por último, una vez se ejecute el CI de Github Pages, debería aparecer un enlace a las diapositivas en Settings>Pages.

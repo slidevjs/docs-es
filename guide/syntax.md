@@ -103,6 +103,34 @@ function sumar(
 
 Esto resaltará primero `a: Ref<number> | number` y `b: Ref<number> | number`, y después `return computed(() => unref(a) + unref(b))` tras un clic, y finalmente, todo el bloque. Aprende más en la [guía de animaciones de clics](/guide/animations).
 
+Para omitir el resaltado de cualquier línea, puedes establecer el número de línea en `0`. Por ejemplo:
+
+~~~ts {0}
+//```ts {0}
+function suma(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+Si el código no cabe en una diapositiva, puedes añadir la opción `maxHeight que establecerá una altura fija y permitirá el desplazamiento:
+
+~~~ts {2|3|7|12}
+//```ts {2|3|7|12} {maxHeight:'100px'}
+function suma(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+/// ...tantas líneas como desees
+const c = suma(1, 2)
+//```
+~~~
+
 ### Editor de Monaco
 
 
@@ -134,7 +162,7 @@ h1 {
 # La siguiente diapositiva no se ve afectada
 ```
 
-La etiqueta `<style>` en Markdown siempre está [focalizada](https://vue-loader.vuejs.org/guide/scoped-css.html). Para reemplazar los estilos globales, echa un vistazo a la [sección de personalización](/custom/directory-structure#style).
+La etiqueta `<style>` en Markdown tiene siempre [alcance local](https://vuejs.org/api/sfc-css-features.html#scoped-css). Como resultado destacado, un selector con el combinador hijo (`.a > .b`) es inutilizable como tal; consulta el enlace anterior. Para tener anulaciones de estilo globales, consulta la [sección de personalización](/custom/directory-structure#style).
 
 Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directivas](https://windicss.org/features/directives.html) (por `@apply`)
 
@@ -206,7 +234,7 @@ Esta es otra nota
 
 ## Iconos
 
-Slidev te permite tener acceso a casi todos los conjuntos de iconos populares de código abierto **directamente** en tu markdown. Potenciado por [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) e [Iconify](https://iconify.design/).
+Slidev te permite tener acceso a casi todos los conjuntos de iconos populares de código abierto **directamente** en tu markdown. Potenciado por [`unplugin-icons`](https://github.com/antfu/unplugin-icons) e [Iconify](https://iconify.design/).
 
 El nombrado sigue la convención de [Iconify](https://iconify.design/): `{collection-name}-{icon-name}`. Por ejemplo:
 

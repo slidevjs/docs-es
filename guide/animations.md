@@ -198,6 +198,79 @@ El texto `Slidev` se moverá de `-80px` a su posición original en la inicializa
 
 Aprende más: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
 
-## Transiciones de páginas
+## Transiciones de diapositivas
 
-> La versión actual NO incluye soporte para diapositivas. Estamos planeando añadir soporte para ellas en la próxima versión mayor. Mientras tanto, puedes utilizar tus estilos y librerías personalizadas para hacerlo.
+<div id="pages-transitions" />
+
+> Disponible desde v0.39.0
+
+Slidev soporta transiciones de diapositivas. Puedes habilitarlo configurando la opción `transition` en el frontmatter:
+
+```md
+---
+transition: slide-left
+---
+```
+
+Esto dará un bonito efecto de deslizamiento al cambiar de diapositiva. Configurándolo en la portada se aplicará a todas las diapositivas. También puede establecer diferentes transiciones por diapositiva.
+
+### Transiciones incorporadas
+
+- `fade` - Fundido cruzado de entrada/salida
+- `fade-out` - Fundido de salida y luego fundido de entrada
+- `slide-left` - Desliza a la izquierda (desliza a la derecha cuando va hacia atrás)
+- `slide-right` - Desliza hacia la derecha (desliza hacia la izquierda al retroceder)
+- `slide-up` - Deslizar hacia arriba (deslizar hacia abajo al retroceder)
+- `slide-down` - Desliza hacia abajo (desliza hacia arriba al retroceder)
+
+### Transiciones personalizadas
+
+Las transiciones de diapositivas de Slidev son impulsadas por [Vue Transition](https://vuejs.org/guide/built-ins/transition.html). Usted puede proporcionar sus transiciones personalizadas por:
+
+```md
+---
+transition: mi-transicion
+---
+```
+
+and then in your custom stylesheets:
+
+```css
+.mi-transicion-enter-active,
+.mi-transicion-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.mi-transicion-enter-from,
+.mi-transicion-leave-to {
+  opacity: 0;
+}
+```
+
+Más información sobre su funcionamiento en [Vue Transition](https://vuejs.org/guide/built-ins/transition.html).
+
+### Transiciones hacia delante y hacia atrás
+
+Puede especificar diferentes transiciones para la navegación hacia adelante y hacia atrás utilizando `|` como separador en el nombre de la transición:
+
+
+```md
+---
+transition: go-forward | go-backward
+---
+```
+
+Con esto, cuando pase de la diapositiva 1 a la diapositiva 2, se aplicará la transición `go-forward`. Cuando vaya de la diapositiva 2 a la diapositiva 1, se aplicará la transición `go-backward`.
+
+### Uso Avanzado
+
+El campo `transition` acepta una opción que se pasará al componente [`<TransitionGroup>`](https://vuejs.org/api/built-in-components.html#transition). Por ejemplo:
+
+```md
+---
+transition:
+  name: mi-transicion
+  enterFromClass: custom-enter-from
+  enterActiveClass: custom-enter-active
+---
+```

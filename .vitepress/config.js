@@ -70,6 +70,17 @@ const Theme = [
   },
 ]
 
+const Addon = [
+  {
+    text: 'Usar addons',
+    link: '/addons/use',
+  },
+  {
+    text: 'Escribir un addon',
+    link: '/addons/write-an-addon',
+  },
+]
+
 const Translations = [
   {
     text: 'Español',
@@ -158,6 +169,10 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
+    text: 'Configurar Parser',
+    link: '/custom/config-parser',
+  },
+  {
     text: 'Configure Shortcuts',
     link: '/custom/config-shortcuts',
   },
@@ -194,6 +209,10 @@ const slidebars = [
   {
     text: 'Temas',
     children: Theme,
+  },
+  {
+    text: 'Addons',
+    children: Addon,
   },
   {
     text: 'Personalizaciones',
@@ -241,7 +260,8 @@ module.exports = {
     editLinkText: 'Sugerir cambios a esta página',
 
     algolia: {
-      apiKey: '1a5c5a504139c58f428974c78c55291d',
+      appId: 'LCBV6MIFS6',
+      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
       indexName: 'slidev',
       searchParameters: {
         // for translations maintainers: change the filter to your locale code (subdomain name)
@@ -257,6 +277,10 @@ module.exports = {
       {
         text: 'Temas',
         items: Theme,
+      },
+      {
+        text: 'Addons',
+        items: Addon,
       },
       {
         text: 'Personalizar',
@@ -275,6 +299,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

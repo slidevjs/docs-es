@@ -22,9 +22,24 @@ info: false
 presenter: true
 # descarga habilitada de pdf en la compilación de SPA, también puede ser una url personalizada
 download: false
+<<<<<<< HEAD
 # nombre del archivo exportado
 exportFilename: 'slidev-exported.pdf'
 # resaltador de sintaxis, puede ser 'prisma' o 'shiki'
+=======
+# filename of the export file
+exportFilename: 'slidev-exported'
+# export options
+# use export CLI options in camelCase format
+# Learn more: https://sli.dev/guide/exporting.html
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: false
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 highlighter: 'prism'
 # muestra el número de línea
 lineNumbers: false

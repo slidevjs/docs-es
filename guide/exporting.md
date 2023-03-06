@@ -19,29 +19,89 @@ Ahora exporta sus diapositivas a PDF utilizando el siguiente comando:
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Después de unos segundos, tus diapositivas estarán listas en `./slides-export.pdf`.
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+### PNGs and Markdown
+
+When passing in the `--format png` option, Slidev will export PNG images for each slide instead of a PDF.
+
+```bash
+$ slidev export --format png
+```
+
+You can also compile a markdown file composed of compiled png using `--format md`.
+
+```bash
+$ slidev export --format md
+```
+
+### Dark mode
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 En el caso que quieras exportar tus diapositivas usando la versión oscura del tema, utiliza la opción `--dark`:
 ```bash
 $ slidev export --dark
 ```
 
+<<<<<<< HEAD
 ### Exportar pasos por clic
+=======
+### Export Clicks Steps
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 > Disponible desde v0.21
 
+<<<<<<< HEAD
 Por defecto, Slidev exporta 1 página por diapositiva con las animaciones de los clics desactivadas. Si deseas exportar diapositivas con múltiples pasos en múltiples páginas, agrega `--with-clicks`.
+=======
+By default, Slidev exports one page per slide with clicks animations disabled. If you want export slides with multiple steps into multiple pages, pass the `--with-clicks` option.
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 ```bash
 $ slidev export --with-clicks
 ```
 
-### PNGs
+### Slide range
 
+<<<<<<< HEAD
 Al pasar la opción `--format png`, Slidev exportará imágenes PNG para cada diapositiva en lugar de un PDF.
+=======
+You can also specify a range of slides to export with the `--range` option.
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 ```bash
-$ slidev export --format png
+$ slidev export --range 1,4-5,6
+```
+
+### PDF outline
+
+> Available since v0.36.10
+
+You can generate the PDF outline by passing the `--with-toc` option.
+
+```bash
+$ slidev export --with-toc
+```
+
+### Output filename
+
+You can specify the output filename with the `--output` option.
+
+```bash
+$ slidev export --output my-pdf-export
+```
+
+Or in the frontmatter configuration:
+
+```yaml
+---
+exportFilename: my-pdf-export
+---
 ```
 ### Exportar un rango de diapositivas
 
@@ -67,4 +127,26 @@ $ slidev export-notes
 
 ## Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Revisa [Alojamiento Estático](/guide/hosting).
+=======
+See [Static Hosting](/guide/hosting).
+
+## Troubleshooting
+
+### Timeout
+
+For big presentation you might want to increase the playwrigth timeout with `--timeout`
+
+```bash
+$ slidev export --timeout 60000
+```
+
+### Executable path
+
+You can set the browser executable path for playwright using `--executable-path`
+
+```bash
+$ slidev export --executable-path [path_to_chromium]
+```
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed

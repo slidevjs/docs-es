@@ -60,7 +60,26 @@ Same as `v-click` but instead of making the element appear, it makes the element
 
 Cada vez que haga clic en "siguiente" se hará visible un elemento.
 
+<<<<<<< HEAD
 ### Recuento de clics personalizado
+=======
+It accepts a `depth` props for nested list:
+
+```md
+<v-clicks depth="2">
+
+- Item 1
+  - Item 1.1
+  - Item 1.2
+- Item 2
+  - Item 2.1
+  - Item 2.2
+
+</v-clicks>
+```
+
+### Custom Clicks Count
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 Por defecto, Slidev cuenta cuántos pasos son necesarios antes de pasar a la siguiente diapositiva. Puedes anular esta configuración pasando la opción de en Front Matter `clicks`:
 

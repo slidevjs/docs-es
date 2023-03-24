@@ -186,6 +186,17 @@ const Customizations = [
   }
 ]
 
+const BuiltIn = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
+]
+
 const Resources = [
   {
     text: 'Galería',
@@ -219,6 +230,7 @@ const slidebars = [
     children: Customizations,
   },
   {
+<<<<<<< HEAD
     text: 'Integrado',
     children: [
       {
@@ -230,6 +242,10 @@ const slidebars = [
         link: '/builtin/layouts',
       },
     ],
+=======
+    text: 'Built-in',
+    children: BuiltIn,
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
   },
 ]
 
@@ -287,7 +303,15 @@ module.exports = {
         items: Customizations,
       },
       {
+<<<<<<< HEAD
         text: 'Recursos',
+=======
+        text: 'Built-in',
+        items: BuiltIn,
+      },
+      {
+        text: 'Resources',
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
         items: Resources,
       },
       {

@@ -65,7 +65,17 @@ Con Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
 Sigue las instrucciones, ¡y empieza a crear tus diapositivas ahora! Para obtener más detalles sobre la sintaxis de Markdown, lee la [guía de sintaxis](/guide/syntax).
+=======
+With pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+>>>>>>> c2931a4b1de23de51866bfc76636cc1667f323b4
 
 ### Interfaz de la línea de comandos
 

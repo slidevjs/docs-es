@@ -69,7 +69,7 @@ Un tema puede proporcionar por defecto [configuraciones](/custom/#frontmatter-co
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -133,7 +133,7 @@ Además, recuerda especificar los resaltadores compatibles en su `package.json`.
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // or "prism" or "both"
   }
 }
 ```

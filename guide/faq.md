@@ -24,7 +24,7 @@ La segunda columna
 Yendo más allá, puedes personalizar el tamaño de cada columna con:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 La primera columna (200px)

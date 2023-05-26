@@ -2,7 +2,11 @@
 
 Las diapositivas se escriben dentro de **un único archivo markdown** (por defecto `./slides.md`). 
 
+<<<<<<< HEAD
 Puedes utilizar [las características de Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) como lo harías normalmente, con soporte adicional de HTML en línea y componentes de Vue. También se admite el estilo utilizando [Windi CSS](https://windicss.org). Utiliza `---` separado con una nueva línea para dividir tus diapositivas. 
+=======
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides. 
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ~~~md
 # Slidev
@@ -144,7 +148,31 @@ console.log('HolaMundo')
 
 Lea más sobre [configurar Monaco](/custom/config-monaco).
 
+<<<<<<< HEAD
 ## Estilos incrustados
+=======
+### Monaco diff
+
+Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+
+```md
+//```ts {monaco-diff}
+This line is removed on the right.
+just some text
+abcd
+efgh
+Some more text
+~~~
+just some text
+abcz
+zzzzefgh
+Some more text.
+This line is removed on the left.
+//```
+```
+
+## Embedded Styles
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 Puedes usar la etiqueta `<style>` en tu Markdown directamente para sobreescribir los estilos de la **diapositiva actual**.
 
@@ -164,7 +192,11 @@ h1 {
 
 La etiqueta `<style>` en Markdown tiene siempre [alcance local](https://vuejs.org/api/sfc-css-features.html#scoped-css). Como resultado destacado, un selector con el combinador hijo (`.a > .b`) es inutilizable como tal; consulta el enlace anterior. Para tener anulaciones de estilo globales, consulta la [sección de personalización](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directivas](https://windicss.org/features/directives.html) (por `@apply`)
+=======
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ```md
 # Slidev

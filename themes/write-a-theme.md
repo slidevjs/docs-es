@@ -22,6 +22,11 @@ Un tema puede contribuir a los siguientes puntos:
 - Provide default configurations (fonts, color schema, highlighters, etc.)
 - Provide custom layouts or override the existing one
 - Provide custom components or override the existing one
+<<<<<<< HEAD
+=======
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> e2d97fbd68e86abf383c60d24a33b740d2b414d4
 
 
 ## Convenciones
@@ -69,7 +74,7 @@ Un tema puede proporcionar por defecto [configuraciones](/custom/#frontmatter-co
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -133,7 +138,7 @@ Además, recuerda especificar los resaltadores compatibles en su `package.json`.
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // or "prism" or "both"
   }
 }
 ```

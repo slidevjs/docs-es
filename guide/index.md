@@ -10,6 +10,7 @@ Puedes obtener más información sobre la justificación del proyecto en la secc
 
 ### Características
 
+<<<<<<< HEAD
 - 📝 [**Basado en Markdown**](/guide/syntax.html) - utiliza tus editores y forma de trabajar favoritos.
 - 🧑‍💻 [**Pensado para desarrolladores**](/guide/syntax.html#code-blocks) - resaltado de sintaxis integrado, escritura de código en vivo, etc.
 - 🎨 [**Tematizable**](/themes/gallery.html) - un tema puede ser compartido y usado con paquetes npm.
@@ -25,6 +26,23 @@ Puedes obtener más información sobre la justificación del proyecto en la secc
 - 📤 [**Portable**](/guide/exporting.html) - exporta a PDF, PNGs, o incluso un SPA alojable
 - ⚡️ [**Rápido**](https://vitejs.dev) - recarga instantánea impulsada por [Vite](https://vitejs.dev)
 - 🛠 [**Hackeable**](/custom/config-vite.html) - usando plugins de Vite, componentes de Vue, o cualquier paquete de npm
+=======
+- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
+- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
+- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [UnoCSS](https://github.com/unocss/unocss) or [Windi CSS](https://windicss.org/).
+- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
+- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
+- 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - built-in LaTeX math equations support
+- 📰 [**Diagrams**](/guide/syntax.html#diagrams) - creates diagrams with textual descriptions 
+- 🌟 [**Icons**](/guide/syntax.html#icons) - Access to icons from any iconset directly
+- 💻 [**Editors**](/guide/editors.html) - integrated editor, or [extension for VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎥 [**Recording**](/guide/recording.html) - built-in recording and camera view
+- 📤 [**Portable**](/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA
+- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
+- 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
+>>>>>>> e2d97fbd68e86abf383c60d24a33b740d2b414d4
 
 ### Tecnologías
 
@@ -65,7 +83,17 @@ Con Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
 Sigue las instrucciones, ¡y empieza a crear tus diapositivas ahora! Para obtener más detalles sobre la sintaxis de Markdown, lee la [guía de sintaxis](/guide/syntax).
+=======
+With pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+>>>>>>> e2d97fbd68e86abf383c60d24a33b740d2b414d4
 
 ### Interfaz de la línea de comandos
 

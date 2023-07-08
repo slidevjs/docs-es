@@ -13,16 +13,11 @@ Luego puedes modificar y jugar con él. También puede consultar los [temas ofic
 Un tema puede contribuir a los siguientes puntos:
 
 - Estilos globales
-- Provide configuraciones por defecto (fuentes, esquema de colores, resaltadores, etc.)
+- Proporcionar configuraciones por defecto (fuentes, esquema de colores, resaltadores, etc.)
 - Proporcionar diseños personalizados o anular los existentes
 - Proporcionar componentes personalizados o anular los existentes
 - Extender las configuraciones de Windi CSS
 - Configurar herramientas como Monaco y Prism
-
-- Provide default configurations (fonts, color schema, highlighters, etc.)
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-
 
 ## Convenciones
 
@@ -57,7 +52,7 @@ Opcionalmente, también puedes añadir algunos scripts a tu `packages.json`.
 
 Para publicar tu tema, simplemente ejecuta `npm publish` y estarás listo. No se requiere ningún proceso de transpilación (lo que significa que puedes publicar directamente los archivos `.vue` y `.ts`, Slidev es lo suficientemente inteligente como para entenderlos).
 
-Los puntos de contribución del tema siguen las mismas convenciones que la personalización local, por favor consulta [los documentos para las convenciones de nomenclatura](/custom/). 
+Los puntos de contribución del tema siguen las mismas convenciones que la personalización local, por favor consulta [los documentos para las convenciones de nomenclatura](/custom/).
 
 ## Configuraciones por defecto
 
@@ -95,10 +90,7 @@ Por defecto, Slidev asume que los temas soportan tanto el modo claro como el mod
 // package.json
 {
   "name": "slidev-theme-my-cool-theme",
-  "keywords": [
-    "slidev-theme",
-    "slidev"
-  ],
+  "keywords": ["slidev-theme", "slidev"],
   "slidev": {
     "colorSchema": "light" // o "dark" o "both"
   }

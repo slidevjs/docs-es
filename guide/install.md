@@ -18,7 +18,7 @@ Con Yarn:
 $ yarn create slidev
 ```
 
-Sigue las indicaciones y se abrirá la presentación en http://localhost:3030/ automáticamente para ti.
+Sigue las indicaciones y se abrirá la presentación en `http://localhost:3030/` automáticamente para ti.
 
 También contiene la configuración básica y una breve demostración con instrucciones sobre cómo empezar a utilizar Slidev.
 
@@ -95,7 +95,7 @@ Crea la imagen de Docker: `docker build -t mippt .`
 
 Y ejecuta el contenedor: `docker run --name misdiapos --rm --user node -p 3030:3030 mippt`
 
-Puedes visitar tus diapositivas desde http://localhost:3030/
+Puedes visitar tus diapositivas desde `http://localhost:3030/`
 
 
 ### Constuir una SPA alojable (Single Page Application)
@@ -132,7 +132,7 @@ Crea la imagen de Docker: `docker build -t mystaticppt .`
 
 Y ejecuta el contendor: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
-Puedes acceder a tus diapositivas desde http://localhost/
+Puedes acceder a tus diapositivas desde `http://localhost/`
 
 Echa un vistazo a [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) para más detalles.
 

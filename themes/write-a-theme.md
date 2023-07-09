@@ -90,7 +90,10 @@ Por defecto, Slidev asume que los temas soportan tanto el modo claro como el mod
 // package.json
 {
   "name": "slidev-theme-my-cool-theme",
-  "keywords": ["slidev-theme", "slidev"],
+  "keywords": [
+    "slidev-theme", 
+    "slidev"
+  ],
   "slidev": {
     "colorSchema": "light" // o "dark" o "both"
   }

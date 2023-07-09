@@ -18,7 +18,7 @@ La configuración del analizador de Markdown utilizado en el paso 2 puede hacers
 Importante: al modificar la configuración del preparador, es necesario detener e iniciar slidev de nuevo (reiniciarlo podría no ser suficiente).
 :::
 
-El preparador (paso 1 anterior) es altamente extensible y permite implementar sintaxis personalizadas para tus archivos md. Extender el preparador se considera **una característica avanzada** y es susceptible de romper [integraciones de editores](/guía/editores) debido a cambios implícitos en la sintaxis.
+El preparador (paso 1 anterior) es altamente extensible y permite implementar sintaxis personalizadas para tus archivos md. Extender el preparador se considera **una característica avanzada** y es susceptible de romper [integraciones de editores](/guide/editors) debido a cambios implícitos en la sintaxis.
 
 Para personalizarlo, crea un archivo `./setup/preparser.ts` con el siguiente contenido:
 

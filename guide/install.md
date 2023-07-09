@@ -77,7 +77,7 @@ docker run --name slidev --rm -it \
 Si tu carpeta de trabajo está vacía, generará una plantilla de `slides.md` y otros archivos relacionados en tu carpeta de trabajo, y lanzará el servidor en el puerto `3030`. 
 
 
-Puedes acceder a tus diapositivas desde http://localhost:3030/
+Puedes acceder a tus diapositivas desde `http://localhost:3030/`
 
 
 ### Construir una imagen desplegable

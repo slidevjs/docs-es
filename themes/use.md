@@ -8,7 +8,14 @@ theme: seriph
 ---
 ```
 
+<<<<<<< HEAD
 Puedes iniciar el servidor, que te preguntará instalar el tema automáticamente
+=======
+> **Note**
+> To install a theme from a scoped package, you will have to give the full namespace e.g `@organization/slidev-theme-name`
+
+You can start the server, which will prompt you to install the theme automatically
+>>>>>>> 4b8e2bb7224b7e213ae6dee3f33b6f36fa32f0d1
 
 <div class="language-md">
 <pre>

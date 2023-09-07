@@ -34,7 +34,11 @@ Lee más sobre los [resaltadores](/custom/highlighters) y la [configuración de 
 
 Slidev es potenciado por [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) y [Windi CSS](https://windicss.org/), lo que da la mejor experiencia de editor. Cada cambio que hagas se reflejará en las diapositivas **instantáneamente**.
 
+<<<<<<< HEAD
 Aprende más sobre [nuestras tecnologías](/guide/#tech-stack).
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
 
 ## Interactivo y expresivo
 

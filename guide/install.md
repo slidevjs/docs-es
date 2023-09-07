@@ -2,7 +2,11 @@
 
 ## Plantilla de inicio
 
+<<<<<<< HEAD
 > Slidev requiere [**Node.js >=14.0**](https://nodejs.org/)
+=======
+> Slidev requires [**Node.js >=18.0**](https://nodejs.org/)
+>>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
 
 La mejor manera de empezar es utilizando nuestra plantilla oficial de inicio.
 
@@ -18,7 +22,17 @@ Con Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
 Sigue las indicaciones y se abrirá la presentación en `http://localhost:3030/` automáticamente para ti.
+=======
+With PNPM:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
+>>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
 
 También contiene la configuración básica y una breve demostración con instrucciones sobre cómo empezar a utilizar Slidev.
 
@@ -196,9 +210,29 @@ Exporta diapositivas a PDF (u otro formato).
 
 Opciones:
 
+<<<<<<< HEAD
 * `--output` (`string`, por defecto: usa `exportFilename` (véase https://sli.dev/custom/#frontmatter-configures) o usa`[entrada]-export`): ruta a la salida.
 * `--base` (`'pdf', 'png', 'md'`, por defecto: `'pdf'`): formato de salida.
 * `--timeout` (`number`, por defecto: `30000`): tiempo de espera para renderizar la impresión (véase https://playwright.dev/docs/api/class-page#page-goto).
+=======
+* `--watch`, `-w` (`boolean`, default: `false`): build watch.
+* `--out`, `-o` (`string`, default: `dist`): output dir.
+* `--base` (`string`, default: `/`): base URL (see https://cli.vuejs.org/config/#publicpath)
+* `--download` (`boolean`, default: `false`): allow to download the slides as PDF inside the SPA.
+* `--theme`, `-t` (`string`): override theme.
+
+### `slidev export [entry]`
+
+Export slides to PDF (or other format).
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+Options:
+
+* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
+* `--format` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
+* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+>>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
 * `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
 * `--dark` (`boolean`, por defecto: `false`): export as dark theme.
 * `--with-clicks`, `-c` (`boolean`, por defecto: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).

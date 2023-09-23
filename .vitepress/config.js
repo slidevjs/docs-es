@@ -153,7 +153,15 @@ const Customizations = [
     link: '/custom/config-vite',
   },
   {
+<<<<<<< HEAD
     text: 'Configurar Windi CSS',
+=======
+    text: 'Configure UnoCSS',
+    link: '/custom/config-unocss',
+  },
+  {
+    text: 'Configure Windi CSS',
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
     link: '/custom/config-windicss',
   },
   {
@@ -184,6 +192,17 @@ const Customizations = [
     text: 'Capas globales',
     link: '/custom/global-layers',
   }
+]
+
+const BuiltIn = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
 ]
 
 const Resources = [
@@ -219,6 +238,7 @@ const slidebars = [
     children: Customizations,
   },
   {
+<<<<<<< HEAD
     text: 'Integrado',
     children: [
       {
@@ -230,6 +250,10 @@ const slidebars = [
         link: '/builtin/layouts',
       },
     ],
+=======
+    text: 'Built-in',
+    children: BuiltIn,
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
   },
 ]
 
@@ -287,7 +311,15 @@ module.exports = {
         items: Customizations,
       },
       {
+<<<<<<< HEAD
         text: 'Recursos',
+=======
+        text: 'Built-in',
+        items: BuiltIn,
+      },
+      {
+        text: 'Resources',
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
         items: Resources,
       },
       {

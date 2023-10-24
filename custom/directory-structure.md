@@ -114,7 +114,11 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Los estilos serán procesados por [Windi CSS](http://windicss.org/) y [PostCSS](https://postcss.org/), así que puedes usar CSS anidado y [directivas @](https://windicss.org/features/directives.html) por defecto. Por ejemplo:
+=======
+Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+>>>>>>> 285da456fee4e267e3d19c2fb5b19ebef4d1f909
 
 ```less
 .slidev-layout {

@@ -6,11 +6,19 @@
 
 Un addon puede permitirte lo siguiente:
 
+<<<<<<< HEAD
 - Estilos globales (úsalo con cautela puesto que es el enfoque de [los temas](/themes/use)
 - Proporcionar layouts personalizados o sustituye los existentes
 - Proporcionar componentes personalizados o sustituir los existentes
 - Extender las configuraciones CSS de Windi
 - Configurar herramientas como Monaco y Prism
+=======
+- Global styles (use with caution has it is more the role of [themes](/themes/use))
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 285da456fee4e267e3d19c2fb5b19ebef4d1f909
 
 
 ## Convenciones

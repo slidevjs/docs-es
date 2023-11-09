@@ -176,7 +176,38 @@ This shows on the left
 This shows on the right
 ```
 
+<<<<<<< HEAD
 ## Plantillas personalizadas
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> cbaf809403e519ee40e0980dc672c57d90c1dea2
 
 Crea un directorio `layouts/` en la raíz de tu proyecto, y simplemente pon los componentes de la plantilla (layout) Vue en él.
 

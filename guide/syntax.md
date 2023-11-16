@@ -2,7 +2,11 @@
 
 Las diapositivas se escriben dentro de **un único archivo markdown** (por defecto `./slides.md`). 
 
+<<<<<<< HEAD
 Puedes utilizar [las características de Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) como lo harías normalmente, con soporte adicional de HTML en línea y componentes de Vue. También se admite el estilo utilizando [Windi CSS](https://windicss.org). Utiliza `---` separado con una nueva línea para dividir tus diapositivas. 
+=======
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides. 
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 ~~~md
 # Slidev
@@ -62,7 +66,38 @@ Esta es la página por defecto sin ningún metadato adicional.
 
 Revisa la [página de personalización](/custom/) para más detalles.
 
+<<<<<<< HEAD
 ## Bloques de código
+=======
+> The custom syntax might not be compactible with some formatters like Prettier. To improve that, we also support using a direct `yaml` code block to define the frontmatter:
+>
+> ~~~markdown
+> ---
+> layout: cover
+> ---
+> 
+> # Slidev
+> 
+> This is the cover page.
+> 
+> ---
+> 
+> ```yaml
+> # The first yaml block will be treated as the frontmatter of that slide
+> layout: center
+> background: './images/background-1.png'
+> class: 'text-white'
+> ```
+> 
+> # Page 2
+> 
+> This is a page with the layout `center` and a background image.
+> ~~~
+>
+> (Available since v0.44.0)
+
+## Code Blocks
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 Una gran razón por la que estoy construyendo Slidev es la necesidad de hacer que mi código se vea bien en las diapositivas. Así que, tal y como esperabas, puedes utilizar el bloque de código de estilo Markdown para resaltar tu código.
 
@@ -76,7 +111,11 @@ Damos soporte a [Prism](http://prismjs.com) y [Shiki](https://github.com/shiki/s
 
 ### Resaltado de línea
 
+<<<<<<< HEAD
 Para resaltar líneas específicas, simplemente añade los números de línea dentro del paréntesis `{}`. Los números de línea empiezan a contar desde 1.
+=======
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 ~~~ts
 //```ts {2,3}
@@ -89,7 +128,38 @@ function sumar(
 //```
 ~~~
 
+<<<<<<< HEAD
 Para cambiar el resaltado en varios pasos, puede utilizar `|` para separarlos. Por ejemplo
+=======
+You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines:true`. In case you want to disable the numbering for an specific block when `lineNumbers: true` you can set `lines:false` for that block:
+
+~~~ts
+//```ts {2,3} {lines:true}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
+
+~~~ts
+//```ts {6,7} {lines:true, startLine:5}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+To change the highlight in multiple steps, you can use `|` to separate them. For example
+
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 ~~~ts
 //```ts {2-3|5|all}
 function sumar(
@@ -103,7 +173,26 @@ function sumar(
 
 Esto resaltará primero `a: Ref<number> | number` y `b: Ref<number> | number`, y después `return computed(() => unref(a) + unref(b))` tras un clic, y finalmente, todo el bloque. Aprende más en la [guía de animaciones de clics](/guide/animations).
 
+<<<<<<< HEAD
 Para omitir el resaltado de cualquier línea, puedes establecer el número de línea en `0`. Por ejemplo:
+=======
+You can start the highlight at a specific click:
+
+~~~ts
+//```ts {2-3|5|all} {at:0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+This is especially useful when you need to sync different animations (when using `two-cols` layout and list animation for instance).
+
+To skip highlighting any lines, you can set the line number to `0`. For example
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 ~~~ts {0}
 //```ts {0}
@@ -144,7 +233,31 @@ console.log('HolaMundo')
 
 Lea más sobre [configurar Monaco](/custom/config-monaco).
 
+<<<<<<< HEAD
 ## Estilos incrustados
+=======
+### Monaco diff
+
+Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+
+```md
+//```ts {monaco-diff}
+This line is removed on the right.
+just some text
+abcd
+efgh
+Some more text
+~~~
+just some text
+abcz
+zzzzefgh
+Some more text.
+This line is removed on the left.
+//```
+```
+
+## Embedded Styles
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 Puedes usar la etiqueta `<style>` en tu Markdown directamente para sobreescribir los estilos de la **diapositiva actual**.
 
@@ -164,7 +277,11 @@ h1 {
 
 La etiqueta `<style>` en Markdown tiene siempre [alcance local](https://vuejs.org/api/sfc-css-features.html#scoped-css). Como resultado destacado, un selector con el combinador hijo (`.a > .b`) es inutilizable como tal; consulta el enlace anterior. Para tener anulaciones de estilo globales, consulta la [sección de personalización](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directivas](https://windicss.org/features/directives.html) (por `@apply`)
+=======
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 ```md
 # Slidev
@@ -392,7 +509,28 @@ $$
 
 Aprende más: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
+<<<<<<< HEAD
 ## Diagramas
+=======
+### LaTex line highlighting
+
+> Available since v0.43.1
+
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+
+```md
+$$ {1|3|all}
+\begin{array}{c}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
+= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0
+\end{array}
+$$
+```
+
+## Diagrams
+>>>>>>> 5c3b2e72641bb22ec8f567c57e56ad4d873d45ea
 
 También puedes crear diagramas / gráficos a partir de descripciones textuales en tu Markdown, gracias a [Mermaid](https://mermaid-js.github.io/mermaid).
 
@@ -511,3 +649,27 @@ src: ./content.md
 src: ./content.md
 ---
 ```
+
+## MDC Syntax
+
+> Available since v0.43.0
+
+Slidev has and experimental support for [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
+
+You can enable it by add `mdc: true` to the frontmatter of your markdown file.
+
+```md
+---
+mdc: true
+---
+
+This is a [red text]{style="color:red"} :inline-component{prop="value"}
+
+![](/image.png){width=500px lazy}
+
+::block-component{prop="value"}
+The **default** slot
+::
+```
+
+Learn more about [the syntax](https://content.nuxtjs.org/guide/writing/mdc).

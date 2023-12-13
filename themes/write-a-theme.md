@@ -12,12 +12,21 @@ Luego puedes modificar y jugar con él. También puede consultar los [temas ofic
 
 Un tema puede contribuir a los siguientes puntos:
 
+<<<<<<< HEAD
 - Estilos globales
 - Proporcionar configuraciones por defecto (fuentes, esquema de colores, resaltadores, etc.)
 - Proporcionar diseños personalizados o anular los existentes
 - Proporcionar componentes personalizados o anular los existentes
 - Extender las configuraciones de Windi CSS
 - Configurar herramientas como Monaco y Prism
+=======
+- Global styles
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> a6529b60e6a2f963398d169ce543df66469f74df
 
 ## Convenciones
 
@@ -64,7 +73,7 @@ Un tema puede proporcionar por defecto [configuraciones](/custom/#frontmatter-co
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -118,7 +127,11 @@ Slidev alterna una clase `dark` en el elemento `html` de la página para cambiar
 
 ## Resaltador
 
+<<<<<<< HEAD
 Los colores de resaltado de sintaxis también se proporcionan en el tema. Soportamos tanto [Prism](https://prismjs.com/) como [Shiki](https://github.com/shikijs/shiki). Para más información, consulte [los documentos de resaltado de sintaxis](/custom/highlighters).
+=======
+Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki) and [Shikiji](https://github.com/antfu/shikiji). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+>>>>>>> a6529b60e6a2f963398d169ce543df66469f74df
 
 Puedes soportar uno de ellos, o ambos. Consulta el tema por defecto para los ejemplos de configuración [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
 
@@ -128,7 +141,7 @@ Además, recuerda especificar los resaltadores compatibles en su `package.json`.
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // or "prism" or "both"
   }
 }
 ```

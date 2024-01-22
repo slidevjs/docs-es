@@ -2,6 +2,7 @@
 
 ## Componentes integrados
 
+<<<<<<< HEAD
 > La documentación de esta sección está todavía en progreso. Mientras tanto, puedes echar un vistazo al [código fuente](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directamente.
 
 ### `Toc`
@@ -17,15 +18,27 @@ hideInToc: true
 ```
 
 Los títulos se muestran con el [componente `<Titles>`](#titles)
+=======
+### `Arrow`
+
+Draw an arrow.
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 
 #### Uso
 
 ~~~md
-<Toc />
+<Arrow x1="10" y1="20" x2="100" y2="200" />
+~~~
+
+Or:
+
+~~~md
+<Arrow v-bind="{ x1:10, y1:10, x2:200, y2:200 }" />
 ~~~
 
 Parámetros
 
+<<<<<<< HEAD
 * `columns` (`string | number`, por defecto: `1`) El número de columnas a mostrar
 * `maxDepth` (`string | number`, por defecto: `Infinity`): La profundidad máxima a mostrar
 * `minDepth` (`string | number`, por defecto: `1`): La profundidad mínima a mostrar
@@ -33,21 +46,40 @@ Parámetros
   * `'all'`: Muestra todos los items.
   * `'onlyCurrentTree'`: Muestra solo los items que están en el árbol actual (el ítem activo, su padre y sus hijos)
   * `'onlySiblings'`: Muestra solo los items que están en el árbol actual y sus hijos directos.
+=======
+* `x1` (`string | number`, required): start point x position
+* `y1` (`string | number`, required): start point y position
+* `x2` (`string | number`, required): end point x position
+* `y2` (`string | number`, required): end point x position
+* `width` (`string | number`, default: `2`): line width
+* `color` (`string`, default: `'currentColor'`): line color
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 
-### `Link`
+### `AutoFitText`
 
+<<<<<<< HEAD
 Inserta un enlace que pueda utilizar para navegar a una diapositiva determinada.
+=======
+> Experimental
+
+Box inside which the font size will automatically adapt to fit the content. Similar to PowerPoint or Keynote TextBox.
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 
 
 #### Uso
 
 ~~~md
+<<<<<<< HEAD
 <Link to="42">Ir a la diapositiva 42</Link>
 <Link to="42" title="Ir a la diapositiva 42"/>
+=======
+<AutoFitText :max="200" :min="100" modelValue="Some text"/>
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 ~~~
 
 Parámetros:
 
+<<<<<<< HEAD
 * `to` (`string | number`): La ruta de la diapositiva a la que se va a navegar (las diapositivas empiezan por `1`)
 * `title` (`string`): El título a mostrar
 
@@ -80,6 +112,11 @@ Y puedes usarlo así:
 Parámetros
 
 * `no` (`string | number`): El numero de la diapositiva de la cual extraer el título (las diapositivas empiezan por `1`)
+=======
+* `max` (`string | number`, default `100`): Maximum font size
+* `min` (`string | number`, default `30`): Minimum font size
+* `modelValue` (`string`, default `''`): text content
+>>>>>>> 9b64ca249c101e7e425d7ca81aebba12658b9b97
 
 
 =======
@@ -126,6 +163,180 @@ Puedes usar markdown en los slots, pero tendrás que rodearlo con líneas en bla
 </LightOrDark>
 ~~~
 
+### `Link`
+
+Insert a link you can use to navigate to a given slide.
+
+#### Usage
+
+~~~md
+<Link to="42">Go to slide 42</Link>
+<Link to="42" title="Go to slide 42"/>
+<Link to="solutions" title="Go to solutions"/>
+~~~
+
+Parameters:
+
+* `to` (`string | number`): The path of the slide to navigate to (slides starts from `1`)
+* `title` (`string`): The title to display
+
+One can use a string as `to`, provided the corresponding route exists, e.g.
+
+~~~md
+---
+routeAlias: solutions
+---
+# Now some solutions!
+~~~
+
+
+### `RenderWhen`
+
+Render slot only when the context match (for example when we are in presenter view).
+
+#### Usage
+
+~~~md
+<RenderWhen context="presenter">This will only be rendered in presenter view.</RenderWhen>
+~~~
+
+Context type: `'main' | 'slide' | 'overview' | 'presenter' | 'previewNext'`
+
+Parameters:
+
+* `context` (`Context | Context[]`): context or array of contexts you want the slot to be rendered
+
+### `SlideCurrentNo`
+
+Current slide number.
+
+#### Usage
+
+~~~md
+<SlideCurrentNo />
+~~~
+
+### `SlidesTotal`
+
+Total number of slides.
+
+#### Usage
+
+~~~md
+<SlidesTotal />
+~~~
+
+### `Titles`
+
+Insert the main title from a slide parsed as HTML.
+
+Titles and title levels get automatically retrieved from the first title element of each slides.
+
+You can override this automatic behaviour for a slide by using the front matter syntax:
+```yml
+---
+title: Amazing slide title
+level: 2
+---
+```
+
+#### Usage
+
+The `<Titles>` component is a virtual component you can import with:
+```js
+import Titles from '/@slidev/titles.md'
+```
+
+Then you can use it with:
+~~~md
+<Titles no="42" />
+~~~
+
+Parameters:
+
+* `no` (`string | number`): The number of the slide to display the title from (slides starts from `1`)
+
+### `Toc`
+
+Insert a Table Of Content.
+
+If you want a slide to not appear in the `<Toc>` component, you can use in the front matter block of the slide:
+```yml
+---
+hideInToc: true
+---
+```
+
+Titles are displayed using the [`<Titles>` component](#titles)
+
+#### Usage
+
+~~~md
+<Toc />
+~~~
+
+Parameters:
+
+* `columns` (`string | number`, default: `1`): The number of columns of the display
+* `listClass` (`string | string[]`, default: `''`): Classes to apply to the table of contents list
+* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
+* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
+  * `'all'`: Display all items
+  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
+  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+
+### `Transform`
+
+Apply scaling or transforming to elements.
+
+#### Usage
+
+~~~md
+<Transform :scale="0.5">
+  <YourElements />
+</Transform>
+~~~
+
+Parameters:
+
+* `scale` (`number | string`, default `1`): transform scale value
+* `origin` (`string`, default `'top left'`): transform origin value
+
+### `Tweet`
+
+Embed a tweet.
+
+#### Usage
+
+~~~md
+<Tweet id="20" />
+~~~
+
+Parameters:
+
+* `id` (`number | string`, required): id of the tweet
+* `scale` (`number | string`, default `1`): transform scale value
+* `conversation` (`string`, default `'none'`): [tweet embed parameter](https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/guides/embedded-tweet-parameter-reference)
+
+### `VAfter`, `VClick` and `VClicks`
+
+See https://sli.dev/guide/animations.html
+### `Youtube`
+
+Embed a youtube video.
+
+#### Usage
+
+~~~md
+<Youtube id="luoMHjh-XcQ" />
+~~~
+
+Parameters:
+
+* `id` (`string`, required): id of the youtube video
+* `width` (`number`): width of the video
+* `height` (`number`): height of the video
 
 ## Componentes personalizados
 

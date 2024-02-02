@@ -2,16 +2,25 @@
 
 ## Plantilla de inicio
 
+<<<<<<< HEAD
 > Slidev requiere [**Node.js >=14.0**](https://nodejs.org/)
+=======
+> Slidev requires [**Node.js >=18.0**](https://nodejs.org/)
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 La mejor manera de empezar es utilizando nuestra plantilla oficial de inicio.
 
+<<<<<<< HEAD
 Con NPM:
+=======
+::: code-group
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
-```bash
-$ npm init slidev@latest
+```bash [npm]
+npm init slidev@latest
 ```
 
+<<<<<<< HEAD
 Con Yarn:
 
 ```bash
@@ -19,6 +28,19 @@ $ yarn create slidev
 ```
 
 Sigue las indicaciones y se abrirá la presentación en `http://localhost:3030/` automáticamente para ti.
+=======
+```bash [yarn]
+yarn create slidev
+```
+
+```bash [pnpm]
+pnpm create slidev
+```
+
+:::
+
+Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 También contiene la configuración básica y una breve demostración con instrucciones sobre cómo empezar a utilizar Slidev.
 
@@ -27,15 +49,16 @@ También contiene la configuración básica y una breve demostración con instru
 Si todavía prefieres instalar Slidev manualmente o quieres integrarlo en tus proyectos existentes, puedes hacer lo siguiente:
 
 ```bash
-$ npm install @slidev/cli @slidev/theme-default
+npm install @slidev/cli @slidev/theme-default
 ```
 ```bash
-$ touch slides.md
+touch slides.md
 ```
 ```bash
-$ npx slidev
+npx slidev
 ```
 
+<<<<<<< HEAD
 > Por favor, nótese que si usas [pnpm](https://pnpm.io), necesitarás activar la opción de '[shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist)' para que Slidev funcione correctamente:
 >
 > ```bash
@@ -43,19 +66,22 @@ $ npx slidev
 > ```
 
 ## Instalación global
+=======
+## Install Globally
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 > Available since v0.14
 
 Puedes instalar Slidev globalmente con el siguiente comando:
 
 ```bash
-$ npm i -g @slidev/cli
+npm i -g @slidev/cli
 ```
 
 Y luego usar `slidev` donde desees sin que tengas que crear un proyecto cada vez.
 
 ```bash
-$ slidev
+npx slidev
 ```
 
 Este comando también intentará utilizar el `@slidev/cli` local si se ha encontrado en `node_modules`.
@@ -74,10 +100,18 @@ docker run --name slidev --rm -it \
     tangramor/slidev:latest
 ```
 
+<<<<<<< HEAD
 Si tu carpeta de trabajo está vacía, generará una plantilla de `slides.md` y otros archivos relacionados en tu carpeta de trabajo, y lanzará el servidor en el puerto `3030`. 
 
 
 Puedes acceder a tus diapositivas desde `http://localhost:3030/`
+=======
+If your work folder is empty, it will generate a template `slides.md` and other related files under your work folder, and launch the server on port `3030`.
+
+You can access your slides from `http://localhost:3030/`
+
+### Build deployable image
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 
 ### Construir una imagen desplegable
@@ -97,22 +131,36 @@ Y ejecuta el contenedor: `docker run --name misdiapos --rm --user node -p 3030:3
 
 Puedes visitar tus diapositivas desde `http://localhost:3030/`
 
+<<<<<<< HEAD
 
 ### Constuir una SPA alojable (Single Page Application)
+=======
+### Build hostable SPA (Single Page Application)
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Ejecuta el comando `docker exec -i slidev npx slidev build` en el contenedor de `slidev` en ejcución. Generará archivos HTML estáticos en la carpeta `dist`.
 
+<<<<<<< HEAD
 
 #### Alojar en Github Pages
 
 Puedes alojar `dist` en un sitio web estático como [Github Pages](https://tangramor.github.io/slidev_docker/) o Gitlab Pages. 
+=======
+#### Host on Github Pages
+
+You can host `dist` in a static web site such as [Github Pages](https://tangramor.github.io/slidev_docker/) or Gitlab Pages.
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 Debido a que en las páginas de Github la URL puede contener subcarpetas, tienes que modificar el `index.html` generado y cambiar `href="/assets/xxx` por `href="./assets/xxx`. O puedes utilizar la opción `--base=/<subcarpeta>/` durante el proceso de construcción, como por ejemplo `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
 
 Y para evitar el proceso de construcción de Jekyll, es necesario añadir un archivo vacío denominado `.nojekyll`.
 
+<<<<<<< HEAD
 
 #### Alojamiento con Docker
+=======
+#### Host by docker
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 También puedes alojarlo por tu cuenta con Docker:
 
@@ -196,9 +244,29 @@ Exporta diapositivas a PDF (u otro formato).
 
 Opciones:
 
+<<<<<<< HEAD
 * `--output` (`string`, por defecto: usa `exportFilename` (véase https://sli.dev/custom/#frontmatter-configures) o usa`[entrada]-export`): ruta a la salida.
 * `--base` (`'pdf', 'png', 'md'`, por defecto: `'pdf'`): formato de salida.
 * `--timeout` (`number`, por defecto: `30000`): tiempo de espera para renderizar la impresión (véase https://playwright.dev/docs/api/class-page#page-goto).
+=======
+* `--watch`, `-w` (`boolean`, default: `false`): build watch.
+* `--out`, `-o` (`string`, default: `dist`): output dir.
+* `--base` (`string`, default: `/`): base URL (see https://cli.vuejs.org/config/#publicpath)
+* `--download` (`boolean`, default: `false`): allow to download the slides as PDF inside the SPA.
+* `--theme`, `-t` (`string`): override theme.
+
+### `slidev export [entry]`
+
+Export slides to PDF (or other format).
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+Options:
+
+* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
+* `--format` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
+* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 * `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
 * `--dark` (`boolean`, por defecto: `false`): export as dark theme.
 * `--with-clicks`, `-c` (`boolean`, por defecto: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).

@@ -6,11 +6,19 @@
 
 Un addon puede permitirte lo siguiente:
 
+<<<<<<< HEAD
 - Estilos globales (úsalo con cautela puesto que es el enfoque de [los temas](/themes/use)
 - Proporcionar layouts personalizados o sustituye los existentes
 - Proporcionar componentes personalizados o sustituir los existentes
 - Extender las configuraciones CSS de Windi
 - Configurar herramientas como Monaco y Prism
+=======
+- Global styles (use with caution has it is more the role of [themes](/themes/use))
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 
 ## Convenciones
@@ -52,7 +60,11 @@ Y, opcionalmente, puedes añadir varios script a `packages.json`:
 
 Para publicar tu addon, simplemente ejecuta `npm publish` y listo. No es necesario ningún proceso de compilación (lo que significa que puedes publicar directamente los archivos `.vue` y `.ts`, Slidev es lo suficientemente inteligente como para entenderlos).
 
+<<<<<<< HEAD
 Recuerda consultar [los documentos para las convenciones de nomenclatura](/custom/). 
+=======
+Addon contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/).
+>>>>>>> 79a4d453cf7d626368487ec247f6becebd0a20d5
 
 ## Metadatos del addon
 

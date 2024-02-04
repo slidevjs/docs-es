@@ -1,6 +1,11 @@
-// @ts-check
+import type { DefaultTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
+import vite from '../vite.config'
 
-const Guide = [
+const CURRENT_VERSION = '0.47.1'
+
+const Guide: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Por qué Slidev',
     link: '/guide/why',
@@ -55,7 +60,18 @@ const Guide = [
   },
 ]
 
-const Theme = [
+const BuiltIn: DefaultTheme.NavItemWithLink[] = [
+  {
+    text: 'Components',
+    link: '/builtin/components',
+  },
+  {
+    text: 'Layouts',
+    link: '/builtin/layouts',
+  },
+]
+
+const Theme: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
   {
     text: 'Usar un tema',
     link: '/themes/use',
@@ -70,7 +86,7 @@ const Theme = [
   },
 ]
 
-const Addon = [
+const Addon: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Usar addons',
     link: '/addons/use',
@@ -81,6 +97,7 @@ const Addon = [
   },
 ]
 
+<<<<<<< HEAD:.vitepress/config.js
 const Translations = [
   {
     text: 'Español',
@@ -128,6 +145,9 @@ const Translations = [
 ]
 
 const Customizations = [
+=======
+const Customizations: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
   {
     text: 'Personalizaciones',
     link: '/custom/',
@@ -153,8 +173,13 @@ const Customizations = [
     link: '/custom/config-vite',
   },
   {
+<<<<<<< HEAD:.vitepress/config.js
     text: 'Configurar Windi CSS',
     link: '/custom/config-windicss',
+=======
+    text: 'Configure UnoCSS',
+    link: '/custom/config-unocss',
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
   },
   {
     text: 'Configurar Monaco',
@@ -183,10 +208,10 @@ const Customizations = [
   {
     text: 'Capas globales',
     link: '/custom/global-layers',
-  }
+  },
 ]
 
-const Resources = [
+const Resources: DefaultTheme.NavItemWithLink[] = [
   {
     text: 'Galería',
     link: '/showcases',
@@ -201,20 +226,30 @@ const Resources = [
   },
 ]
 
-const slidebars = [
+const slidebars: DefaultTheme.SidebarItem[] = [
   {
+<<<<<<< HEAD:.vitepress/config.js
     text: 'Guía',
     children: Guide,
   },
   {
     text: 'Temas',
     children: Theme,
+=======
+    text: 'Guide',
+    items: Guide,
+  },
+  {
+    text: 'Themes',
+    items: Theme,
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
   },
   {
     text: 'Addons',
-    children: Addon,
+    items: Addon,
   },
   {
+<<<<<<< HEAD:.vitepress/config.js
     text: 'Personalizaciones',
     children: Customizations,
   },
@@ -230,13 +265,18 @@ const slidebars = [
         link: '/builtin/layouts',
       },
     ],
+=======
+    text: 'Customizations',
+    items: Customizations,
+  },
+  {
+    text: 'Built-in',
+    items: BuiltIn,
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
   },
 ]
 
-/**
- * @type {import('vitepress').UserConfig}
- */
-module.exports = {
+export default defineConfig({
   title: 'Slidev',
   description: 'Presentaciones de diapositivas para desarrolladores',
   head: [
@@ -252,7 +292,26 @@ module.exports = {
     ['link', { rel: 'preconnect', crossorigin: 'anonymous', href: 'https://fonts.gstatic.com' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500&family=Inter:wght@200;400;500;600', rel: 'stylesheet' }],
   ],
+  markdown: {
+    theme: {
+      light: 'vitesse-light',
+      dark: 'vitesse-dark',
+    },
+    async shikiSetup(shiki) {
+      await shiki.loadLanguage(
+        'html',
+        'xml',
+        'vue',
+        'markdown',
+      )
+    },
+    codeTransformers: [
+      transformerTwoslash(),
+    ],
+  },
+  cleanUrls: true,
   themeConfig: {
+<<<<<<< HEAD:.vitepress/config.js
     repo: 'slidevjs/docs-es',
     logo: '/logo.svg',
     docsBranch: 'main',
@@ -267,6 +326,16 @@ module.exports = {
         // for translations maintainers: change the filter to your locale code (subdomain name)
         facetFilters: ['language:es']
       }
+=======
+    logo: '/logo.svg',
+    editLink: {
+      pattern: 'https://github.com/slidevjs/docs/edit/main/:path',
+      text: 'Suggest changes to this page',
+    },
+
+    search: {
+      provider: 'local',
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
     },
 
     nav: [
@@ -275,6 +344,7 @@ module.exports = {
         items: Guide,
       },
       {
+<<<<<<< HEAD:.vitepress/config.js
         text: 'Temas',
         items: Theme,
       },
@@ -285,15 +355,48 @@ module.exports = {
       {
         text: 'Personalizar',
         items: Customizations,
+=======
+        text: 'Theme',
+        items: [
+          ...Theme,
+          {
+            text: 'Built-in',
+            items: BuiltIn,
+          },
+        ],
+      },
+      {
+        text: 'Customize',
+        items: [
+          ...Customizations,
+          {
+            text: 'Addon',
+            items: Addon,
+          },
+        ],
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
       },
       {
         text: 'Recursos',
         items: Resources,
       },
       {
+<<<<<<< HEAD:.vitepress/config.js
         text: 'Español',
         items: Translations,
+=======
+        text: `v${CURRENT_VERSION}`,
+        items: [
+          { text: 'Release Notes', link: 'https://github.com/slidevjs/slidev/releases' },
+        ],
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518:.vitepress/config.ts
       },
+    ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/slidevjs/slidev' },
+      { icon: 'twitter', link: 'https://twitter.com/slidevjs' },
+      { icon: 'discord', link: 'https://chat.sli.dev' },
     ],
 
     sidebar: {
@@ -305,5 +408,52 @@ module.exports = {
       '/resources/': slidebars,
       '/': slidebars,
     },
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2020 Anthony Fu.',
+    },
   },
-}
+
+  locales: {
+    root: {
+      label: 'English',
+    },
+    zh: {
+      label: '简体中文',
+      link: 'https://cn.sli.dev/',
+    },
+    fr: {
+      label: 'Français',
+      link: 'https://fr.sli.dev/',
+    },
+    es: {
+      label: 'Español',
+      link: 'https://es.sli.dev/',
+    },
+    ru: {
+      label: 'Русский',
+      link: 'https://ru.sli.dev/',
+    },
+    vn: {
+      label: 'Việt Nam',
+      link: 'https://vn.sli.dev/',
+    },
+    de: {
+      label: 'Deutsch',
+      link: 'https://de.sli.dev/',
+    },
+    br: {
+      label: 'Português (BR)',
+      link: 'https://br.sli.dev/',
+    },
+    el: {
+      label: 'Ελληνικά',
+      link: 'https://el.sli.dev/',
+    },
+    ja: {
+      label: '日本語',
+      link: 'https://ja.sli.dev/',
+    },
+  },
+})

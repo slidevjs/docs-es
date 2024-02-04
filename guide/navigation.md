@@ -28,6 +28,10 @@ Mueve el ratón a la esquina inferior izquierda de la página de Slidev, aparece
 
 ## Vistazo rápido de diapositivas
 
+<<<<<<< HEAD
 Pulsando <kbd>o</kbd> o haciendo clic en el botón <carbon-apps class="inline-icon-btn"/> de la barra de navegación, puedes tener un vistazo rápido de tus diapositivas para poder saltar entre ellas fácilmente. 
+=======
+By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily.
+>>>>>>> 9bbccbb1bd2d1d93f3d376ed06c73986710dd518
 
 ![](/screenshots/slides-overview.png)

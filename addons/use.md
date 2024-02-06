@@ -30,8 +30,13 @@ O en tu `package.json`:
 {
   "slidev": {
     "addons": [
+<<<<<<< HEAD
       "slidev-addon-1",
       "slidev-addon-2",
+=======
+      "slidev-addon-package1",
+      "slidev-addon-package2"
+>>>>>>> e52d01f8924fc2746acb41ca2510db795a7b0c4a
     ]
   }
 }

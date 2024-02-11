@@ -60,7 +60,26 @@ Same as `v-click` but instead of making the element appear, it makes the element
 
 Cada vez que haga clic en "siguiente" se hará visible un elemento.
 
+<<<<<<< HEAD
 ### Recuento de clics personalizado
+=======
+It accepts a `depth` props for nested list:
+
+```md
+<v-clicks depth="2">
+
+- Item 1
+  - Item 1.1
+  - Item 1.2
+- Item 2
+  - Item 2.1
+  - Item 2.2
+
+</v-clicks>
+```
+
+### Custom Clicks Count
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 Por defecto, Slidev cuenta cuántos pasos son necesarios antes de pasar a la siguiente diapositiva. Puedes anular esta configuración pasando la opción de en Front Matter `clicks`:
 
@@ -99,7 +118,21 @@ clicks: 3
 </v-clicks>
 ```
 
+<<<<<<< HEAD
 ### Transiciones de elementos
+=======
+### Enter & Leave
+
+> Available since v0.43.0
+
+You can also specify the enter and leave index for the `v-click` directive by passing an array. The end index is exclusive.
+
+```md
+<div v-click="[2, 4]">This will be shown on the 2nd and 3rd clicks, and hide again after the 4th.</div>
+```
+
+### Element Transitions
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 Cuando aplique la directiva `v-click` a sus elementos, se le adjuntará el nombre de clase `slidev-vclick-target`. Cuando los elementos están ocultos, el nombre de la clase `slidev-vclick-hidden` también se adjuntará. Por ejemplo:
 
@@ -128,9 +161,15 @@ Por defecto, se aplica una sutil transición de opacidad a esas clases:
 }
 ```
 
+<<<<<<< HEAD
 Puedes sobreescribirlos para personalizar los efectos de transición en tus hojas de estilo personalizadas. 
 
 Por ejemplo, puedes conseguir las transiciones de escalado mediante: 
+=======
+You can override them to customize the transition effects in your custom stylesheets.
+
+For example, you can achieve the scaling up transitions by:
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ```css
 // styles.css
@@ -196,7 +235,11 @@ El texto `Slidev` se moverá de `-80px` a su posición original en la inicializa
 > </div>
 > ```
 
+<<<<<<< HEAD
 Aprende más: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
+=======
+Learn mode: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/features/directive-usage) | [Presets](https://motion.vueuse.org/features/presets)
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ## Transiciones de diapositivas
 
@@ -216,12 +259,46 @@ Esto dará un bonito efecto de deslizamiento al cambiar de diapositiva. Configur
 
 ### Transiciones incorporadas
 
+<<<<<<< HEAD
 - `fade` - Fundido cruzado de entrada/salida
 - `fade-out` - Fundido de salida y luego fundido de entrada
 - `slide-left` - Desliza a la izquierda (desliza a la derecha cuando va hacia atrás)
 - `slide-right` - Desliza hacia la derecha (desliza hacia la izquierda al retroceder)
 - `slide-up` - Deslizar hacia arriba (deslizar hacia abajo al retroceder)
 - `slide-down` - Desliza hacia abajo (desliza hacia arriba al retroceder)
+=======
+- `fade` - Crossfade in/out
+- `fade-out` - Fade out and then fade in
+- `slide-left` - Slides to the left (slide to right when going backward)
+- `slide-right` - Slides to the right (slide to left when going backward)
+- `slide-up` - Slides to the top (slide to bottom when going backward)
+- `slide-down` - Slides to the bottom (slide to top when going backward)
+- `view-transition` - Slides with the view transitions API
+
+### View Transitions
+
+> Available since v0.43.0
+
+The **View Transitions API** provides a mechanism for easily creating animated transitions between different DOM states. Learn more how it works in [View Transitions API - MDN Web Docs - Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API).
+
+:::warning
+Experimental: This is not supported by all browsers. Check the [Browser compatibility table](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API#browser_compatibility) carefully before using this.
+:::
+
+You can use the `view-transition-name` CSS property to name view transitions, which creates connections between different page elements and smooth transitions when switching slides.
+
+You can enable [MDC (Markdown Component) Syntax](https://content.nuxtjs.org/guide/writing/mdc) support to conveniently name view-transitions:
+
+```md
+---
+transition: view-transition
+mdc: true
+---
+# View Transition {.inline-block.view-transition-title}
+---
+# View Transition {.inline-block.view-transition-title}
+```
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ### Transiciones personalizadas
 

@@ -114,18 +114,22 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Los estilos serán procesados por [Windi CSS](http://windicss.org/) y [PostCSS](https://postcss.org/), así que puedes usar CSS anidado y [directivas @](https://windicss.org/features/directives.html) por defecto. Por ejemplo:
+=======
+Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://unocss.dev/transformers/directives#apply) out-of-box. For example:
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ```less
 .slidev-layout {
-  @apply px-14 py-10 text-[1.1rem];
+  --uno: px-14 py-10 text-[1.1rem];
 
   h1, h2, h3, h4, p, div {
-    @apply select-none;
+    --uno: select-none;
   }
 
   pre, code {
-    @apply select-text;
+    --uno: select-text;
   }
 
   a {
@@ -134,7 +138,11 @@ Los estilos serán procesados por [Windi CSS](http://windicss.org/) y [PostCSS](
 }
 ```
 
+<<<<<<< HEAD
 [Lee más sobre la sintaxis](https://windicss.org/features/directives.html).
+=======
+[Learn more about the syntax](https://unocss.dev/transformers/directives#apply).
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ## `index.html`
 
@@ -183,4 +191,3 @@ El `index.html` final será:
 Conventions: `global-top.vue` | `global-bottom.vue`
 
 Learn more: [Global Layers](/custom/global-layers)
-

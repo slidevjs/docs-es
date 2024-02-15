@@ -1,8 +1,20 @@
+<<<<<<< HEAD
 # Sintaxis de Markdown
 
 Las diapositivas se escriben dentro de **un único archivo markdown** (por defecto `./slides.md`). 
 
 Puedes utilizar [las características de Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) como lo harías normalmente, con soporte adicional de HTML en línea y componentes de Vue. También se admite el estilo utilizando [Windi CSS](https://windicss.org). Utiliza `---` separado con una nueva línea para dividir tus diapositivas. 
+=======
+---
+outline: deep
+---
+
+# Markdown Syntax
+
+Slides are written within **a single markdown file** (by default `./slides.md`).
+
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides.
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 ~~~md
 # Slidev
@@ -30,9 +42,15 @@ Puedes utilizar directamente Windi CSS y los componentes de Vue para estilizar y
 </div>
 ~~~
 
+<<<<<<< HEAD
 ## Front Matter y plantillas
 
 Puedes especificar plantillas y otros metadatos para cada diapositiva convirtiendo los separadores en [bloques de Front Matter](https://jekyllrb.com/docs/front-matter/). Cada bloque de entrada comienza con un guión triple y termina con otro. Los textos entre ellos son objetos de datos en formato [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Por ejemplo:
+=======
+## Frontmatter & Layouts
+
+Specify layouts and other metadata for each slide by converting the separators into [frontmatter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 ~~~md
 ---
@@ -47,7 +65,7 @@ Esta es la página de portada
 layout: centrado
 background: './images/background-1.png'
 class: 'text-white'
----​
+---
 
 # Página 2
 
@@ -62,45 +80,97 @@ Esta es la página por defecto sin ningún metadato adicional.
 
 Revisa la [página de personalización](/custom/) para más detalles.
 
+<<<<<<< HEAD
 ## Bloques de código
+=======
+> The custom syntax might not be compactible with some formatters like Prettier. To improve that, we also support using a direct `yaml` code block to define the frontmatter:
+>
+> ~~~markdown
+> ---
+> layout: cover
+> ---
+>
+> # Slidev
+>
+> This is the cover page.
+>
+> ---
+>
+> ```yaml
+> # The first yaml block will be treated as the frontmatter of that slide
+> layout: center
+> background: './images/background-1.png'
+> class: 'text-white'
+> ```
+>
+> # Page 2
+>
+> This is a page with the layout `center` and a background image.
+> ~~~
+>
+> (Available since v0.44.0)
+
+## Code Blocks
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 Una gran razón por la que estoy construyendo Slidev es la necesidad de hacer que mi código se vea bien en las diapositivas. Así que, tal y como esperabas, puedes utilizar el bloque de código de estilo Markdown para resaltar tu código.
 
-~~~ts
-//```ts
+~~~md
+```ts
 console.log('Hello, World!')
-//```
+```
 ~~~
 
+<<<<<<< HEAD
 Damos soporte a [Prism](http://prismjs.com) y [Shiki](https://github.com/shiki/shiki) como resaltadores de sintaxis. Revisa la [sección de resaltadores](/custom/highlighters) para más detalles.
+=======
+We support [Prism](https://prismjs.com), [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 ### Resaltado de línea
 
+<<<<<<< HEAD
 Para resaltar líneas específicas, simplemente añade los números de línea dentro del paréntesis `{}`. Los números de línea empiezan a contar desde 1.
 
 ~~~ts
 //```ts {2,3}
 function sumar(
+=======
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+
+~~~md
+```ts {2,3}
+function add(
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
+<<<<<<< HEAD
 Para cambiar el resaltado en varios pasos, puede utilizar `|` para separarlos. Por ejemplo
 ~~~ts
 //```ts {2-3|5|all}
 function sumar(
+=======
+You can enable line number to all slides by setting `lineNumbers: true` on the config or enable each code block individually by setting `lines:true`. You can also set the starting line for each code block and highlight the lines accordingly, defaults to 1:
+
+~~~md
+```ts {6,7}{lines:true, startLine:5}
+function add(
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
+<<<<<<< HEAD
 Esto resaltará primero `a: Ref<number> | number` y `b: Ref<number> | number`, y después `return computed(() => unref(a) + unref(b))` tras un clic, y finalmente, todo el bloque. Aprende más en la [guía de animaciones de clics](/guide/animations).
 
 Para omitir el resaltado de cualquier línea, puedes establecer el número de línea en `0`. Por ejemplo:
@@ -108,43 +178,143 @@ Para omitir el resaltado de cualquier línea, puedes establecer el número de l�
 ~~~ts {0}
 //```ts {0}
 function suma(
+=======
+To change the highlight in multiple clicks, you can use `|` to separate them:
+
+~~~md
+```ts {2-3|5|all}
+function add(
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
-//```
+```
 ~~~
 
+<<<<<<< HEAD
 Si el código no cabe en una diapositiva, puedes añadir la opción `maxHeight que establecerá una altura fija y permitirá el desplazamiento:
 
 ~~~ts {2|3|7|12}
 //```ts {2|3|7|12} {maxHeight:'100px'}
 function suma(
+=======
+This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block.
+
+You can set the line number to `hide` to hide the code block or `none` to not highlight any line:
+
+~~~md
+```ts {hide|none}
+function add(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
   return computed(() => unref(a) + unref(b))
 }
+```
+~~~
+
+::: tip
+Learn more in the [clicks animations guide](./animations#positioning).
+:::
+
+If the code doesn't fit into one slide, you use the `maxHeight` to set fixed height and enable scrolling:
+
+~~~md
+```ts {2|3|7|12}{maxHeight:'100px'}
+function add(
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+<<<<<<< HEAD
 /// ...tantas líneas como desees
 const c = suma(1, 2)
 //```
 ~~~
 
 ### Editor de Monaco
+=======
+/// ...as many lines as you want
+const c = add(1, 2)
+```
+~~~
+
+### TwoSlash Integration
+
+This feature is only available when you [set `highlighter` to `shiki`](/custom/highlighters)
+
+[TwoSlash](https://twoslash.netlify.app/) is a powerful tool for rendering TypeScript code blocks with type information on hover or inlined. It's quite useful for preparing slides for JavaScript/TypeScript-related topics.
+
+To use it, you can add `twoslash` to the code block's language identifier:
+
+~~~md
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
+~~~
+
+It will be rendered as:
+
+```ts twoslash
+import { ref } from 'vue'
+
+const count = ref(0)
+//            ^?
+```
+
+### Monaco Editor
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 
 Cuando quieras hacer alguna modificación en la presentación, simplemente añade `{monaco}` después del identificador del lenguaje - ¡se convierte todo el bloque en un editor de Monaco con todas las funciones!
 
+<<<<<<< HEAD
 ~~~ts
 //```ts {monaco}
 console.log('HolaMundo')
 //```
+=======
+~~~md
+```ts {monaco}
+console.log('HelloWorld')
+```
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 ~~~
 
 Lea más sobre [configurar Monaco](/custom/config-monaco).
 
+<<<<<<< HEAD
 ## Estilos incrustados
+=======
+#### Monaco Diff
+
+Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+
+````md
+```ts {monaco-diff}
+This line is removed on the right.
+just some text
+abcd
+efgh
+Some more text
+~~~
+just some text
+abcz
+zzzzefgh
+Some more text.
+This line is removed on the left.
+```
+````
+
+## Embedded Styles
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 Puedes usar la etiqueta `<style>` en tu Markdown directamente para sobreescribir los estilos de la **diapositiva actual**.
 
@@ -164,7 +334,11 @@ h1 {
 
 La etiqueta `<style>` en Markdown tiene siempre [alcance local](https://vuejs.org/api/sfc-css-features.html#scoped-css). Como resultado destacado, un selector con el combinador hijo (`.a > .b`) es inutilizable como tal; consulta el enlace anterior. Para tener anulaciones de estilo globales, consulta la [sección de personalización](/custom/directory-structure#style).
 
+<<<<<<< HEAD
 Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directivas](https://windicss.org/features/directives.html) (por `@apply`)
+=======
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://unocss.dev/transformers/directives) (e.g. `--uno:` or `@apply`)
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 ```md
 # Slidev
@@ -174,7 +348,7 @@ Gracias a [Windi CSS](https://windicss.org), puedes usar CSS anidado y [directiv
 <style>
 blockquote {
   code {
-    @apply text-teal-500 dark:text-teal-400;
+    --uno: text-teal-500 dark:text-teal-400;
   }
 }
 </style>
@@ -196,7 +370,11 @@ Para recursos locales, muévelos a [la carpeta `public`](/custom/directory-struc
 ![Imagen local](/pic.png)
 ```
 
+<<<<<<< HEAD
 Si deseas aplicar tamaños o estilos personalizados, puedes convertirlos a la etiqueta `<img>`: 
+=======
+For you want to apply custom sizes or styles, you can convert them to the `<img>` tag
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
@@ -339,7 +517,27 @@ Esto se muestra a la derecha
 Esto muestra a la izquierda
 ```
 
+<<<<<<< HEAD
 ## Configuraciones
+=======
+## Import Code Snippets
+
+> Available since v0.47.0
+
+You can import code snippets from existing files via following syntax:
+
+```md
+<<< @/snippets/snippet.js
+```
+
+::: tip
+The value of `@` corresponds to the source root, the directory where the `slides.md` is located.
+:::
+
+This feature is vendored from VitePress, learn more about it in [VitePress's documentation](https://vitepress.dev/guide/markdown#import-code-snippets).
+
+## Configurations
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 Todas las configuraciones necesarias se pueden definir en el archivo Markdown. Por ejemplo:
 
@@ -361,7 +559,7 @@ Lee más sobre la [configuración de Front Matter](/custom/#frontmatter-configur
 
 Slidev viene con soporte integrado de LaTex, gracias a [KaTeX](https://katex.org/).
 
-<Tweet id="1392246507793915904" />
+<TheTweet id="1392246507793915904" />
 
 ### En líneas
 
@@ -375,7 +573,7 @@ $\sqrt{3x-1}+(1+x)^2$
 
 Utiliza dos (`$$`) para la representación de bloques. Este modo utiliza símbolos más grandes y centra el resultado.
 
-```md
+```latex
 $$
 \begin{array}{c}
 
@@ -392,7 +590,30 @@ $$
 
 Aprende más: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
+<<<<<<< HEAD
 ## Diagramas
+=======
+### LaTex line highlighting
+
+> Available since v0.43.1
+
+To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1 by default.
+
+```latex
+$$ {1|3|all}
+\begin{array}{c}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
+= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0
+\end{array}
+$$
+```
+
+The `at` and `finally` options of [code blocks](#line-highlighting) are also available for LaTeX blocks.
+
+## Diagrams
+>>>>>>> 5bb36b886ae9009e4661ee060cce1d86954d7280
 
 También puedes crear diagramas / gráficos a partir de descripciones textuales en tu Markdown, gracias a [Mermaid](https://mermaid-js.github.io/mermaid).
 
@@ -511,3 +732,27 @@ src: ./content.md
 src: ./content.md
 ---
 ```
+
+## MDC Syntax
+
+> Available since v0.43.0
+
+Slidev has and experimental support for [MDC (Markdown Components) Syntax](https://content.nuxtjs.org/guide/writing/mdc) powered by [`markdown-it-mdc`](https://github.com/antfu/markdown-it-mdc).
+
+You can enable it by add `mdc: true` to the frontmatter of your markdown file.
+
+```md
+---
+mdc: true
+---
+
+This is a [red text]{style="color:red"} :inline-component{prop="value"}
+
+![](/image.png){width=500px lazy}
+
+::block-component{prop="value"}
+The **default** slot
+::
+```
+
+Learn more about [the syntax](https://content.nuxtjs.org/guide/writing/mdc).

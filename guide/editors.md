@@ -6,7 +6,11 @@ Si deseas un manejo de alto nivel a tus diapositivas, ¡hemos proporcionado las 
 
 ## Editor integrado
 
+<<<<<<< HEAD
 Slidev viene con un editor integrado [CodeMirror](https://codemirror.net/) que instantáneamente recargará y guardará los cambios en tu archivo. 
+=======
+Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file.
+>>>>>>> 081241c66e4b17a1a524facc9585f0b6f74f5699
 
 Haz clic en el botón <carbon-edit class="inline-icon-btn"/> para abrirlo.
 
@@ -40,4 +44,4 @@ La extensión de VS Code ofrece algunas funciones que te ayudarán a organizar m
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
-<Tweet id="1395333405345148930" />
+<TheTweet id="1395333405345148930" />

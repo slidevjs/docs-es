@@ -13,7 +13,6 @@ Slidev tiene los siguientes plugins preconfigurados:
 - [unplugin-icons](https://github.com/antfu/unplugin-icons)
 - [vite-plugin-vue-markdown](https://github.com/antfu/vite-plugin-vue-markdown)
 - [vite-plugin-remote-assets](https://github.com/antfu/vite-plugin-remote-assets)
-- [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss)
 - [unocss/vite](https://github.com/unocss/unocss/tree/main/packages/vite)
 
 

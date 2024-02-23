@@ -22,11 +22,10 @@ El preparador (paso 1 anterior) es altamente extensible y permite implementar si
 
 Para personalizarlo, crea un archivo `./setup/preparser.ts` con el siguiente contenido:
 
-
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup(({filepath, headmatter}) => {
+export default definePreparserSetup(({ filepath, headmatter }) => {
   return [
     {
       transformRawLines(lines) {
@@ -56,7 +55,6 @@ Este ejemplo sustituye sistemáticamente cualquier línea `@@@` por una línea c
 Imagina una situación en la que (parte de) la presentación muestra principalmente imágenes de portada e incluye otros archivos md. Es posible que quieras una notación compacta en la que, por ejemplo, (parte de) `slides.md` sea como esto:
 
 ```md
-
 @cover: /nice.jpg
 # Bienvenida
 @src: page1.md
@@ -64,13 +62,17 @@ Imagina una situación en la que (parte de) la presentación muestra principalme
 @cover: /break.jpg
 @src: pages3-4.md
 @cover: https://source.unsplash.com/collection/94734566/1920x1080
+<<<<<<< HEAD
 # ¿Alguna pregunta?
 Hasta la próxima
 
+=======
+# Questions?
+see you next time
+>>>>>>> 1d54c861642c679ca01887a28e187047fedcbc83
 ```
 
 Para permitir estas sintaxis `@src:` y `@cover:`, crea un archivo `./setup/preparser.ts` con el siguiente contenido:
-
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -83,20 +85,26 @@ export default definePreparserSetup(() => {
         while (i < lines.length) {
           const l = lines[i]
           if (l.match(/^@cover:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               'layout: cover',
               `background: ${l.replace(/^@cover: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           if (l.match(/^@src:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               `src: ${l.replace(/^@src: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           i++
@@ -109,7 +117,11 @@ export default definePreparserSetup(() => {
 
 Y eso es todo.
 
+<<<<<<< HEAD
 
+=======
+### Use case 2: using custom frontmatter to wrap slides
+>>>>>>> 1d54c861642c679ca01887a28e187047fedcbc83
 
 ### Caso de uso 2: usar frontmatter personalizado para agrupar diapositivas
 
@@ -118,9 +130,6 @@ Imagina un caso en el que a menudo quieres escalar algunas de tus diapositivas p
 Por ejemplo, podrías escribir tu `slides.md` como esto:
 
 ```md
-
-
-
 ---
 layout: quote
 _scale: 0.75
@@ -143,16 +152,24 @@ _scale: 4
 layout: center
 _scale: 2.5
 ---
+<<<<<<< HEAD
 # ¿Alguna pregunta?
 Nos vemos
 
+=======
+# Questions?
+see you next time
+>>>>>>> 1d54c861642c679ca01887a28e187047fedcbc83
 ```
 
 Aquí hemos utilizado un guión bajo en `_scale` para evitar posibles conflictos con las propiedades frontmatter existentes (de hecho, el caso de `scale`, sin guión bajo podría causar problemas).
 
+<<<<<<< HEAD
 
 Para manejar esta sintaxis `_scale: ...` en el frontmatter, crea un archivo `./setup/preparser.ts` con el siguiente contenido:
-
+=======
+To handle this `_scale: ...` syntax in the frontmatter, create a `./setup/preparser.ts` file with the following content:
+>>>>>>> 1d54c861642c679ca01887a28e187047fedcbc83
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -163,7 +180,7 @@ export default definePreparserSetup(() => {
       transformSlide(content, frontmatter) {
         if ('_scale' in frontmatter) {
           return [
-            `<Transform :scale=${frontmatter['_scale']}>`,
+            `<Transform :scale=${frontmatter._scale}>`,
             '',
             content,
             '',

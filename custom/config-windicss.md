@@ -2,12 +2,20 @@
 
 <Environment type="node" />
 
+<<<<<<< HEAD
 Markdown soporta por defecto las etiquetas HTML incrustadas. Por lo tanto, puedes estilizar tu contenido de la manera que quieras. Por conveniencia, tenemos [Windi CSS](https://github.com/windicss/windicss) incorporado, por lo que puedes estilizar el marcado directamente usando clases de utilidades.
+=======
+::: warning
+Since Slidev v0.47.0, we no longer support Windi CSS. Please migrate to [UnoCSS](/custom/config-unocss).
+:::
+
+Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want.
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 Por ejemplo:
 
 ```html
-<div class="grid pt-4 gap-4 grids-cols-[100px,1fr]">
+<div class="grid pt-4 gap-4 grid-cols-[100px,1fr]">
 
 ### Nombre
 

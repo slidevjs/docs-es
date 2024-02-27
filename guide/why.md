@@ -3,7 +3,11 @@
 Hay muchos creadores de diapositivas *WYSIWYG* de uso general y repletos de funciones, como
 [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) y [Apple Keynote](https://www.apple.com/keynote/). Funcionan bastante bien para hacer bonitas diapositivas con animaciones, gráficos y muchas otras cosas, a la vez que son muy intuitivas y fáciles de aprender. Entonces, ¿por qué molestarse en hacer Slidev?
 
+<<<<<<< HEAD
 Slidev pretende proporcionar la flexibilidad y la interactividad para que los desarrolladores puedan hacer sus presentaciones aún más interesantes, expresivas y atractivas utilizando las herramientas y tecnologías con las que ya están familiarizados. 
+=======
+Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with.
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 Cuando se trabaja con editores WYSIWYG, es fácil distraerse con las opciones de estilo. Slidev lo remedia separando el contenido y lo visual. Esto le permite centrarse en una cosa a la vez, a la vez que puede reutilizar los temas de la comunidad. Slidev no pretende sustituir por completo a otros creadores de presentaciones de diapositivas. Más bien, se centra en atender a la comunidad de desarrolladores.
 
@@ -34,7 +38,11 @@ Lee más sobre los [resaltadores](/custom/highlighters) y la [configuración de 
 
 Slidev es potenciado por [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) y [Windi CSS](https://windicss.org/), lo que da la mejor experiencia de editor. Cada cambio que hagas se reflejará en las diapositivas **instantáneamente**.
 
+<<<<<<< HEAD
 Aprende más sobre [nuestras tecnologías](/guide/#tech-stack).
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 ## Interactivo y expresivo
 
@@ -62,6 +70,4 @@ $ npm init slidev
 
 O echa un vistazo rápido:
 
-<div class="aspect-9/16 relative">
-<iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe class="aspect-16/9 rounded-xl w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

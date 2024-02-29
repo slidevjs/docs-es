@@ -64,16 +64,23 @@ Las operaciones de navegación `nav` te permiten acceder a algunas funcionalidad
 
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import { NavOperations, defineShortcutsSetup } from '@slidev/types'
 
 export default defineShortcutsSetup((nav: NavOperations) => {
   return [
     {
       key: 'e',
+<<<<<<< HEAD
       
       // Establece el atajo de teclado `e` para usarlo como marcador
       // o una especie de acceso rápido, para navegar específicamente a
       // diapositiva número 42
+=======
+
+      // Set the `e` keyboard shortcut to be used as a bookmark
+      // or quick-access of sorts, to navigate specifically to
+      // slide number 42
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
       fn: () => nav.go(42),
       autoRepeat: true,
     }

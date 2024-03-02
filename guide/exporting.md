@@ -19,6 +19,7 @@ Ahora exporta sus diapositivas a PDF utilizando el siguiente comando:
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Después de unos segundos, tus diapositivas estarán listas en `./slides-export.pdf`.
 
 En el caso que quieras exportar tus diapositivas usando la versión oscura del tema, utiliza la opción `--dark`:
@@ -37,6 +38,11 @@ $ slidev export --with-clicks
 ```
 
 ### PNGs
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+### PNGs and Markdown
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
 
 Al pasar la opción `--format png`, Slidev exportará imágenes PNG para cada diapositiva en lugar de un PDF.
 
@@ -45,7 +51,71 @@ $ slidev export --format png
 ```
 ### Exportar un rango de diapositivas
 
+<<<<<<< HEAD
 Por defecto, se exportan todas las diapositivas de la presentación. Si deseas exportar una diapositiva específica o un rango de diapositivas, puede sactivar la opción `--range` y especificar qué diapositivas desea exportar. 
+=======
+You can also compile a markdown file composed of compiled png using `--format md`.
+
+```bash
+$ slidev export --format md
+```
+
+### Dark mode
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+
+### Export Clicks Steps
+
+> Available since v0.21
+
+By default, Slidev exports one page per slide with clicks animations disabled. If you want export slides with multiple steps into multiple pages, pass the `--with-clicks` option.
+
+```bash
+$ slidev export --with-clicks
+```
+
+### Slide range
+
+You can also specify a range of slides to export with the `--range` option.
+
+```bash
+$ slidev export --range 1,4-5,6
+```
+
+### PDF outline
+
+> Available since v0.36.10
+
+You can generate the PDF outline by passing the `--with-toc` option.
+
+```bash
+$ slidev export --with-toc
+```
+
+### Output filename
+
+You can specify the output filename with the `--output` option.
+
+```bash
+$ slidev export --output my-pdf-export
+```
+
+Or in the frontmatter configuration:
+
+```yaml
+---
+exportFilename: my-pdf-export
+---
+```
+
+### Export a range of slides
+
+By default, all slides in the presentation are exported. If you want to export a specific slide or a range of slides you can set the `--range` option and specify which slides you would like to export.
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
 
 ```bash
 $ slidev export --range 1,6-8,10
@@ -53,7 +123,27 @@ $ slidev export --range 1,6-8,10
 
 Esta opción acepta tanto números específicos de diapositivas como rangos.
 
+<<<<<<< HEAD
 El ejemplo anterior exportaría las diapositivas 1,6,7,8 y 10. 
+=======
+The example above would export slides 1,6,7,8, and 10.
+
+### Multiple entries
+
+You can also export multiple slides at once.
+
+```bash
+$ slidev export slides1.md slides1.md
+```
+
+Or
+
+```bash
+$ slidev export *.md
+```
+
+In this case, each input file will generate its own PDf file.
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
 
 ## Notas de presentador
 
@@ -65,6 +155,30 @@ Exporta todas las notas del presentador (el último comentario al final de cada 
 $ slidev export-notes
 ```
 
+This command also accept multiple entries like for the [export command](#multiple-entries)
+
 ## Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Revisa [Alojamiento Estático](/guide/hosting).
+=======
+See [Static Hosting](/guide/hosting).
+
+## Troubleshooting
+
+### Timeout
+
+For big presentation you might want to increase the playwrigth timeout with `--timeout`
+
+```bash
+$ slidev export --timeout 60000
+```
+
+### Executable path
+
+You can set the browser executable path for playwright using `--executable-path`
+
+```bash
+$ slidev export --executable-path [path_to_chromium]
+```
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1

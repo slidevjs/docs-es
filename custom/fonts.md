@@ -9,12 +9,21 @@ En tu *frontmatter*, configúralo de la siguiente manera:
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   # normalmente, el texto
   sans: 'Robot'
   # utilizado junto a la clase 'font-serif' de windicss
   serif: 'Robot Slab'
   # para bloques de código, código en línea, etc.
   mono: 'Fira Code'
+=======
+  # basically the text
+  sans: Robot
+  # use with `font-serif` css class from UnoCSS
+  serif: Robot Slab
+  # for code blocks, inline code, etc.
+  mono: Fira Code
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 ---
 ```
 
@@ -22,16 +31,27 @@ Y eso es todo.
 
 Las fuentes serán **importadas automáticamente desde [Google Fonts](https://fonts.google.com/)**. Eso significa que puedes utilizar cualquier fuente alojada en Google Fonts.
 
+<<<<<<< HEAD
 ## Fuentes locales
 Por defecto, Slidev asume que todas las fuentes especificadas a través de las configuraciones `fonts` provienen de Google Fonts. Si deseas utilizar fuentes locales, especifica `fonts.local` para evitar que colisione con Google Fonts. 
+=======
+## Local Fonts
+
+By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing.
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 
 ```yaml
 ---
 fonts:
   # Igual que font-family en CSS, puedes separar con una coma para el fallback
   sans: 'Helvetica Neue,Robot'
+<<<<<<< HEAD
   # marca 'Helvetica Neue' como una fuente local
   local: 'Helvetica Neue'
+=======
+  # mark 'Helvetica Neue' as local font
+  local: Helvetica Neue
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 ---
 ```
 
@@ -42,8 +62,13 @@ Por defecto, Slidev viene con tres grosores: `200`,`400`,`600` para cada fuente.
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   sans: 'Robot'
   # por defecto
+=======
+  sans: Robot
+  # default
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
   weights: '200,400,600'
   # importa fuentes itálicas, `false` por defecto
   italic: false
@@ -59,13 +84,17 @@ En la mayoría de los casos, bastará con marcar la "fuente especial" y Slidev s
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
-  serif: 'Robot Slab'
-  mono: 'Fira Code'
+  sans: Robot
+  serif: Robot Slab
+  mono: Fira Code
 ---
 ```
 
+<<<<<<< HEAD
 resultará en:
+=======
+will result in
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
 
 ```css
 .font-sans {
@@ -85,7 +114,7 @@ Si quieres desactivar este comportamiento, puedes hacerlo con:
 ---
 fonts:
   mono: 'Fira Code, monospace'
-  fallback: false
+  fallbacks: false
 ---
 ```
 
@@ -99,8 +128,6 @@ Por el momento, solo se soporta Google como proveedor de fuentes aunque está pl
 ```yaml
 ---
 fonts:
-  provider: 'none'
+  provider: none
 ---
 ```
-
-

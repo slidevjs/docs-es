@@ -3,13 +3,20 @@ defineProps<{ type: 'node' | 'client' }>()
 </script>
 
 <template>
+<<<<<<< HEAD
   <details class="px-4 py-3 mt-4 rounded bg-gray-400 bg-opacity-10">
     <summary class="outline-none">
       Entorno:
       <span class="capitalize" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
+=======
+  <details class="p4 mt-4 rounded-lg bg-gray-400 bg-opacity-10">
+    <summary class="outline-none !m0 select-none">
+      Environment:
+      <span class="capitalize font-bold" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
     </summary>
 
-    <div class="mt-2 opacity-75">
+    <div class="pt2 opacity-75">
       <span v-if="type === 'node'">
         Esta función de configuración sólo se ejecutará en el entorno Node.js, puedes tener acceso a la API de Node.
       </span>

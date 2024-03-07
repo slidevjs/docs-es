@@ -1,13 +1,24 @@
+<<<<<<< HEAD
 # Primeros pasos
 
 ## Introducción
 
 Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> es un creador y presentador de diapositivas basado en la web. Está diseñado para que los desarrolladores se centren en la escritura de contenido en Markdown, mientras que también tiene el poder de los componentes HTML y Vue para ofrecer diseños y plantillas _pixel-perfect_ con demostraciones interactivas incrustadas en sus presentaciones.
+=======
+---
+outline: deep
+---
+
+# Getting Started
+
+Slidev <sup>(slide + dev, **/slaɪdɪv/**)</sup> is a web-based slides maker and presenter. It's designed for developers to focus on writing content in Markdown while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Utiliza un archivo Markdown rico en funciones para generar diapositivas bonitas con una experiencia de recarga instantánea, junto con muchas integraciones incorporadas como la escritura de código en vivo, la exportación de PDF, la grabación de presentaciones, etc. Dado que está impulsado por la web, puedes hacer cualquier cosa con Slidev: las posibilidades son infinitas.
 
 Puedes obtener más información sobre la justificación del proyecto en la sección de [Por qué Slidev](/guide/why).
 
+<<<<<<< HEAD
 ### Características
 
 - 📝 [**Basado en Markdown**](/guide/syntax.html) - utiliza tus editores y forma de trabajar favoritos.
@@ -54,11 +65,43 @@ Slidev es posible gracias a la combinación de estas herramientas y tecnologías
 #### Créalo localmente
 
 Con NPM:
+=======
+## Features
 
-```bash
-$ npm init slidev
+- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
+- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
+- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [UnoCSS](https://github.com/unocss/unocss).
+- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
+- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
+- 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - built-in LaTeX math equations support
+- 📰 [**Diagrams**](/guide/syntax.html#diagrams) - creates diagrams with textual descriptions
+- 🌟 [**Icons**](/guide/syntax.html#icons) - Access to icons from any iconset directly
+- 💻 [**Editors**](/guide/editors.html) - integrated editor, or [extension for VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎥 [**Recording**](/guide/recording.html) - built-in recording and camera view
+- 📤 [**Portable**](/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA
+- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
+- 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
+
+## Scaffolding Your First Presentation
+
+### Try it Online
+
+Start Slidev right in your browser: [sli.dev/new](https://sli.dev/new)
+
+[![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
+
+### Create Locally
+
+::: code-group
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
+
+```bash [npm]
+npm init slidev@latest
 ```
 
+<<<<<<< HEAD
 Con Yarn:
 
 ```bash
@@ -68,6 +111,21 @@ $ yarn create slidev
 Sigue las instrucciones, ¡y empieza a crear tus diapositivas ahora! Para obtener más detalles sobre la sintaxis de Markdown, lee la [guía de sintaxis](/guide/syntax).
 
 ### Interfaz de la línea de comandos
+=======
+```bash [yarn]
+yarn create slidev
+```
+
+```bash [pnpm]
+pnpm create slidev
+```
+
+:::
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+
+## Command Line Interface
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 En un proyecto donde Slidev está instalado, puedes usar el binario `slidev` en tus scripts npm.
 
@@ -89,11 +147,15 @@ $ npx slidev
 
 Ejecuta `slidev --help` para ver más opciones disponibles.
 
+<<<<<<< HEAD
 ### Sintaxis de Markdown
+=======
+## Markdown Syntax
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Slidev lee tu archivo `slides.md` bajo la raíz de tu proyecto y lo convierte a diapositivas. Cada vez que haces cambios, el contenido de las diapositivas se reflejará automáticamente. Por ejemplo:
 
-~~~md
+````md
 # Slidev
 
 Hola mundo
@@ -104,6 +166,7 @@ Hola mundo
 
 Usa directamente bloques de código para el resaltado
 
+<<<<<<< HEAD
 //```ts
 console.log('¡Hola, mundo!')
 //```
@@ -114,3 +177,30 @@ console.log('¡Hola, mundo!')
 ~~~
 
 Lee más sobre la sintaxis de Markdown de Slidev en la [guía de sintaxis](/guide/syntax).
+=======
+```ts
+console.log('Hello, World!')
+```
+
+---
+
+# Page 3
+````
+
+Read more about the Slidev Markdown syntax in the [syntax guide](/guide/syntax).
+
+## Tech Stack
+
+Slidev is made possible by combining these tools and technologies.
+
+- [Vite](https://vitejs.dev) - An extremely fast frontend tooling
+- [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
+- [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, style your slides at ease
+- [Shiki](https://github.com/shikijs/shiki), [Prism](https://github.com/PrismJS/prism), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
+- [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
+- [VueUse](https://vueuse.org) family - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
+- [Iconify](https://iconify.design/) - Iconsets collection.
+- [Drauu](https://github.com/antfu/drauu) - Drawing and annotations support
+- [KaTeX](https://katex.org/) - LaTeX math rendering.
+- [Mermaid](https://mermaid-js.github.io/mermaid) - Textual Diagrams.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2

@@ -4,8 +4,13 @@ Los _addons_ son sets de componentes, layouts, estilos, configuración ... etc. 
 
 Son bastante similares a [los temas]](/themes/use), pero en líneas generales:
 
+<<<<<<< HEAD
 * No afectan a los estilos globales de tus diapositivas.
 * Puedes usar múltiples addons en tu presentación.
+=======
+- they don't affect the global styles of your slides
+- you can use multiple addons in one presentation
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
 
 Para usar un addon, debes instalarlo manualmente:
 
@@ -30,8 +35,13 @@ O en tu `package.json`:
 {
   "slidev": {
     "addons": [
+<<<<<<< HEAD
       "slidev-addon-1",
       "slidev-addon-2",
+=======
+      "slidev-addon-package1",
+      "slidev-addon-package2"
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
     ]
   }
 }

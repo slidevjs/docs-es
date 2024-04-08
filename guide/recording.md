@@ -6,7 +6,7 @@ Slidev tiene integrados grabación y vista de cámara. Puedes usarlas para graba
 
 Haz clic en el botón <carbon-user-avatar class="inline-icon-btn"/> del panel de navegación para mostrar la vista de cámara en la presentación. Puedes arrastrarla para moverla y utilizar el manejador de la esquina inferior derecha para cambiar su tamaño. El tamaño y la posición persistirán en `localStorage` y por lo tanto serán consistentes a través de múltiples actualizaciones, así que no hay necesidad de preocuparse por eso.
 
-<Tweet id="1395006771027120133" />
+<TheTweet id="1395006771027120133" />
 
 ## Grabación
 

@@ -16,13 +16,23 @@ presenter: false
 ---
 ```
 
+<<<<<<< HEAD
 O puedes habilitarlo sólo para el modo `dev` o `build` estableciendo el modo que desees en la configuración:
+=======
+Or you can enable it only for `dev` or `build` mode by setting the mode you want in the config:
+
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 ```md
 ---
 presentador: dev
 ---
 ```
+<<<<<<< HEAD
 En ese caso el presentador sólo estará disponible cuando se ejecute `slidev` pero no cuando se ejecute `slidev build`.
+=======
+
+In that case the presenter will only be available when running `slidev` but not when running `slidev build`.
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ## Acceso remoto restringido
 
